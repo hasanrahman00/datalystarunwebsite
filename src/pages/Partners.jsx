@@ -14,7 +14,7 @@ const integrations = [
 const partnerTypes = [
   { icon: 'Handshake', title: 'Agencies', body: 'White-label our data and demand-gen so you can deliver pipeline programs to clients.' },
   { icon: 'Boxes', title: 'Technology platforms', body: 'Embed verified B2B data into your product via flexible delivery and APIs.' },
-  { icon: 'Network', title: 'Resellers', body: 'Earn wholesale pricing and dedicated support reselling Datalyst services.' },
+  { icon: 'Network', title: 'Resellers', body: 'Earn wholesale pricing and dedicated support reselling DataCentra services.' },
 ]
 
 export default function Partners() {
@@ -23,7 +23,7 @@ export default function Partners() {
     <>
       <PageHero
         eyebrow="Delivery partners"
-        headline="Datalyst data, delivered into the tools you already use"
+        headline="DataCentra data, delivered into the tools you already use"
         subcopy="Push verified segments straight into your CRM and sales-engagement stack, or partner with us to resell and embed our data."
         trail={[{ label: 'Company' }, { label: 'Delivery Partners' }]}
         highlights={['Native CRM delivery', 'White-label options', 'Flexible APIs']}
@@ -45,7 +45,7 @@ export default function Partners() {
       </Section>
 
       <Section tone="subtle">
-        <SectionHeading eyebrow="Partner with us" title="Three ways to grow with Datalyst" />
+        <SectionHeading eyebrow="Partner with us" title="Three ways to grow with DataCentra" />
         <div className="mt-12">
           <FeatureCards items={partnerTypes} columns={3} />
         </div>

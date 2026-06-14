@@ -1,4 +1,4 @@
-// Datalyst — marketing service landing pages. Auto-rendered; keep shape stable.
+// DataCentra — marketing service landing pages. Auto-rendered; keep shape stable.
 export default [
   {
     slug: "data-driven-marketing",
@@ -7,7 +7,7 @@ export default [
     blurb: "Turn raw account and intent signals into marketing programs that target the right buyers at the right moment.",
     hero: {
       headline: "Make every marketing dollar follow the data.",
-      subcopy: "Datalyst connects your account data, intent signals, and engagement history so your team spends budget where pipeline actually comes from."
+      subcopy: "DataCentra connects your account data, intent signals, and engagement history so your team spends budget where pipeline actually comes from."
     },
     highlights: ["Unified account view", "Intent-based targeting", "Closed-loop attribution"],
     stats: [
@@ -20,7 +20,7 @@ export default [
       eyebrow: "Overview",
       title: "Marketing decisions grounded in evidence, not guesswork.",
       body: [
-        "Most teams have more dashboards than direction. Datalyst unifies firmographic, technographic, and behavioral data into a single model so you can see which segments convert and double down on them.",
+        "Most teams have more dashboards than direction. DataCentra unifies firmographic, technographic, and behavioral data into a single model so you can see which segments convert and double down on them.",
         "We instrument the full journey from first touch to closed revenue, giving marketing and sales one shared definition of a good account and a clear read on what is actually working."
       ]
     },
@@ -30,7 +30,7 @@ export default [
       { icon: "Gauge", title: "Faster decisions", body: "Replace monthly guesswork with live signals that tell you where to lean in this week." }
     ],
     process: [
-      { title: "Data unification", body: "We consolidate your CRM, web, and ad data with Datalyst account intelligence into one clean model." },
+      { title: "Data unification", body: "We consolidate your CRM, web, and ad data with DataCentra account intelligence into one clean model." },
       { title: "Segment modeling", body: "We score and segment accounts by fit and intent so you know exactly who to prioritize." },
       { title: "Program activation", body: "We push audiences and triggers into your ad, email, and sales tools for coordinated outreach." },
       { title: "Measure and refine", body: "We report on pipeline impact and tune segments and spend every cycle." }
@@ -47,7 +47,7 @@ export default [
       "Data hygiene and dedupe pass"
     ],
     faqs: [
-      { q: "Do we need a specific CRM or stack?", a: "No. Datalyst integrates with common CRMs, ad platforms, and marketing automation tools, and we map whatever you already run." },
+      { q: "Do we need a specific CRM or stack?", a: "No. DataCentra integrates with common CRMs, ad platforms, and marketing automation tools, and we map whatever you already run." },
       { q: "How long until we see results?", a: "Most teams have unified data and first segments live within three weeks, with attribution maturing over the first quarter." },
       { q: "Who owns the data and model?", a: "You do. Everything we build is delivered into your systems and documented so your team can run it independently." }
     ],
@@ -65,7 +65,7 @@ export default [
     blurb: "A predictable pipeline of qualified, contactable leads matched to your exact ideal customer profile.",
     hero: {
       headline: "Fill the funnel with leads worth calling.",
-      subcopy: "Datalyst sources, verifies, and delivers fit-matched leads into your CRM so your reps spend time selling instead of digging for contacts."
+      subcopy: "DataCentra sources, verifies, and delivers fit-matched leads into your CRM so your reps spend time selling instead of digging for contacts."
     },
     highlights: ["ICP-matched sourcing", "Verified contact data", "CRM-ready delivery"],
     stats: [
@@ -78,7 +78,7 @@ export default [
       eyebrow: "Overview",
       title: "Quality leads, sourced and verified before they reach your reps.",
       body: [
-        "Buying a generic list and hoping is not a strategy. Datalyst builds leads to your exact ICP, then verifies every email and number so your team is not burning hours on bounces and dead lines.",
+        "Buying a generic list and hoping is not a strategy. DataCentra builds leads to your exact ICP, then verifies every email and number so your team is not burning hours on bounces and dead lines.",
         "Each lead arrives enriched with the context reps need to personalize the first touch, and flows straight into your CRM with no manual cleanup."
       ]
     },
@@ -89,7 +89,7 @@ export default [
     ],
     process: [
       { title: "Define the ICP", body: "We map your best customers into a precise profile of industry, size, role, and signals." },
-      { title: "Source matches", body: "We pull fit-matched accounts and contacts from Datalyst data and targeted research." },
+      { title: "Source matches", body: "We pull fit-matched accounts and contacts from DataCentra data and targeted research." },
       { title: "Verify and enrich", body: "We validate contact details and add the context reps need for outreach." },
       { title: "Deliver to CRM", body: "We push clean, deduped leads into your CRM on your chosen schedule." }
     ],
@@ -124,7 +124,7 @@ export default [
     blurb: "Full-funnel programs that create awareness, capture intent, and hand sales a steady stream of ready buyers.",
     hero: {
       headline: "Create demand, capture it, and convert it.",
-      subcopy: "Datalyst designs and runs multi-channel demand programs that move target accounts from unaware to in-market to sales-ready."
+      subcopy: "DataCentra designs and runs multi-channel demand programs that move target accounts from unaware to in-market to sales-ready."
     },
     highlights: ["Multi-channel programs", "Intent capture", "Sales-ready handoff"],
     stats: [
@@ -137,7 +137,7 @@ export default [
       eyebrow: "Overview",
       title: "Demand that fills the pipeline instead of just the dashboard.",
       body: [
-        "Generating clicks is easy; generating demand that closes is not. Datalyst builds coordinated programs across content, ads, email, and events so target accounts move through real buying stages.",
+        "Generating clicks is easy; generating demand that closes is not. DataCentra builds coordinated programs across content, ads, email, and events so target accounts move through real buying stages.",
         "We track intent at the account level and route engaged buyers to sales the moment they signal readiness, so no warm interest goes cold in a queue."
       ]
     },
@@ -170,7 +170,7 @@ export default [
       { q: "How do you define sales-ready?", a: "We agree on scoring thresholds with your sales team so handoffs match what reps consider a real opportunity." }
     ],
     testimonial: {
-      quote: "Pipeline stopped being a quarterly fire drill. The programs Datalyst built keep producing opportunities week after week.",
+      quote: "Pipeline stopped being a quarterly fire drill. The programs DataCentra built keep producing opportunities week after week.",
       name: "Elena Vasquez",
       role: "Director of Demand Gen",
       company: "Brightline Analytics"
@@ -183,7 +183,7 @@ export default [
     blurb: "Paid, organic, and lifecycle channels managed as one system to grow qualified traffic and conversions.",
     hero: {
       headline: "One digital engine, every channel pulling together.",
-      subcopy: "Datalyst plans, runs, and optimizes your paid media, SEO, and lifecycle marketing so growth compounds instead of competing for budget."
+      subcopy: "DataCentra plans, runs, and optimizes your paid media, SEO, and lifecycle marketing so growth compounds instead of competing for budget."
     },
     highlights: ["Paid and organic", "Conversion-focused", "Always-on optimization"],
     stats: [
@@ -196,7 +196,7 @@ export default [
       eyebrow: "Overview",
       title: "Digital channels that work as a system, not silos.",
       body: [
-        "When paid, SEO, and email are run by different hands they pull in different directions. Datalyst manages them as one engine with shared goals, audiences, and measurement.",
+        "When paid, SEO, and email are run by different hands they pull in different directions. DataCentra manages them as one engine with shared goals, audiences, and measurement.",
         "We focus on qualified outcomes over vanity metrics, optimizing toward leads and revenue so every channel earns its place in the budget."
       ]
     },
@@ -242,7 +242,7 @@ export default [
     blurb: "Lifecycle and broadcast email programs that protect deliverability and turn inboxes into pipeline.",
     hero: {
       headline: "Email that reaches inboxes and moves buyers.",
-      subcopy: "Datalyst designs, sends, and optimizes lifecycle and campaign email backed by clean data and deliverability monitoring that keeps you out of spam."
+      subcopy: "DataCentra designs, sends, and optimizes lifecycle and campaign email backed by clean data and deliverability monitoring that keeps you out of spam."
     },
     highlights: ["Deliverability-first", "Lifecycle automation", "List hygiene built in"],
     stats: [
@@ -255,7 +255,7 @@ export default [
       eyebrow: "Overview",
       title: "Email programs built on clean data and trusted sending.",
       body: [
-        "Great email starts long before the send. Datalyst keeps your lists clean, your authentication tight, and your sender reputation healthy so your messages actually land.",
+        "Great email starts long before the send. DataCentra keeps your lists clean, your authentication tight, and your sender reputation healthy so your messages actually land.",
         "From welcome flows to win-back campaigns, we build the automation and content that turns subscribers into engaged buyers and protects the channel for the long term."
       ]
     },
@@ -301,7 +301,7 @@ export default [
     blurb: "Trained agents running outbound calling and appointment setting on verified, compliant contact data.",
     hero: {
       headline: "Real conversations that book real meetings.",
-      subcopy: "Datalyst runs outbound calling programs with trained agents, verified phone data, and compliant scripting to put qualified meetings on your reps' calendars."
+      subcopy: "DataCentra runs outbound calling programs with trained agents, verified phone data, and compliant scripting to put qualified meetings on your reps' calendars."
     },
     highlights: ["Trained calling agents", "Verified phone data", "Compliant scripting"],
     stats: [
@@ -314,7 +314,7 @@ export default [
       eyebrow: "Overview",
       title: "Outbound calling that respects both buyers and the rules.",
       body: [
-        "Phone still converts when it is done right. Datalyst pairs verified direct-dial data with agents trained on your offer so every call sounds informed, not scripted.",
+        "Phone still converts when it is done right. DataCentra pairs verified direct-dial data with agents trained on your offer so every call sounds informed, not scripted.",
         "We handle list scrubbing, call compliance, and qualification so your reps inherit warm, screened conversations rather than cold dials."
       ]
     },
@@ -360,7 +360,7 @@ export default [
     blurb: "Quantitative and qualitative research that sizes markets, profiles buyers, and de-risks your go-to-market.",
     hero: {
       headline: "Decide with evidence, not assumptions.",
-      subcopy: "Datalyst runs surveys, interviews, and data analysis to size your market, map buyer needs, and tell you where the real opportunity is."
+      subcopy: "DataCentra runs surveys, interviews, and data analysis to size your market, map buyer needs, and tell you where the real opportunity is."
     },
     highlights: ["Market sizing", "Buyer interviews", "Competitive landscape"],
     stats: [
@@ -373,7 +373,7 @@ export default [
       eyebrow: "Overview",
       title: "Research that turns market questions into clear answers.",
       body: [
-        "Launching or repositioning without research is expensive guesswork. Datalyst combines primary surveys and interviews with data analysis to ground your strategy in what buyers actually think and do.",
+        "Launching or repositioning without research is expensive guesswork. DataCentra combines primary surveys and interviews with data analysis to ground your strategy in what buyers actually think and do.",
         "We deliver findings you can act on: market size, segment priorities, buyer motivations, and the messaging that resonates, all backed by methodology you can defend."
       ]
     },
@@ -384,7 +384,7 @@ export default [
     ],
     process: [
       { title: "Frame the questions", body: "We define what you need to learn and design a study to answer it rigorously." },
-      { title: "Field the research", body: "We run surveys and interviews with the right audiences using Datalyst panels and outreach." },
+      { title: "Field the research", body: "We run surveys and interviews with the right audiences using DataCentra panels and outreach." },
       { title: "Analyze the data", body: "We clean, code, and analyze responses to surface patterns and segments." },
       { title: "Deliver insight", body: "We present findings, implications, and recommendations your team can act on." }
     ],
@@ -401,7 +401,7 @@ export default [
       "Recommended next steps"
     ],
     faqs: [
-      { q: "Can you reach our specialized audience?", a: "Yes. We recruit niche B2B respondents through Datalyst data and targeted outreach, not just generic panels." },
+      { q: "Can you reach our specialized audience?", a: "Yes. We recruit niche B2B respondents through DataCentra data and targeted outreach, not just generic panels." },
       { q: "Do you do qualitative and quantitative?", a: "Both. We blend interviews for depth with surveys for scale, sized to your questions and budget." },
       { q: "How do we use the findings?", a: "We deliver clear recommendations and an executive deck so the research drives decisions, not just a report on a shelf." }
     ],
@@ -419,7 +419,7 @@ export default [
     blurb: "End-to-end event programs that drive registrations, fill sessions, and turn attendees into pipeline.",
     hero: {
       headline: "Events that book the room and build the pipeline.",
-      subcopy: "Datalyst handles promotion, targeted invites, and follow-up for your webinars and events so attendance is high and the leads are real."
+      subcopy: "DataCentra handles promotion, targeted invites, and follow-up for your webinars and events so attendance is high and the leads are real."
     },
     highlights: ["Targeted invites", "Registration campaigns", "Post-event follow-up"],
     stats: [
@@ -432,7 +432,7 @@ export default [
       eyebrow: "Overview",
       title: "Events promoted to the right people and worked after the lights go down.",
       body: [
-        "An event is only as good as who shows up and what happens next. Datalyst targets invites to fit accounts, drives registrations across channels, and keeps attendance high with smart reminders.",
+        "An event is only as good as who shows up and what happens next. DataCentra targets invites to fit accounts, drives registrations across channels, and keeps attendance high with smart reminders.",
         "After the event we route engaged attendees to sales with full context so the energy in the room turns into booked meetings instead of a forgotten attendee list."
       ]
     },
@@ -478,7 +478,7 @@ export default [
     blurb: "Hand-built, verified prospect lists matched to your exact criteria and ready to load into any tool.",
     hero: {
       headline: "The exact list you need, built and verified for you.",
-      subcopy: "Datalyst researches and assembles bespoke prospect lists to your precise criteria, verifies every record, and delivers them ready for outreach."
+      subcopy: "DataCentra researches and assembles bespoke prospect lists to your precise criteria, verifies every record, and delivers them ready for outreach."
     },
     highlights: ["Built to spec", "Every record verified", "Any format you need"],
     stats: [
@@ -491,7 +491,7 @@ export default [
       eyebrow: "Overview",
       title: "Precise prospect lists without the research grind.",
       body: [
-        "Generic databases give you everyone and no one. Datalyst builds lists to your exact specification, whether that is a niche job title in a single region or accounts using a specific technology.",
+        "Generic databases give you everyone and no one. DataCentra builds lists to your exact specification, whether that is a niche job title in a single region or accounts using a specific technology.",
         "Every contact is researched and verified by hand and machine, deduped against your suppression lists, and delivered in the format your tools expect so you can launch immediately."
       ]
     },
@@ -502,7 +502,7 @@ export default [
     ],
     process: [
       { title: "Capture the spec", body: "We document your target criteria, fields, exclusions, and preferred delivery format." },
-      { title: "Research and build", body: "We source matching accounts and contacts using Datalyst data and manual research." },
+      { title: "Research and build", body: "We source matching accounts and contacts using DataCentra data and manual research." },
       { title: "Verify and dedupe", body: "We validate every record and remove duplicates and suppressed contacts." },
       { title: "Deliver the list", body: "We hand over a clean, formatted file ready to import and use." }
     ],

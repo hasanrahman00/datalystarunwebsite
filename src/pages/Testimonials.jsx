@@ -6,10 +6,10 @@ export default function Testimonials() {
     <ListingTemplate
       page={{
         title: 'What customers say',
-        subcopy: 'Revenue, marketing and growth leaders on what changed after switching to Datalyst.',
+        subcopy: 'Revenue, marketing and growth leaders on what changed after switching to DataCentra.',
         variant: 'testimonials',
         items: testimonials,
-        seo: { title: 'Testimonials', description: 'Customer testimonials about Datalyst data and demand generation.' },
+        seo: { title: 'Testimonials', description: 'Customer testimonials about DataCentra data and demand generation.' },
       }}
     />
   )

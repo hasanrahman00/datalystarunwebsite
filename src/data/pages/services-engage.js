@@ -1,4 +1,4 @@
-// Datalyst — Engage service landing pages
+// DataCentra — Engage service landing pages
 export default [
   {
     slug: "lead-nurturing",
@@ -7,7 +7,7 @@ export default [
     blurb: "Turn early interest into sales-ready conversations with behavior-driven sequences that warm leads without burning them out.",
     hero: {
       headline: "Keep every lead warm until they're ready to buy.",
-      subcopy: "Datalyst builds and runs nurture journeys that respond to real buyer behavior, so the right message lands at the right moment and no opportunity goes cold."
+      subcopy: "DataCentra builds and runs nurture journeys that respond to real buyer behavior, so the right message lands at the right moment and no opportunity goes cold."
     },
     highlights: ["Behavior-triggered sequences", "Multi-channel touchpoints", "Lead scoring built in"],
     stats: [
@@ -20,7 +20,7 @@ export default [
       eyebrow: "Overview",
       title: "Most leads aren't ready today, so we keep them close.",
       body: [
-        "Only a small slice of your pipeline is ready to buy the moment they raise a hand. The rest get forgotten, blasted with generic emails, or handed to sales too early. Datalyst fixes the messy middle with nurture programs that adapt to what each lead actually does.",
+        "Only a small slice of your pipeline is ready to buy the moment they raise a hand. The rest get forgotten, blasted with generic emails, or handed to sales too early. DataCentra fixes the messy middle with nurture programs that adapt to what each lead actually does.",
         "We map intent signals to content, build the sequences, and tune them every week. Your reps inherit warm, educated leads instead of cold names, and marketing finally gets credit for the deals it shaped."
       ]
     },
@@ -53,7 +53,7 @@ export default [
       { q: "What if our leads are old or cold?", a: "That's often the biggest opportunity. We run a dedicated re-engagement track to revive dormant contacts before writing them off." }
     ],
     testimonial: {
-      quote: "Datalyst turned a stale list we'd given up on into a steady stream of meetings. Our reps stopped chasing dead names and started closing.",
+      quote: "DataCentra turned a stale list we'd given up on into a steady stream of meetings. Our reps stopped chasing dead names and started closing.",
       name: "Priya Menon",
       role: "VP Marketing",
       company: "Northwind Analytics"
@@ -66,7 +66,7 @@ export default [
     blurb: "A clean, accountable system for capturing, scoring, routing, and tracking every lead so nothing slips through the cracks.",
     hero: {
       headline: "Every lead captured, scored, and routed in seconds.",
-      subcopy: "Datalyst designs the rules and workflows that move leads from form fill to follow-up without manual handoffs, duplicates, or dropped opportunities."
+      subcopy: "DataCentra designs the rules and workflows that move leads from form fill to follow-up without manual handoffs, duplicates, or dropped opportunities."
     },
     highlights: ["Automated routing", "Dedupe and enrichment", "Full lifecycle tracking"],
     stats: [
@@ -79,7 +79,7 @@ export default [
       eyebrow: "Overview",
       title: "Leads don't fail because of demand. They fail in the handoff.",
       body: [
-        "A lead fills out a form, then disappears into a spreadsheet, gets assigned to the wrong rep, or sits untouched for three days. By the time anyone reaches out, the buyer has moved on. Datalyst builds the operational backbone that keeps that from happening.",
+        "A lead fills out a form, then disappears into a spreadsheet, gets assigned to the wrong rep, or sits untouched for three days. By the time anyone reaches out, the buyer has moved on. DataCentra builds the operational backbone that keeps that from happening.",
         "We define ownership, automate assignment, kill duplicates, and make every stage visible. The result is a funnel where leads move fast, reps stay accountable, and leadership can actually trust the numbers."
       ]
     },
@@ -112,7 +112,7 @@ export default [
       { q: "Do reps have to change how they work?", a: "Minimally. Most logic runs in the background, and we document the few new steps so adoption is painless." }
     ],
     testimonial: {
-      quote: "We were losing deals to slow follow-up and had no idea. Datalyst made the whole funnel visible and our response time dropped from days to minutes.",
+      quote: "We were losing deals to slow follow-up and had no idea. DataCentra made the whole funnel visible and our response time dropped from days to minutes.",
       name: "Marcus Webb",
       role: "Director of Sales Ops",
       company: "Brightline Software"
@@ -125,7 +125,7 @@ export default [
     blurb: "Done-for-you outreach that books qualified meetings on your reps' calendars so they can spend their time closing, not prospecting.",
     hero: {
       headline: "Qualified meetings on the calendar, every week.",
-      subcopy: "Datalyst runs targeted, multi-channel outreach to your ideal buyers and books vetted appointments directly with your team, so your reps walk into ready conversations."
+      subcopy: "DataCentra runs targeted, multi-channel outreach to your ideal buyers and books vetted appointments directly with your team, so your reps walk into ready conversations."
     },
     highlights: ["Vetted meetings only", "Multi-channel outreach", "Calendar-ready handoffs"],
     stats: [
@@ -138,7 +138,7 @@ export default [
       eyebrow: "Overview",
       title: "Your closers shouldn't be spending their day prospecting.",
       body: [
-        "The fastest way to slow down a sales team is to make them find their own meetings. Hours vanish into list-building and cold outreach instead of selling. Datalyst takes the top of the funnel off their plate entirely.",
+        "The fastest way to slow down a sales team is to make them find their own meetings. Hours vanish into list-building and cold outreach instead of selling. DataCentra takes the top of the funnel off their plate entirely.",
         "We build the target list, write the messaging, run the cadences, and qualify the responses. When a meeting lands on a rep's calendar, it's a real buyer who matches your profile and knows why they're there."
       ]
     },
@@ -184,7 +184,7 @@ export default [
     blurb: "We architect and run the automated workflows that scale your marketing, from triggered campaigns to lifecycle journeys, without the busywork.",
     hero: {
       headline: "Marketing that runs itself, reliably.",
-      subcopy: "Datalyst designs, builds, and maintains the automation engine behind your campaigns, so the right journeys fire automatically and your team stops doing repetitive work by hand."
+      subcopy: "DataCentra designs, builds, and maintains the automation engine behind your campaigns, so the right journeys fire automatically and your team stops doing repetitive work by hand."
     },
     highlights: ["Triggered workflows", "Lifecycle campaigns", "Clean platform setup"],
     stats: [
@@ -198,7 +198,7 @@ export default [
       title: "Your automation platform is powerful. Most of it sits unused.",
       body: [
         "Teams buy capable automation tools and then use a fraction of what they can do, because building reliable workflows takes time and expertise nobody has to spare. The platform becomes an expensive email sender.",
-        "Datalyst turns it into the engine it was meant to be. We architect the workflows, connect your data, and maintain it all so campaigns trigger themselves, leads flow cleanly, and your marketers get their time back for strategy and creative."
+        "DataCentra turns it into the engine it was meant to be. We architect the workflows, connect your data, and maintain it all so campaigns trigger themselves, leads flow cleanly, and your marketers get their time back for strategy and creative."
       ]
     },
     benefits: [
@@ -230,7 +230,7 @@ export default [
       { q: "Can you fix our existing broken workflows?", a: "Yes. We often start by auditing and repairing what's already there before building anything new." }
     ],
     testimonial: {
-      quote: "We were drowning in manual campaign work. Datalyst rebuilt our automation from the ground up and gave our two-person team the reach of ten.",
+      quote: "We were drowning in manual campaign work. DataCentra rebuilt our automation from the ground up and gave our two-person team the reach of ten.",
       name: "Tobias Lund",
       role: "Marketing Operations Lead",
       company: "Aperture Retail Group"
@@ -243,7 +243,7 @@ export default [
     blurb: "Coordinated, personalized campaigns aimed at your highest-value accounts, aligning marketing and sales around the deals that matter most.",
     hero: {
       headline: "Win your dream accounts with precision, not spray.",
-      subcopy: "Datalyst builds the target list, the personalized plays, and the sales alignment that land your most valuable accounts, focusing resources where the revenue actually is."
+      subcopy: "DataCentra builds the target list, the personalized plays, and the sales alignment that land your most valuable accounts, focusing resources where the revenue actually is."
     },
     highlights: ["Tiered target accounts", "Personalized plays", "Sales and marketing aligned"],
     stats: [
@@ -257,7 +257,7 @@ export default [
       title: "Not all accounts are equal, so stop marketing to them that way.",
       body: [
         "Broad campaigns chase volume and end up courting accounts that will never close while ignoring the handful that could transform your year. Account-based marketing flips that, concentrating effort on the companies worth winning.",
-        "Datalyst identifies and tiers those accounts, builds personalized campaigns for the buying committees inside them, and aligns sales and marketing on a single plan. Every dollar and message targets revenue you actually want."
+        "DataCentra identifies and tiers those accounts, builds personalized campaigns for the buying committees inside them, and aligns sales and marketing on a single plan. Every dollar and message targets revenue you actually want."
       ]
     },
     benefits: [
@@ -289,7 +289,7 @@ export default [
       { q: "How do you keep sales involved?", a: "We co-build the account list and run coordinated plays, with shared dashboards that keep both teams accountable to the same targets." }
     ],
     testimonial: {
-      quote: "Datalyst got our sales and marketing teams pointed at the same fifty accounts. Within two quarters we closed three logos we'd been chasing for years.",
+      quote: "DataCentra got our sales and marketing teams pointed at the same fifty accounts. Within two quarters we closed three logos we'd been chasing for years.",
       name: "Hannah Okoro",
       role: "Chief Revenue Officer",
       company: "Vanta Industrial"

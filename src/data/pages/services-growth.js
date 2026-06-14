@@ -1,4 +1,4 @@
-// Datalyst — Growth service landing pages
+// DataCentra — Growth service landing pages
 export default [
   {
     slug: "inside-sales-teams",
@@ -7,7 +7,7 @@ export default [
     blurb: "Stand up a fully managed inside sales engine that books qualified meetings into your reps' calendars every week.",
     hero: {
       headline: "A booked calendar, without the headcount headache.",
-      subcopy: "Datalyst builds, trains, and runs an inside sales motion on your behalf — sourcing, sequencing, and setting meetings so your closers only do what they do best."
+      subcopy: "DataCentra builds, trains, and runs an inside sales motion on your behalf — sourcing, sequencing, and setting meetings so your closers only do what they do best."
     },
     highlights: ["Managed SDR pods", "Multi-touch sequencing", "Calendar-ready meetings"],
     stats: [
@@ -20,7 +20,7 @@ export default [
       eyebrow: "Overview",
       title: "An outbound team that plugs straight into your pipeline.",
       body: [
-        "Hiring, ramping, and retaining SDRs is slow and expensive, and most teams never get a repeatable motion off the ground. Datalyst gives you a trained inside sales pod that owns prospecting end to end — from list building to live conversations — while you keep full visibility.",
+        "Hiring, ramping, and retaining SDRs is slow and expensive, and most teams never get a repeatable motion off the ground. DataCentra gives you a trained inside sales pod that owns prospecting end to end — from list building to live conversations — while you keep full visibility.",
         "We operate inside your CRM and your brand voice, so every meeting that lands feels like it came from your own team. You get the output of a seasoned SDR function without the months of build-out."
       ]
     },
@@ -66,7 +66,7 @@ export default [
     blurb: "A growth program purpose-built for home care agencies that fills your intake pipeline with qualified family inquiries.",
     hero: {
       headline: "Twice the referrals, half the chasing.",
-      subcopy: "Datalyst runs a done-for-you acquisition engine for home care agencies — reaching families and referral partners so your intake team stays busy with real, ready-to-start clients."
+      subcopy: "DataCentra runs a done-for-you acquisition engine for home care agencies — reaching families and referral partners so your intake team stays busy with real, ready-to-start clients."
     },
     highlights: ["Family lead generation", "Referral partner outreach", "Intake-ready inquiries"],
     stats: [
@@ -79,7 +79,7 @@ export default [
       eyebrow: "Overview",
       title: "Growth built around how families actually choose care.",
       body: [
-        "Home care decisions are emotional, local, and often urgent. Generic marketing rarely reaches the adult children and discharge planners who make the call. Datalyst builds a targeted engine that speaks to those decision-makers at the right moment.",
+        "Home care decisions are emotional, local, and often urgent. Generic marketing rarely reaches the adult children and discharge planners who make the call. DataCentra builds a targeted engine that speaks to those decision-makers at the right moment.",
         "We combine family-facing campaigns with structured outreach to hospitals, case managers, and senior communities — the referral relationships that drive durable, high-quality admissions for your agency."
       ]
     },
@@ -112,7 +112,7 @@ export default [
       { q: "Will this work in our region?", a: "Every program is built around your specific service area, payer mix, and competition, so targeting reflects your local market." }
     ],
     testimonial: {
-      quote: "Our inquiry volume more than doubled in a quarter, and the referral relationships Datalyst opened keep sending us clients month after month.",
+      quote: "Our inquiry volume more than doubled in a quarter, and the referral relationships DataCentra opened keep sending us clients month after month.",
       name: "Priya Donnelly",
       role: "Executive Director",
       company: "Willowtree Home Care"
@@ -125,7 +125,7 @@ export default [
     blurb: "A patient acquisition program for clinics and private practices that turns local demand into booked appointments.",
     hero: {
       headline: "More booked patients, less empty chair time.",
-      subcopy: "Datalyst builds a local growth engine for your practice — capturing high-intent patients searching for care and guiding them straight into your schedule."
+      subcopy: "DataCentra builds a local growth engine for your practice — capturing high-intent patients searching for care and guiding them straight into your schedule."
     },
     highlights: ["Local patient acquisition", "Online booking funnels", "Reactivation campaigns"],
     stats: [
@@ -138,7 +138,7 @@ export default [
       eyebrow: "Overview",
       title: "Turn local search demand into a full appointment book.",
       body: [
-        "Patients near your practice are already searching for the services you offer. The challenge is being the obvious, trusted choice when they decide to book. Datalyst makes your practice the first and easiest option in your area.",
+        "Patients near your practice are already searching for the services you offer. The challenge is being the obvious, trusted choice when they decide to book. DataCentra makes your practice the first and easiest option in your area.",
         "We connect high-intent local demand to frictionless booking, then reactivate the patients already in your records. The result is a fuller schedule without leaning on discounts or one-off promotions."
       ]
     },
@@ -184,7 +184,7 @@ export default [
     blurb: "Orchestrate email, ads, social, and direct outreach into one coordinated motion that moves buyers from awareness to booked.",
     hero: {
       headline: "One message, every channel, perfectly in sync.",
-      subcopy: "Datalyst designs and runs cross-channel campaigns that surround your buyers with a consistent story — so the same audience hears from you on email, ads, and social at the right moment."
+      subcopy: "DataCentra designs and runs cross-channel campaigns that surround your buyers with a consistent story — so the same audience hears from you on email, ads, and social at the right moment."
     },
     highlights: ["Unified campaign strategy", "Audience syncing", "Attribution and reporting"],
     stats: [
@@ -197,7 +197,7 @@ export default [
       eyebrow: "Overview",
       title: "Stop running channels in silos.",
       body: [
-        "Most teams treat email, paid ads, social, and outreach as separate programs with separate goals. Buyers experience the gaps as disjointed, repetitive, or easy to ignore. Datalyst stitches your channels into one coordinated journey.",
+        "Most teams treat email, paid ads, social, and outreach as separate programs with separate goals. Buyers experience the gaps as disjointed, repetitive, or easy to ignore. DataCentra stitches your channels into one coordinated journey.",
         "We build a single audience strategy, then sequence the right message across every channel so each touch reinforces the last. You get more reach, less wasted spend, and a clear view of what is actually driving pipeline."
       ]
     },

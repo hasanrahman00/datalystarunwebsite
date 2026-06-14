@@ -1,4 +1,4 @@
-// Datalyst — Professionals category data lists. Auto-generated marketing content module.
+// DataCentra — Professionals category data lists. Auto-generated marketing content module.
 export default [
   {
     slug: "ceo-email-list",
@@ -6,7 +6,7 @@ export default [
     blurb: "Reach chief executives with verified inboxes, direct lines, and the firmographic context to open a real conversation.",
     hero: {
       headline: "Put Your Message On A CEO's Desk",
-      subcopy: "Datalyst connects you to founders and chief executives who own the vision and sign off on the biggest bets. Every record is verified, enriched, and ready for high-stakes outreach."
+      subcopy: "DataCentra connects you to founders and chief executives who own the vision and sign off on the biggest bets. Every record is verified, enriched, and ready for high-stakes outreach."
     },
     highlights: ["Verified C-suite inboxes", "Direct executive lines", "Firmographic context"],
     stats: [
@@ -60,7 +60,7 @@ export default [
     blurb: "Reach finance chiefs who control the budget, own the spend approval, and run the numbers on every vendor decision.",
     hero: {
       headline: "Get In Front Of The Budget Owner",
-      subcopy: "Datalyst's CFO list connects you with finance leaders who hold the purse strings. Verified emails enriched with revenue, ERP, and finance-stack signals."
+      subcopy: "DataCentra's CFO list connects you with finance leaders who hold the purse strings. Verified emails enriched with revenue, ERP, and finance-stack signals."
     },
     highlights: ["Budget-authority contacts", "Finance-stack signals", "Verified direct lines"],
     stats: [
@@ -114,7 +114,7 @@ export default [
     blurb: "Reach technical leaders who choose the architecture, approve the tooling, and own the engineering roadmap.",
     hero: {
       headline: "Reach The Engineers' Final Decision-Maker",
-      subcopy: "Datalyst's CTO list connects you with technology leaders who set the stack and sign off on build-versus-buy. Verified emails enriched with tech signals."
+      subcopy: "DataCentra's CTO list connects you with technology leaders who set the stack and sign off on build-versus-buy. Verified emails enriched with tech signals."
     },
     highlights: ["Technographic enrichment", "Verified tech leaders", "Roadmap decision-makers"],
     stats: [
@@ -168,7 +168,7 @@ export default [
     blurb: "Reach CIOs who govern enterprise IT strategy, vendor consolidation, and the systems the whole business runs on.",
     hero: {
       headline: "Connect With Enterprise IT Strategy Leaders",
-      subcopy: "Datalyst's CIO list reaches the executives who set IT direction, manage vendor portfolios, and approve enterprise-grade spend across large organizations."
+      subcopy: "DataCentra's CIO list reaches the executives who set IT direction, manage vendor portfolios, and approve enterprise-grade spend across large organizations."
     },
     highlights: ["Enterprise IT leaders", "Verified executive emails", "Systems-stack context"],
     stats: [
@@ -214,7 +214,7 @@ export default [
       { q: "Can I see how many locations a company has?", a: "Records include location counts and headquarters data, useful for sizing multi-site deployments and territory planning." },
       { q: "How do you keep enterprise data fresh?", a: "We re-verify on a rolling basis and suppress stale inboxes, so job changes among IT leaders don't quietly inflate your bounce rate." }
     ],
-    testimonial: { quote: "Datalyst gave us clean CIO coverage across our enterprise tier, which used to take our SDRs weeks to build by hand.", name: "Helen Brandt", role: "Director of Demand Gen", company: "Axion Systems" }
+    testimonial: { quote: "DataCentra gave us clean CIO coverage across our enterprise tier, which used to take our SDRs weeks to build by hand.", name: "Helen Brandt", role: "Director of Demand Gen", company: "Axion Systems" }
   },
   {
     slug: "cmo-email-list",
@@ -222,7 +222,7 @@ export default [
     blurb: "Reach marketing chiefs who own the brand, control the marketing budget, and shape the entire go-to-market motion.",
     hero: {
       headline: "Reach The Marketers Who Own The Budget",
-      subcopy: "Datalyst's CMO list connects you with marketing leaders who set strategy and approve spend. Verified emails enriched with martech and growth signals."
+      subcopy: "DataCentra's CMO list connects you with marketing leaders who set strategy and approve spend. Verified emails enriched with martech and growth signals."
     },
     highlights: ["Verified CMO inboxes", "Martech stack signals", "Budget owners"],
     stats: [
@@ -276,7 +276,7 @@ export default [
     blurb: "Reach operations chiefs who run the day-to-day, own process efficiency, and approve the tools that keep things moving.",
     hero: {
       headline: "Reach The Leader Who Runs Operations",
-      subcopy: "Datalyst's COO list connects you with the executives accountable for execution, efficiency, and scale. Verified emails with full operational context."
+      subcopy: "DataCentra's COO list connects you with the executives accountable for execution, efficiency, and scale. Verified emails with full operational context."
     },
     highlights: ["Verified COO contacts", "Operational firmographics", "Execution decision-makers"],
     stats: [
@@ -322,7 +322,7 @@ export default [
       { q: "Are titles limited to COO exactly?", a: "You can filter to chief operating officers specifically or broaden to senior operations leadership depending on your motion." },
       { q: "How do you handle role changes?", a: "Continuous re-verification suppresses inboxes that go stale when operations leaders change companies or titles." }
     ],
-    testimonial: { quote: "We sell to ops teams, and Datalyst's COO data let us reach the actual decision-maker instead of routing through gatekeepers.", name: "Tomas Eklund", role: "Sales Director", company: "Flowgrid" }
+    testimonial: { quote: "We sell to ops teams, and DataCentra's COO data let us reach the actual decision-maker instead of routing through gatekeepers.", name: "Tomas Eklund", role: "Sales Director", company: "Flowgrid" }
   },
   {
     slug: "hr-executives-email-list",
@@ -330,7 +330,7 @@ export default [
     blurb: "Reach CHROs and people leaders who own talent strategy, HR tech budgets, and the employee experience.",
     hero: {
       headline: "Reach The People Leaders Who Decide",
-      subcopy: "Datalyst's HR executives list connects you with CHROs and senior people leaders who own talent, culture, and HR technology spend across their organizations."
+      subcopy: "DataCentra's HR executives list connects you with CHROs and senior people leaders who own talent, culture, and HR technology spend across their organizations."
     },
     highlights: ["Senior people leaders", "HR-tech signals", "Verified executive emails"],
     stats: [
@@ -384,7 +384,7 @@ export default [
     blurb: "Reach IT directors who manage infrastructure, evaluate vendors, and run the systems the business depends on daily.",
     hero: {
       headline: "Reach The IT Directors Who Evaluate Vendors",
-      subcopy: "Datalyst's IT directors list connects you with the leaders who manage infrastructure, run procurement evaluations, and influence technology budgets."
+      subcopy: "DataCentra's IT directors list connects you with the leaders who manage infrastructure, run procurement evaluations, and influence technology budgets."
     },
     highlights: ["Verified IT directors", "Infrastructure signals", "Vendor evaluators"],
     stats: [
@@ -430,7 +430,7 @@ export default [
       { q: "Can I target specific industries?", a: "Yes. Filter by industry and sub-vertical alongside headcount to focus on the IT environments that fit best." },
       { q: "Is the data refreshed regularly?", a: "Records are re-verified on a rolling basis and stale inboxes are suppressed before your export is delivered." }
     ],
-    testimonial: { quote: "We sell managed services and Datalyst let us target IT directors by their actual cloud setup. Pipeline quality went way up.", name: "Ravi Menon", role: "Sales Lead", company: "Stackhaven MSP" }
+    testimonial: { quote: "We sell managed services and DataCentra let us target IT directors by their actual cloud setup. Pipeline quality went way up.", name: "Ravi Menon", role: "Sales Lead", company: "Stackhaven MSP" }
   },
   {
     slug: "marketing-directors-email-list",
@@ -438,7 +438,7 @@ export default [
     blurb: "Reach marketing directors who run campaigns, manage agency budgets, and pick the tools their teams use every day.",
     hero: {
       headline: "Reach The Directors Running The Campaigns",
-      subcopy: "Datalyst's marketing directors list connects you with the hands-on leaders who execute strategy, manage budgets, and choose the martech their teams rely on."
+      subcopy: "DataCentra's marketing directors list connects you with the hands-on leaders who execute strategy, manage budgets, and choose the martech their teams rely on."
     },
     highlights: ["Verified marketing directors", "Martech signals", "Campaign budget owners"],
     stats: [
@@ -492,7 +492,7 @@ export default [
     blurb: "Reach VPs of Sales and revenue leaders who own quota, manage the team, and buy the tools that drive the number.",
     hero: {
       headline: "Reach The Leaders Who Own The Number",
-      subcopy: "Datalyst's sales executives list connects you with VPs of Sales and revenue leaders who control quota, headcount, and the sales-tech budget."
+      subcopy: "DataCentra's sales executives list connects you with VPs of Sales and revenue leaders who control quota, headcount, and the sales-tech budget."
     },
     highlights: ["Verified sales leaders", "Revenue-team signals", "Quota owners"],
     stats: [
@@ -538,7 +538,7 @@ export default [
       { q: "Can I target by sales team size?", a: "Yes. Filter by sales headcount band to separate small teams from large revenue organizations." },
       { q: "How accurate are the contact details?", a: "Inboxes are live-verified and stale records suppressed before delivery, keeping bounce rates low even at volume." }
     ],
-    testimonial: { quote: "Selling to sales leaders is brutal, but Datalyst's data let us reference their exact stack and the conversations opened up.", name: "Liam Carrow", role: "Co-Founder", company: "Revblock" }
+    testimonial: { quote: "Selling to sales leaders is brutal, but DataCentra's data let us reference their exact stack and the conversations opened up.", name: "Liam Carrow", role: "Co-Founder", company: "Revblock" }
   },
   {
     slug: "finance-executives-email-list",
@@ -546,7 +546,7 @@ export default [
     blurb: "Reach VPs of Finance, controllers, and finance leaders who shape budgets and influence every vendor decision.",
     hero: {
       headline: "Reach Senior Finance Decision Influencers",
-      subcopy: "Datalyst's finance executives list connects you with VPs of Finance, controllers, and senior finance leaders who shape budgets and steer vendor selection."
+      subcopy: "DataCentra's finance executives list connects you with VPs of Finance, controllers, and senior finance leaders who shape budgets and steer vendor selection."
     },
     highlights: ["Senior finance leaders", "Budget influencers", "Verified executive emails"],
     stats: [
@@ -600,7 +600,7 @@ export default [
     blurb: "Reach procurement managers who run sourcing, negotiate contracts, and decide which vendors make the shortlist.",
     hero: {
       headline: "Reach The Gatekeepers Of Vendor Spend",
-      subcopy: "Datalyst's procurement managers list connects you with the people who run sourcing, negotiate terms, and control which suppliers get approved."
+      subcopy: "DataCentra's procurement managers list connects you with the people who run sourcing, negotiate terms, and control which suppliers get approved."
     },
     highlights: ["Verified procurement leads", "Sourcing decision-makers", "Vendor approvers"],
     stats: [
@@ -654,7 +654,7 @@ export default [
     blurb: "Reach operations managers who run the daily workflows, fix the bottlenecks, and recommend the tools their teams use.",
     hero: {
       headline: "Reach The Managers Who Run The Floor",
-      subcopy: "Datalyst's operations managers list connects you with the hands-on leaders who run daily workflows, solve bottlenecks, and influence operational tool decisions."
+      subcopy: "DataCentra's operations managers list connects you with the hands-on leaders who run daily workflows, solve bottlenecks, and influence operational tool decisions."
     },
     highlights: ["Verified ops managers", "Workflow decision-makers", "Operational firmographics"],
     stats: [
@@ -708,7 +708,7 @@ export default [
     blurb: "Reach accountants and accounting firms who manage the books, advise clients, and choose the software they run on.",
     hero: {
       headline: "Reach Accountants And Accounting Firms",
-      subcopy: "Datalyst's accountants list connects you with practicing accountants and firm leaders who manage the books, advise clients, and select accounting software."
+      subcopy: "DataCentra's accountants list connects you with practicing accountants and firm leaders who manage the books, advise clients, and select accounting software."
     },
     highlights: ["Verified accountants", "Firm and practice data", "Accounting-stack signals"],
     stats: [
@@ -762,7 +762,7 @@ export default [
     blurb: "Reach attorneys and law firms by practice area, firm size, and location for compliant, targeted legal outreach.",
     hero: {
       headline: "Reach Attorneys By Practice And Firm",
-      subcopy: "Datalyst's attorneys list connects you with practicing lawyers and firm decision-makers, segmented by practice area, firm size, and jurisdiction."
+      subcopy: "DataCentra's attorneys list connects you with practicing lawyers and firm decision-makers, segmented by practice area, firm size, and jurisdiction."
     },
     highlights: ["Verified attorney emails", "Practice-area filtering", "Firm-size data"],
     stats: [
@@ -816,7 +816,7 @@ export default [
     blurb: "Reach mortgage and loan officers who originate deals, advise borrowers, and choose the tools that close faster.",
     hero: {
       headline: "Reach Loan Officers Who Close Deals",
-      subcopy: "Datalyst's loan officers list connects you with mortgage and lending professionals who originate loans, advise borrowers, and adopt tools that speed up closings."
+      subcopy: "DataCentra's loan officers list connects you with mortgage and lending professionals who originate loans, advise borrowers, and adopt tools that speed up closings."
     },
     highlights: ["Verified loan officers", "Lending-stack signals", "Originator-level access"],
     stats: [
@@ -862,6 +862,6 @@ export default [
       { q: "Do records include licensing identifiers?", a: "Where publicly listed, identifiers and branch details are included to help you verify and route your outreach." },
       { q: "How current is the data?", a: "Inboxes are re-verified on a rolling basis and stale records suppressed before delivery to keep bounces low." }
     ],
-    testimonial: { quote: "We sell to originators and Datalyst's data let us reach active loan officers directly. Our pipeline filled up within weeks.", name: "Bianca Ferreira", role: "Growth Lead", company: "Closewise" }
+    testimonial: { quote: "We sell to originators and DataCentra's data let us reach active loan officers directly. Our pipeline filled up within weeks.", name: "Bianca Ferreira", role: "Growth Lead", company: "Closewise" }
   }
 ];

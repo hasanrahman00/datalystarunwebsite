@@ -1,4 +1,4 @@
-// Datalyst service landing pages — Enrich group
+// DataCentra service landing pages — Enrich group
 export default [
   {
     slug: "data-enrichment",
@@ -7,7 +7,7 @@ export default [
     blurb: "Turn thin records into full profiles by layering firmographic, demographic, and intent signals onto every contact.",
     hero: {
       headline: "Give every record the context it's been missing.",
-      subcopy: "Datalyst enriches your contacts and accounts with verified company, role, and technographic data so your teams can target with precision instead of guessing."
+      subcopy: "DataCentra enriches your contacts and accounts with verified company, role, and technographic data so your teams can target with precision instead of guessing."
     },
     highlights: ["120+ appendable attributes", "Firmographic and technographic layers", "API or batch delivery"],
     stats: [
@@ -20,7 +20,7 @@ export default [
       eyebrow: "Overview",
       title: "Records that actually tell you who you're selling to.",
       body: [
-        "Most CRMs fill up with half-finished rows: a name here, an email there, no idea what the company does or whether the person can buy. Datalyst closes those gaps by matching each record against our identity graph and appending the attributes that drive routing, scoring, and personalization.",
+        "Most CRMs fill up with half-finished rows: a name here, an email there, no idea what the company does or whether the person can buy. DataCentra closes those gaps by matching each record against our identity graph and appending the attributes that drive routing, scoring, and personalization.",
         "You decide which fields matter, from headcount and revenue bands to job function and installed tech. We return clean, normalized values your systems can use immediately, with confidence scores on every appended field."
       ]
     },
@@ -64,7 +64,7 @@ export default [
     blurb: "Match your existing records to verified, deliverable business emails so you can reach contacts you could only see by name before.",
     hero: {
       headline: "Reach the contacts you already have, by email.",
-      subcopy: "Datalyst matches your names and companies to verified business email addresses, then validates each one before delivery so your campaigns land in the inbox."
+      subcopy: "DataCentra matches your names and companies to verified business email addresses, then validates each one before delivery so your campaigns land in the inbox."
     },
     highlights: ["Verified business emails", "Bounce-tested before delivery", "Permission-aware sourcing"],
     stats: [
@@ -108,7 +108,7 @@ export default [
       { q: "Do you flag catch-all domains?", a: "Yes. Catch-all and risky mailboxes are labeled so you can decide how aggressively to mail them." }
     ],
     testimonial: {
-      quote: "Half our event leads had no email. Datalyst recovered most of them and the list mailed cleaner than the addresses we'd collected ourselves.",
+      quote: "Half our event leads had no email. DataCentra recovered most of them and the list mailed cleaner than the addresses we'd collected ourselves.",
       name: "Marcus Feld",
       role: "Director of Demand Generation",
       company: "Cendral Software"
@@ -121,7 +121,7 @@ export default [
     blurb: "Add missing phone numbers, mailing addresses, social handles, and firmographics to records you already own.",
     hero: {
       headline: "Backfill the fields your records are missing.",
-      subcopy: "Datalyst appends phone, postal, social, and company data to your existing contacts so every record carries the detail your teams need to act."
+      subcopy: "DataCentra appends phone, postal, social, and company data to your existing contacts so every record carries the detail your teams need to act."
     },
     highlights: ["Phone, postal, and social fields", "Firmographic backfill", "Multi-channel coverage"],
     stats: [
@@ -165,7 +165,7 @@ export default [
       { q: "Can you append to international records?", a: "Yes. Coverage is strongest in North America and Europe, with growing depth across other regions." }
     ],
     testimonial: {
-      quote: "Our SDRs needed direct dials, not just emails. Datalyst filled the gaps and connect rates jumped almost immediately.",
+      quote: "Our SDRs needed direct dials, not just emails. DataCentra filled the gaps and connect rates jumped almost immediately.",
       name: "Elena Vasquez",
       role: "Head of Sales Development",
       company: "Brightlane Logistics"
@@ -178,7 +178,7 @@ export default [
     blurb: "Validate emails, phones, and company details in real time so you only act on records that are accurate and reachable.",
     hero: {
       headline: "Trust every record before you act on it.",
-      subcopy: "Datalyst verifies emails, phone numbers, and company details against live signals so your teams stop wasting effort on dead and inaccurate data."
+      subcopy: "DataCentra verifies emails, phone numbers, and company details against live signals so your teams stop wasting effort on dead and inaccurate data."
     },
     highlights: ["Real-time and batch checks", "Email, phone, and firmo validation", "API-first integration"],
     stats: [
@@ -235,7 +235,7 @@ export default [
     blurb: "Analyze your database to expose duplicates, gaps, and inconsistencies, with a clear picture of overall data health.",
     hero: {
       headline: "See exactly what shape your data is in.",
-      subcopy: "Datalyst profiles your entire database to surface duplicates, missing fields, and formatting issues, giving you a clear health score and a plan to fix it."
+      subcopy: "DataCentra profiles your entire database to surface duplicates, missing fields, and formatting issues, giving you a clear health score and a plan to fix it."
     },
     highlights: ["Full-database health scan", "Duplicate and gap detection", "Field-level quality scoring"],
     stats: [
@@ -292,7 +292,7 @@ export default [
     blurb: "Ongoing governance, deduplication, and sync to keep your customer data clean, consistent, and trustworthy over time.",
     hero: {
       headline: "Keep your data clean long after the first cleanup.",
-      subcopy: "Datalyst runs continuous governance, deduplication, and synchronization across your systems so your data stays accurate instead of decaying again."
+      subcopy: "DataCentra runs continuous governance, deduplication, and synchronization across your systems so your data stays accurate instead of decaying again."
     },
     highlights: ["Continuous governance", "Cross-system sync", "Automated dedup rules"],
     stats: [
@@ -349,7 +349,7 @@ export default [
     blurb: "Remove duplicates, fix formatting, and correct errors across your records for a database you can finally rely on.",
     hero: {
       headline: "Scrub your database down to records you can trust.",
-      subcopy: "Datalyst removes duplicates, standardizes formats, and corrects errors across your data so what's left is accurate, consistent, and ready to use."
+      subcopy: "DataCentra removes duplicates, standardizes formats, and corrects errors across your data so what's left is accurate, consistent, and ready to use."
     },
     highlights: ["Dedup and merge", "Format standardization", "Error correction"],
     stats: [
@@ -393,7 +393,7 @@ export default [
       { q: "Can you cleanse on a recurring schedule?", a: "Yes. Many clients run an initial deep cleanse, then schedule lighter recurring sweeps to keep data tidy." }
     ],
     testimonial: {
-      quote: "Datalyst cut our list by nearly 40 percent and somehow our results got better. Turns out we were mailing the same people three times.",
+      quote: "DataCentra cut our list by nearly 40 percent and somehow our results got better. Turns out we were mailing the same people three times.",
       name: "Sofia Marchetti",
       role: "Senior CRM Manager",
       company: "Vireo Consumer Brands"

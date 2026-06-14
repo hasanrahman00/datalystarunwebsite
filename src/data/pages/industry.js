@@ -1,4 +1,4 @@
-// Auto-authored content. Array of industry data-list page objects for Datalyst.
+// Auto-authored content. Array of industry data-list page objects for DataCentra.
 export default [
   {
     slug: "automotive-industry-email-list",
@@ -19,7 +19,7 @@ export default [
       eyebrow: "Overview",
       title: "Built for selling into a complex, multi-tier market.",
       body: [
-        "Automotive buying decisions rarely sit with one person. Datalyst maps the engineers, procurement leads, plant managers, and dealer principals who collectively move a deal forward.",
+        "Automotive buying decisions rarely sit with one person. DataCentra maps the engineers, procurement leads, plant managers, and dealer principals who collectively move a deal forward.",
         "Every record is verified against current employment so your reps reach people who are still in seat, not contacts who left two model years ago."
       ]
     },
@@ -52,7 +52,7 @@ export default [
       { q: "Can I filter by vehicle segment?", a: "You can narrow by passenger, commercial, EV, heavy-duty, and more so your outreach speaks to the right specialty." },
       { q: "How fresh are the records?", a: "Contacts are re-verified on a rolling quarterly basis, and we suppress records that fail validation before delivery." }
     ],
-    testimonial: { quote: "We replaced a stale spreadsheet with a Datalyst pull and booked three plant demos in the first week.", name: "Marcus Lehmann", role: "VP of Sales", company: "AxleWorks Components" }
+    testimonial: { quote: "We replaced a stale spreadsheet with a DataCentra pull and booked three plant demos in the first week.", name: "Marcus Lehmann", role: "VP of Sales", company: "AxleWorks Components" }
   },
   {
     slug: "banking-finance-email-list",
@@ -73,7 +73,7 @@ export default [
       eyebrow: "Overview",
       title: "Sell into a sector where trust and timing decide the deal.",
       body: [
-        "Financial buyers are cautious, regulated, and surrounded by gatekeepers. Datalyst gives you a direct path to the lending, treasury, risk, and technology leaders who can actually approve spend.",
+        "Financial buyers are cautious, regulated, and surrounded by gatekeepers. DataCentra gives you a direct path to the lending, treasury, risk, and technology leaders who can actually approve spend.",
         "We tag institution type and asset size so you can tell a community credit union apart from a global investment bank before you ever hit send."
       ]
     },
@@ -127,7 +127,7 @@ export default [
       eyebrow: "Overview",
       title: "Built for a capital-intensive, project-driven industry.",
       body: [
-        "Oil and gas purchases move through engineering reviews, procurement gates, and EPC partners. Datalyst gives you the names behind each stage, from the wellsite to the boardroom.",
+        "Oil and gas purchases move through engineering reviews, procurement gates, and EPC partners. DataCentra gives you the names behind each stage, from the wellsite to the boardroom.",
         "Segment by upstream, midstream, and downstream so your equipment, services, or software pitch lands with the operators who actually run that part of the chain."
       ]
     },
@@ -181,7 +181,7 @@ export default [
       eyebrow: "Overview",
       title: "Fuel your pipeline across every real estate vertical.",
       body: [
-        "Real estate spans solo agents, regional brokerages, national developers, and institutional investors. Datalyst lets you reach each one with messaging that fits how they buy.",
+        "Real estate spans solo agents, regional brokerages, national developers, and institutional investors. DataCentra lets you reach each one with messaging that fits how they buy.",
         "Filter by firm type, transaction focus, and portfolio scale so a proptech demo or service offer reaches the people most likely to convert."
       ]
     },
@@ -235,7 +235,7 @@ export default [
       eyebrow: "Overview",
       title: "Reach the people who keep the line running.",
       body: [
-        "Manufacturing buying lives close to the floor. Datalyst maps plant managers, maintenance leads, and supply chain heads alongside the executives who fund their projects.",
+        "Manufacturing buying lives close to the floor. DataCentra maps plant managers, maintenance leads, and supply chain heads alongside the executives who fund their projects.",
         "Filter by discrete versus process manufacturing and by facility location so your automation, MRO, or software pitch reaches the right operation."
       ]
     },
@@ -289,7 +289,7 @@ export default [
       eyebrow: "Overview",
       title: "Sell across the entire retail floor and funnel.",
       body: [
-        "Retail decisions are split between merchandising, operations, marketing, and ecommerce. Datalyst gives you the contacts in each function so your pitch reaches the right owner.",
+        "Retail decisions are split between merchandising, operations, marketing, and ecommerce. DataCentra gives you the contacts in each function so your pitch reaches the right owner.",
         "Segment by retail format, from big-box to boutique to pure-play DTC, so a POS system or fulfillment service offer fits how that retailer operates."
       ]
     },
@@ -343,7 +343,7 @@ export default [
       eyebrow: "Overview",
       title: "Navigate budget cycles and committee buying with ease.",
       body: [
-        "Education sales run on academic calendars, grants, and committee approvals. Datalyst connects you to the administrators, department heads, and IT leaders who shape those decisions.",
+        "Education sales run on academic calendars, grants, and committee approvals. DataCentra connects you to the administrators, department heads, and IT leaders who shape those decisions.",
         "Filter by institution type and level so an edtech tool, curriculum service, or facilities offer reaches the right K-12 or higher-ed buyer."
       ]
     },
@@ -397,7 +397,7 @@ export default [
       eyebrow: "Overview",
       title: "Get specified early on the projects that matter.",
       body: [
-        "Construction wins are decided in estimating rooms and design reviews long before the foundation is poured. Datalyst connects you to the contractors, PMs, and architects who shape those calls.",
+        "Construction wins are decided in estimating rooms and design reviews long before the foundation is poured. DataCentra connects you to the contractors, PMs, and architects who shape those calls.",
         "Filter by trade, project type, and company size so your materials, equipment, or software pitch reaches the firms running the work you want."
       ]
     },
@@ -451,7 +451,7 @@ export default [
       eyebrow: "Overview",
       title: "Sell into properties, brands, and management groups.",
       body: [
-        "Hospitality buying is split between corporate brand teams, management companies, and individual properties. Datalyst gives you the contacts at each level so nothing slips through.",
+        "Hospitality buying is split between corporate brand teams, management companies, and individual properties. DataCentra gives you the contacts at each level so nothing slips through.",
         "Filter by segment, from luxury resorts to quick-service chains, so your tech, supply, or service pitch fits the property’s price point and operation."
       ]
     },
@@ -505,7 +505,7 @@ export default [
       eyebrow: "Overview",
       title: "Sell into a sector built on risk and relationships.",
       body: [
-        "Insurance spans carriers, MGAs, brokerages, and insurtechs, each with distinct buyers. Datalyst maps the underwriting, claims, distribution, and technology leaders across them.",
+        "Insurance spans carriers, MGAs, brokerages, and insurtechs, each with distinct buyers. DataCentra maps the underwriting, claims, distribution, and technology leaders across them.",
         "Filter by line of business and firm type so an insurtech platform or service offer reaches the property, casualty, life, or health buyer you actually serve."
       ]
     },
@@ -559,7 +559,7 @@ export default [
       eyebrow: "Overview",
       title: "Sell into the companies that run the network.",
       body: [
-        "Telecom purchases involve network engineering, procurement, and product teams across operators, ISPs, and equipment makers. Datalyst connects you to all of them.",
+        "Telecom purchases involve network engineering, procurement, and product teams across operators, ISPs, and equipment makers. DataCentra connects you to all of them.",
         "Filter by operator type and infrastructure focus so your hardware, software, or services pitch reaches the wireless, fiber, or data-center buyer that fits."
       ]
     },
@@ -613,7 +613,7 @@ export default [
       eyebrow: "Overview",
       title: "Sell across every mode and link in the chain.",
       body: [
-        "Logistics buying spans carriers, brokers, 3PLs, and shippers, each with their own operations and procurement leaders. Datalyst connects you to the right one for your offer.",
+        "Logistics buying spans carriers, brokers, 3PLs, and shippers, each with their own operations and procurement leaders. DataCentra connects you to the right one for your offer.",
         "Filter by transport mode and region so your fleet tech, freight service, or supply chain software reaches the trucking, ocean, air, or warehousing buyer you want."
       ]
     },
@@ -667,7 +667,7 @@ export default [
       eyebrow: "Overview",
       title: "Sell into regulated, infrastructure-heavy buyers.",
       body: [
-        "Utility purchases pass through engineering, operations, regulatory, and procurement gates. Datalyst maps the leaders across electric, gas, water, and renewable providers.",
+        "Utility purchases pass through engineering, operations, regulatory, and procurement gates. DataCentra maps the leaders across electric, gas, water, and renewable providers.",
         "Filter by utility sector and service region so your grid tech, field service, or software pitch reaches the provider responsible for that infrastructure."
       ]
     },
@@ -721,7 +721,7 @@ export default [
       eyebrow: "Overview",
       title: "Sell into a fast-moving, creative-led industry.",
       body: [
-        "Media spans studios, streamers, agencies, game developers, and publishers, each with its own creative and commercial leaders. Datalyst gives you direct access to both.",
+        "Media spans studios, streamers, agencies, game developers, and publishers, each with its own creative and commercial leaders. DataCentra gives you direct access to both.",
         "Filter by medium and function so your production tool, ad service, or distribution pitch reaches the content, marketing, or operations buyer who owns it."
       ]
     },
@@ -775,7 +775,7 @@ export default [
       eyebrow: "Overview",
       title: "Sell across production, brand, and distribution.",
       body: [
-        "Food and beverage buying runs through brand teams, plant operations, quality, and procurement, across manufacturers, distributors, and foodservice. Datalyst connects you to each.",
+        "Food and beverage buying runs through brand teams, plant operations, quality, and procurement, across manufacturers, distributors, and foodservice. DataCentra connects you to each.",
         "Filter by product category and channel so your ingredient, equipment, or software pitch reaches the snack, beverage, dairy, or foodservice buyer that fits."
       ]
     },
@@ -829,7 +829,7 @@ export default [
       eyebrow: "Overview",
       title: "Sell into a regulated, research-driven industry.",
       body: [
-        "Pharma decisions cross R&D, clinical, regulatory, manufacturing, and commercial functions, often over long timelines. Datalyst connects you to the leaders in each.",
+        "Pharma decisions cross R&D, clinical, regulatory, manufacturing, and commercial functions, often over long timelines. DataCentra connects you to the leaders in each.",
         "Filter by company type and therapeutic area so your lab equipment, CRO service, or software pitch reaches the biotech, generics, or big-pharma buyer that fits."
       ]
     },

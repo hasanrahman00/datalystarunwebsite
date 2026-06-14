@@ -26,20 +26,20 @@ const compareRows = [
 ]
 
 const faqs = [
-  { q: 'How is Datalyst different from a typical list broker?', a: 'Most brokers resell static files. We verify every record before delivery, refresh continuously, and back deliverability with an SLA — plus we can activate the data through enrichment and demand-gen programs.' },
+  { q: 'How is DataCentra different from a typical list broker?', a: 'Most brokers resell static files. We verify every record before delivery, refresh continuously, and back deliverability with an SLA — plus we can activate the data through enrichment and demand-gen programs.' },
   { q: 'Will the data hurt my sender reputation?', a: 'The opposite is the goal. By filtering bounce risk before delivery and honoring suppression rules, we help protect your domain reputation.' },
   { q: 'Do I have to commit before seeing quality?', a: 'No. We send matched counts and a free sample first so you can validate fit and accuracy with zero commitment.' },
 ]
 
 export default function WhyUs() {
-  useSeo({ title: 'Why Datalyst', description: `Why revenue teams choose ${brand.name} over typical list vendors.` })
+  useSeo({ title: 'Why DataCentra', description: `Why revenue teams choose ${brand.name} over typical list vendors.` })
   return (
     <>
       <PageHero
-        eyebrow="Why Datalyst"
+        eyebrow="Why DataCentra"
         headline="The difference between a list and a pipeline"
         subcopy="Anyone can sell you rows. We sell reachable, relevant contacts — and the programs that turn them into revenue."
-        trail={[{ label: 'Company' }, { label: 'Why Datalyst' }]}
+        trail={[{ label: 'Company' }, { label: 'Why DataCentra' }]}
         highlights={['95% deliverability SLA', 'Free sample first', 'Data + activation']}
       />
 
@@ -51,7 +51,7 @@ export default function WhyUs() {
       </Section>
 
       <Section tone="subtle">
-        <SectionHeading eyebrow="Compare" title="Datalyst vs. a typical list vendor" />
+        <SectionHeading eyebrow="Compare" title="DataCentra vs. a typical list vendor" />
         <Reveal className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-surface-muted bg-white shadow-soft">
           <div className="grid grid-cols-[1fr_auto_auto] items-center gap-2 border-b border-surface-muted bg-surface-subtle px-5 py-4 text-sm font-semibold text-ink">
             <span>Capability</span>

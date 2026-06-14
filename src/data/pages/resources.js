@@ -17,7 +17,7 @@ const resources = [
   { type: 'infographic', category: 'Infographic', slug: 'pipeline-math', title: 'Pipeline Math: From List to Closed-Won', excerpt: 'The conversion benchmarks that turn list size into revenue projections.' },
 
   // Videos
-  { type: 'video', category: 'Product', slug: 'how-datalyst-verifies-data', title: 'How Datalyst Verifies Every Record', excerpt: 'A 3-minute walkthrough of our multi-step verification pipeline.', duration: '3:12' },
+  { type: 'video', category: 'Product', slug: 'how-datacentra-verifies-data', title: 'How DataCentra Verifies Every Record', excerpt: 'A 3-minute walkthrough of our multi-step verification pipeline.', duration: '3:12' },
   { type: 'video', category: 'Webinar', slug: 'building-a-tam-model', title: 'Webinar: Building a Defensible TAM Model', excerpt: 'Live session on sizing your market with account-level data.', duration: '28:40' },
   { type: 'video', category: 'Customer', slug: 'brightloom-story', title: 'Customer Story: Brightloom', excerpt: 'How Brightloom rebuilt outbound on clean data and doubled reply rates.', duration: '4:55' },
 

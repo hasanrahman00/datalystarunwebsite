@@ -1,21 +1,17 @@
 import { Link } from 'react-router-dom'
 import {
-  ArrowRight, ShieldCheck, BadgeCheck, Sparkles, Database, RefreshCw, Filter,
-  Target, Workflow, Megaphone, Rocket, Check,
+  ArrowRight, BadgeCheck, Database, Sparkles, Workflow, Megaphone, Check, CalendarDays,
 } from 'lucide-react'
 import { Section, SectionHeading } from '../components/Section.jsx'
+import CurvedBand from '../components/CurvedBand.jsx'
 import Button from '../components/Button.jsx'
 import Reveal from '../components/Reveal.jsx'
 import LeadForm from '../components/LeadForm.jsx'
-import {
-  StatGrid, FeatureCards, Steps, TestimonialCard, CheckList,
-} from '../components/blocks.jsx'
+import { FeatureCards, Steps, TestimonialCard, CheckList } from '../components/blocks.jsx'
 import useSeo from '../lib/useSeo.js'
 import brand from '../site/brand.js'
 import testimonials from '../data/pages/testimonials.js'
 import { caseStudyPosts, blogPosts } from '../data/collections.js'
-
-const clients = ['Northwind', 'Brightloom', 'Cadence', 'Kestrel', 'Layerstack', 'Versa', 'Pinnacle', 'Orbit']
 
 const solutions = [
   { icon: 'Database', title: 'Data Solutions', body: 'Verified B2B lists by tech, title, industry, healthcare and geography.', to: '/email-lists' },
@@ -44,6 +40,11 @@ const steps = [
   { title: 'Launch & scale', body: 'Run campaigns with confidence — and refresh the segment on a schedule.' },
 ]
 
+const marquee = [
+  'Verified B2B data', '210M+ contacts', '95% deliverability SLA', 'GDPR & CAN-SPAM aligned',
+  '64M+ companies', '170+ countries', 'Human + AI verified', 'Always refreshed',
+]
+
 function HeroVisual() {
   const rows = [
     { n: 'A. Chen', r: 'VP Engineering', c: 'Northwind' },
@@ -53,29 +54,29 @@ function HeroVisual() {
   ]
   return (
     <div className="relative">
-      <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-brand-500/20 to-accent/20 blur-2xl" />
-      <div className="relative rounded-3xl border border-white/10 bg-white/95 p-5 shadow-lift backdrop-blur">
-        <div className="flex items-center justify-between border-b border-surface-muted pb-3">
-          <div className="flex items-center gap-2 text-sm font-bold text-ink">
-            <Database className="h-4 w-4 text-brand-600" /> Segment preview
+      <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-terracotta/15 to-gold/15 blur-2xl" />
+      <div className="relative rounded-3xl border border-coal/10 bg-white p-5 shadow-lift">
+        <div className="flex items-center justify-between border-b border-cream-deep pb-3">
+          <div className="flex items-center gap-2 text-sm font-bold text-coal">
+            <Database className="h-4 w-4 text-terracotta" /> Segment preview
           </div>
-          <span className="rounded-full bg-accent/15 px-2.5 py-1 text-xs font-semibold text-accent-deep">
+          <span className="rounded-full bg-terracotta/10 px-2.5 py-1 text-xs font-semibold text-terracotta">
             14,208 matches
           </span>
         </div>
         <div className="mt-3 space-y-2">
           {rows.map((row) => (
-            <div key={row.n} className="flex items-center justify-between rounded-xl bg-surface-subtle px-3 py-2.5">
+            <div key={row.n} className="flex items-center justify-between rounded-xl bg-cream px-3 py-2.5">
               <div className="flex items-center gap-3">
-                <div className="grid h-8 w-8 place-items-center rounded-full bg-brand-100 text-xs font-bold text-brand-700">
+                <div className="grid h-8 w-8 place-items-center rounded-full bg-cream-deep text-xs font-bold text-coal">
                   {row.n.split(' ').map((p) => p[0]).join('')}
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-ink">{row.n}</div>
-                  <div className="text-xs text-ink-muted">{row.r} · {row.c}</div>
+                  <div className="text-sm font-semibold text-coal">{row.n}</div>
+                  <div className="text-xs text-coal/55">{row.r} · {row.c}</div>
                 </div>
               </div>
-              <span className="flex items-center gap-1 text-xs font-medium text-accent-deep">
+              <span className="flex items-center gap-1 text-xs font-medium text-terracotta">
                 <BadgeCheck className="h-4 w-4" /> Verified
               </span>
             </div>
@@ -83,9 +84,9 @@ function HeroVisual() {
         </div>
         <div className="mt-3 grid grid-cols-3 gap-2 text-center">
           {[['95%', 'Deliverable'], ['70+', 'Fields'], ['<24h', 'Turnaround']].map(([v, l]) => (
-            <div key={l} className="rounded-xl border border-surface-muted py-2">
-              <div className="text-base font-extrabold text-ink">{v}</div>
-              <div className="text-2xs text-ink-muted">{l}</div>
+            <div key={l} className="rounded-xl border border-cream-deep py-2">
+              <div className="font-bebas text-2xl leading-none text-coal">{v}</div>
+              <div className="text-2xs uppercase tracking-wide text-coal/55">{l}</div>
             </div>
           ))}
         </div>
@@ -100,37 +101,36 @@ export default function Home() {
   const posts = blogPosts.slice(0, 3)
 
   return (
-    <>
+    <div className="bg-cream">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-ink text-white">
-        <div className="pointer-events-none absolute inset-0 bg-brand-radial" />
-        <div className="pointer-events-none absolute inset-0 bg-grid-faint [background-size:46px_46px] opacity-[0.06]" />
-        <div className="pointer-events-none absolute -left-24 top-0 h-80 w-80 rounded-full bg-brand-500/25 blur-3xl" />
-        <div className="pointer-events-none absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-accent/15 blur-3xl" />
+      <section className="relative overflow-hidden bg-cream">
+        <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-terracotta/10 blur-3xl" />
+        <div className="pointer-events-none absolute -left-24 bottom-0 h-72 w-72 rounded-full bg-gold/10 blur-3xl" />
         <div className="container-shell relative grid items-center gap-14 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-accent-soft">
-              <Sparkles className="h-3.5 w-3.5" /> Intent-driven B2B data
+            <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-terracotta">
+              <span className="h-px w-8 bg-terracotta/40" />
+              Intent-driven B2B data
             </span>
-            <h1 className="mt-5 text-4xl font-extrabold leading-[1.06] text-balance text-white sm:text-5xl lg:text-6xl">
-              Turn verified data into <span className="bg-gradient-to-r from-brand-300 to-accent-soft bg-clip-text text-transparent">predictable pipeline</span>
+            <h1 className="mt-5 font-serif text-5xl font-bold leading-[1.05] text-balance text-coal sm:text-6xl lg:text-[4.25rem]">
+              Turn verified data into <span className="italic text-terracotta">predictable pipeline</span>
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70 text-pretty">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-coal/70 text-pretty">
               {brand.name} gives revenue teams targeted contact data, enrichment and demand-generation
               programs — so your message reaches buyers who are ready to act.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button to="/contact" variant="accent" size="lg">
+              <Button to="/contact" variant="terracotta" size="lg">
                 Get a free sample <ArrowRight className="h-4 w-4" />
               </Button>
-              <Button to="/email-lists" variant="outline" size="lg" className="border-white/25 bg-white/5 text-white hover:bg-white/15">
+              <Button to="/email-lists" variant="outline" size="lg" className="border-coal/20 bg-transparent text-coal hover:bg-cream-soft">
                 Explore data solutions
               </Button>
             </div>
-            <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/60">
+            <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-coal/60">
               {['No commitment', '95% deliverability SLA', 'GDPR & CAN-SPAM aligned'].map((t) => (
                 <li key={t} className="flex items-center gap-1.5">
-                  <Check className="h-4 w-4 text-accent" strokeWidth={3} /> {t}
+                  <Check className="h-4 w-4 text-terracotta" strokeWidth={3} /> {t}
                 </li>
               ))}
             </ul>
@@ -141,28 +141,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Client logo marquee */}
-      <div className="border-y border-surface-muted bg-white py-8">
-        <div className="container-shell">
-          <p className="text-center text-xs font-semibold uppercase tracking-[0.16em] text-ink-muted">
-            Trusted by revenue teams at fast-growing companies
-          </p>
-          <div className="mask-fade-x mt-6 overflow-hidden">
-            <div className="flex w-max animate-marquee items-center gap-12">
-              {[...clients, ...clients].map((c, i) => (
-                <span key={i} className="text-xl font-extrabold tracking-tight text-ink/25">
-                  {c}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Value props */}
-      <Section>
+      <Section tone="cream">
         <SectionHeading
-          eyebrow="Why Datalyst"
+          serif
+          eyebrowStyle="rule"
+          eyebrow={`Why ${brand.name}`}
           title="Data your team can actually campaign on"
           description="Quality, targeting and freshness are the difference between pipeline and a spam folder. We obsess over all three."
         />
@@ -172,8 +156,10 @@ export default function Home() {
       </Section>
 
       {/* Solutions */}
-      <Section tone="subtle">
+      <Section tone="cream-soft">
         <SectionHeading
+          serif
+          eyebrowStyle="rule"
           eyebrow="What we do"
           title="One partner for the whole data-to-pipeline journey"
           description="From the list to the meeting — pick a single service or run the full motion with us."
@@ -183,14 +169,14 @@ export default function Home() {
             <Reveal key={s.title} delay={i * 0.06}>
               <Link
                 to={s.to}
-                className="group flex h-full flex-col rounded-2xl border border-surface-muted bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
+                className="group flex h-full flex-col rounded-2xl border border-cream-deep bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
               >
-                <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-600 transition group-hover:bg-brand-600 group-hover:text-white">
+                <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-terracotta/10 text-terracotta transition group-hover:bg-terracotta group-hover:text-white">
                   {(() => { const I = { Database, Sparkles, Workflow, Megaphone }[s.icon]; return <I className="h-5 w-5" /> })()}
                 </span>
-                <h3 className="mt-4 text-lg font-bold text-ink">{s.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{s.body}</p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">
+                <h3 className="mt-4 text-lg font-bold text-coal">{s.title}</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-coal/65">{s.body}</p>
+                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-terracotta">
                   Learn more <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </Link>
@@ -199,26 +185,49 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Stats band */}
-      <Section tone="ink">
-        <div className="grid items-center gap-10 lg:grid-cols-[1fr_1.4fr]">
-          <SectionHeading
-            align="left"
-            light
-            eyebrow="By the numbers"
-            title="Scale without sacrificing quality"
-            description="A data foundation big enough to cover your market and clean enough to trust."
-          />
-          <StatGrid stats={brand.metrics} light />
+      {/* Curved stats band */}
+      <CurvedBand>
+        <Reveal className="text-center">
+          <span className="inline-flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-terracotta">
+            <span className="h-px w-8 bg-terracotta/50" />
+            The numbers
+            <span className="h-px w-8 bg-terracotta/50" />
+          </span>
+          <h2 className="mx-auto mt-4 max-w-2xl font-serif text-4xl font-bold leading-tight text-white sm:text-[2.75rem]">
+            Scale without sacrificing quality
+          </h2>
+        </Reveal>
+
+        <div className="mx-auto mt-14 grid max-w-4xl grid-cols-2 gap-y-12 sm:grid-cols-4">
+          {brand.metrics.map((m, i) => (
+            <Reveal key={m.label} delay={i * 0.08} className="text-center">
+              <div className="font-bebas text-6xl leading-none text-white sm:text-7xl">{m.value}</div>
+              <div className="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/55">{m.label}</div>
+            </Reveal>
+          ))}
         </div>
-      </Section>
+
+        {/* bullet marquee */}
+        <div className="mask-fade-x mt-16 overflow-hidden">
+          <div className="flex w-max animate-marquee items-center">
+            {[...marquee, ...marquee].map((t, i) => (
+              <span key={i} className="flex items-center text-sm font-bold uppercase tracking-[0.18em] text-white/55">
+                <span className="px-6">{t}</span>
+                <span className="h-1.5 w-1.5 rounded-full bg-terracotta" />
+              </span>
+            ))}
+          </div>
+        </div>
+      </CurvedBand>
 
       {/* Intelligence fields */}
-      <Section>
+      <Section tone="cream">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
             <SectionHeading
+              serif
               align="left"
+              eyebrowStyle="rule"
               eyebrow="70+ intelligence fields"
               title="Every record, fully attributed"
               description="Each contact arrives with the context your team needs to segment, personalize and prioritize."
@@ -227,7 +236,7 @@ export default function Home() {
               <CheckList items={intelFields} columns={2} />
             </div>
             <div className="mt-8">
-              <Button to="/email-lists" variant="primary">
+              <Button to="/email-lists" variant="coal">
                 Explore all data <ArrowRight className="h-4 w-4" />
               </Button>
             </div>
@@ -239,8 +248,8 @@ export default function Home() {
       </Section>
 
       {/* Process */}
-      <Section tone="subtle">
-        <SectionHeading eyebrow="How it works" title="From ICP to pipeline in four steps" />
+      <Section tone="cream-soft">
+        <SectionHeading serif eyebrowStyle="rule" eyebrow="How it works" title="From ICP to pipeline in four steps" />
         <div className="mt-12">
           <Steps steps={steps} />
         </div>
@@ -248,24 +257,24 @@ export default function Home() {
 
       {/* Case studies */}
       {cases.length > 0 && (
-        <Section>
+        <Section tone="cream">
           <div className="flex flex-wrap items-end justify-between gap-4">
-            <SectionHeading align="left" eyebrow="Proof" title="Results, not promises" className="!mx-0" />
-            <Button to="/case-studies" variant="ghost">All case studies <ArrowRight className="h-4 w-4" /></Button>
+            <SectionHeading serif align="left" eyebrowStyle="rule" eyebrow="Proof" title="Results, not promises" className="!mx-0" />
+            <Button to="/case-studies" variant="ghost" className="text-coal hover:bg-cream-soft">All case studies <ArrowRight className="h-4 w-4" /></Button>
           </div>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {cases.map((c, i) => (
               <Reveal key={c.path} delay={i * 0.06}>
-                <Link to={c.path} className="group flex h-full flex-col justify-between rounded-2xl border border-surface-muted bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+                <Link to={c.path} className="group flex h-full flex-col justify-between rounded-2xl border border-cream-deep bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                   <div>
-                    <span className="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-semibold text-brand-700">{c.category}</span>
-                    <h3 className="mt-4 text-lg font-bold text-ink">{c.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-ink-muted line-clamp-3">{c.excerpt}</p>
+                    <span className="rounded-full bg-terracotta/10 px-2.5 py-1 text-xs font-semibold text-terracotta">{c.category}</span>
+                    <h3 className="mt-4 text-lg font-bold text-coal">{c.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-coal/65 line-clamp-3">{c.excerpt}</p>
                   </div>
                   {c.headline && (
-                    <div className="mt-5 border-t border-surface-muted pt-4">
-                      <span className="text-2xl font-extrabold text-brand-600">{c.headline.value}</span>
-                      <span className="ml-1.5 text-sm text-ink-muted">{c.headline.label}</span>
+                    <div className="mt-5 border-t border-cream-deep pt-4">
+                      <span className="font-bebas text-3xl text-terracotta">{c.headline.value}</span>
+                      <span className="ml-1.5 text-sm text-coal/60">{c.headline.label}</span>
                     </div>
                   )}
                 </Link>
@@ -276,8 +285,8 @@ export default function Home() {
       )}
 
       {/* Testimonials */}
-      <Section tone={cases.length > 0 ? 'subtle' : 'default'}>
-        <SectionHeading eyebrow="Testimonials" title="Teams that switched, stayed" />
+      <Section tone="cream-soft">
+        <SectionHeading serif eyebrowStyle="rule" eyebrow="Testimonials" title="Teams that switched, stayed" />
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.slice(0, 3).map((t, i) => (
             <Reveal key={t.name} delay={i * 0.06}>
@@ -289,23 +298,23 @@ export default function Home() {
 
       {/* Blog preview */}
       {posts.length > 0 && (
-        <Section>
+        <Section tone="cream">
           <div className="flex flex-wrap items-end justify-between gap-4">
-            <SectionHeading align="left" eyebrow="From the blog" title="Ideas worth stealing" className="!mx-0" />
-            <Button to="/blog" variant="ghost">Read the blog <ArrowRight className="h-4 w-4" /></Button>
+            <SectionHeading serif align="left" eyebrowStyle="rule" eyebrow="From the blog" title="Ideas worth stealing" className="!mx-0" />
+            <Button to="/blog" variant="ghost" className="text-coal hover:bg-cream-soft">Read the blog <ArrowRight className="h-4 w-4" /></Button>
           </div>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {posts.map((p, i) => (
               <Reveal key={p.path} delay={i * 0.06}>
-                <Link to={p.path} className="group flex h-full flex-col overflow-hidden rounded-2xl border border-surface-muted bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
-                  <div className="relative h-36 bg-gradient-to-br from-brand-600 to-accent">
-                    <div className="absolute inset-0 bg-grid-faint [background-size:24px_24px] opacity-20" />
-                    <span className="absolute left-4 top-4 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-ink">{p.category}</span>
+                <Link to={p.path} className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream-deep bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+                  <div className="relative h-36 bg-gradient-to-br from-coal to-coal-soft">
+                    <div className="absolute inset-0 bg-grid-faint [background-size:24px_24px] opacity-10" />
+                    <span className="absolute left-4 top-4 rounded-full bg-cream px-2.5 py-1 text-xs font-semibold text-coal">{p.category}</span>
                   </div>
                   <div className="flex flex-1 flex-col p-5">
-                    <h3 className="text-base font-bold text-ink group-hover:text-brand-700">{p.title}</h3>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted line-clamp-2">{p.excerpt}</p>
-                    <span className="mt-3 text-xs text-ink-muted">{p.date}</span>
+                    <h3 className="text-base font-bold text-coal group-hover:text-terracotta">{p.title}</h3>
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-coal/65 line-clamp-2">{p.excerpt}</p>
+                    <span className="mt-3 text-xs text-coal/50">{p.date}</span>
                   </div>
                 </Link>
               </Reveal>
@@ -313,6 +322,6 @@ export default function Home() {
           </div>
         </Section>
       )}
-    </>
+    </div>
   )
 }

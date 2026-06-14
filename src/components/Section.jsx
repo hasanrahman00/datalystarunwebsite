@@ -8,6 +8,9 @@ export function Section({ children, className, tone = 'default', id }) {
     subtle: 'bg-surface-subtle',
     muted: 'bg-surface-muted',
     ink: 'bg-ink text-white',
+    cream: 'bg-cream text-coal',
+    'cream-soft': 'bg-cream-soft text-coal',
+    coal: 'bg-coal text-white',
   }
   return (
     <section id={id} className={cn('py-16 sm:py-20 lg:py-24', tones[tone], className)}>
@@ -22,6 +25,8 @@ export function SectionHeading({
   description,
   align = 'center',
   light = false,
+  serif = false,
+  eyebrowStyle = 'pill',
   className,
 }) {
   return (
@@ -33,12 +38,29 @@ export function SectionHeading({
         className,
       )}
     >
-      {eyebrow && <span className="eyebrow">{eyebrow}</span>}
+      {eyebrow &&
+        (eyebrowStyle === 'rule' ? (
+          <span
+            className={cn(
+              'inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-terracotta',
+              align === 'center' && 'justify-center',
+            )}
+          >
+            <span className="h-px w-8 bg-terracotta/40" />
+            {eyebrow}
+            <span className="h-px w-8 bg-terracotta/40" />
+          </span>
+        ) : (
+          <span className="eyebrow">{eyebrow}</span>
+        ))}
       {title && (
         <h2
           className={cn(
-            'mt-4 text-3xl font-extrabold leading-tight text-balance sm:text-4xl',
-            light ? 'text-white' : 'text-ink',
+            'mt-4 leading-tight text-balance',
+            serif
+              ? 'font-serif text-4xl font-bold sm:text-[2.75rem]'
+              : 'text-3xl font-extrabold sm:text-4xl',
+            light ? 'text-white' : serif ? 'text-coal' : 'text-ink',
           )}
         >
           {title}

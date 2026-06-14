@@ -19,7 +19,7 @@ export default [
       eyebrow: "Overview",
       title: "Built for the long federal sales cycle",
       body: [
-        "Selling to the federal government means navigating a maze of agencies, sub-agencies, and decision layers. Datalyst maps each contact to their agency, office, and role so you reach the person who shapes the requirement, not just a general inbox.",
+        "Selling to the federal government means navigating a maze of agencies, sub-agencies, and decision layers. DataCentra maps each contact to their agency, office, and role so you reach the person who shapes the requirement, not just a general inbox.",
         "Whether you are pursuing a civilian agency contract or briefing leadership before an RFP drops, our records help you build the relationships that matter before the competition does."
       ]
     },
@@ -53,7 +53,7 @@ export default [
       { q: "Do you include contracting officer roles?", a: "We flag procurement authority and isolate contracting and program roles so you can reach the people who shape requirements." }
     ],
     testimonial: {
-      quote: "We finally stopped guessing which office owned the requirement. Datalyst put us in front of the right program managers months before the solicitation went live.",
+      quote: "We finally stopped guessing which office owned the requirement. DataCentra put us in front of the right program managers months before the solicitation went live.",
       name: "Marcus Reed",
       role: "VP of Federal Sales",
       company: "Stratline Systems"
@@ -78,7 +78,7 @@ export default [
       eyebrow: "Overview",
       title: "One list, fifty distinct buying markets",
       body: [
-        "Every state government runs on its own structure, budget cycle, and procurement rules. Datalyst gives you contacts organized by state and department so you can tailor outreach to how each jurisdiction actually buys.",
+        "Every state government runs on its own structure, budget cycle, and procurement rules. DataCentra gives you contacts organized by state and department so you can tailor outreach to how each jurisdiction actually buys.",
         "From transportation departments to health and human services agencies, our verified records help you reach the program owners and budget holders who drive state-level decisions."
       ]
     },
@@ -137,7 +137,7 @@ export default [
       eyebrow: "Overview",
       title: "Local decisions, mapped to the right desk",
       body: [
-        "Local government is where budgets turn into action, but it is also fragmented across thousands of cities, counties, and special districts. Datalyst organizes contacts by jurisdiction and department so you can reach the official who actually approves the purchase.",
+        "Local government is where budgets turn into action, but it is also fragmented across thousands of cities, counties, and special districts. DataCentra organizes contacts by jurisdiction and department so you can reach the official who actually approves the purchase.",
         "Whether you sell to public works, parks, finance, or the city manager's office, our verified records help you skip the general line and start a real conversation."
       ]
     },
@@ -171,7 +171,7 @@ export default [
       { q: "How granular is the department data?", a: "Records map to specific departments and offices, so you can target public works, finance, or administration directly." }
     ],
     testimonial: {
-      quote: "We sell into hundreds of small municipalities and used to drown in bad contact info. Datalyst gave us clean, department-level data we could actually route to reps.",
+      quote: "We sell into hundreds of small municipalities and used to drown in bad contact info. DataCentra gave us clean, department-level data we could actually route to reps.",
       name: "Priya Anand",
       role: "Head of Government Sales",
       company: "Municipal Works Co."
@@ -196,7 +196,7 @@ export default [
       eyebrow: "Overview",
       title: "Reach the people who shape every classroom",
       body: [
-        "K-12 buying decisions move through superintendents, principals, curriculum leaders, and technology directors, each with a different role in the process. Datalyst maps contacts to their district, school, and function so you reach the right influencer at the right stage.",
+        "K-12 buying decisions move through superintendents, principals, curriculum leaders, and technology directors, each with a different role in the process. DataCentra maps contacts to their district, school, and function so you reach the right influencer at the right stage.",
         "Whether you sell curriculum, edtech, or operational services, our verified education records help you reach administrators during the planning and budget windows that actually matter."
       ]
     },
@@ -255,7 +255,7 @@ export default [
       eyebrow: "Overview",
       title: "Navigate the campus org chart with ease",
       body: [
-        "Higher education is a web of colleges, departments, and administrative offices, each with its own authority and budget. Datalyst maps contacts to their institution, department, and role so you reach the dean, chair, or director who can actually say yes.",
+        "Higher education is a web of colleges, departments, and administrative offices, each with its own authority and budget. DataCentra maps contacts to their institution, department, and role so you reach the dean, chair, or director who can actually say yes.",
         "Whether you serve research labs, student services, or campus operations, our verified records help you reach the right office without bouncing between general inboxes."
       ]
     },
@@ -314,7 +314,7 @@ export default [
       eyebrow: "Overview",
       title: "Built for the defense acquisition reality",
       body: [
-        "Defense and military procurement runs through layered commands, program offices, and acquisition teams with long lead times. Datalyst maps contacts to their command, program, and procurement role so you build relationships early in a cycle that rewards patience.",
+        "Defense and military procurement runs through layered commands, program offices, and acquisition teams with long lead times. DataCentra maps contacts to their command, program, and procurement role so you build relationships early in a cycle that rewards patience.",
         "Whether you support a major weapons program or sell enabling technology, our verified records help your business-development team reach the offices that shape requirements and award work."
       ]
     },
@@ -348,7 +348,7 @@ export default [
       { q: "Is the data appropriate for long sales cycles?", a: "It is built for them. Continuous re-verification keeps contacts current across the multi-year defense buying cycle." }
     ],
     testimonial: {
-      quote: "Capture is all about reaching the right program office early. Datalyst gave our BD team a mapped view of every stakeholder we needed to know.",
+      quote: "Capture is all about reaching the right program office early. DataCentra gave our BD team a mapped view of every stakeholder we needed to know.",
       name: "James Holloway",
       role: "Director of Capture",
       company: "Vanguard Defense Group"
@@ -373,7 +373,7 @@ export default [
       eyebrow: "Overview",
       title: "Speak to the agencies that keep communities safe",
       body: [
-        "Public safety spans law enforcement, fire, EMS, and emergency management, each with its own command structure and procurement process. Datalyst maps contacts to their agency type, jurisdiction, and role so you reach the chief or director who approves the gear.",
+        "Public safety spans law enforcement, fire, EMS, and emergency management, each with its own command structure and procurement process. DataCentra maps contacts to their agency type, jurisdiction, and role so you reach the chief or director who approves the gear.",
         "Whether you sell equipment, software, or training, our verified records help you reach the people responsible for readiness without chasing dispatch lines and general inboxes."
       ]
     },
@@ -432,7 +432,7 @@ export default [
       eyebrow: "Overview",
       title: "Reach government technology buyers directly",
       body: [
-        "Government IT spending is led by CIOs, CISOs, and IT directors who balance modernization, security, and tight procurement rules. Datalyst maps these decision-makers to their government level, agency, and technology focus so your GovTech pitch reaches the right desk.",
+        "Government IT spending is led by CIOs, CISOs, and IT directors who balance modernization, security, and tight procurement rules. DataCentra maps these decision-makers to their government level, agency, and technology focus so your GovTech pitch reaches the right desk.",
         "Whether you sell cloud, cybersecurity, or modernization services, our verified records help you reach the leaders who own the budget and the buying process across federal, state, and local agencies."
       ]
     },

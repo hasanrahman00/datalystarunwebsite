@@ -1,15 +1,15 @@
 // Single source of truth for brand identity. Swap these values to rebrand.
 export const brand = {
-  name: 'Datalyst',
-  legalName: 'Datalyst Data, Inc.',
+  name: 'DataCentra',
+  legalName: 'DataCentra Data, Inc.',
   tagline: 'Intent-driven B2B data & demand generation',
-  domain: 'datalyst.io',
-  email: 'hello@datalyst.io',
-  salesEmail: 'sales@datalyst.io',
+  domain: 'datacentra.io',
+  email: 'hello@datacentra.io',
+  salesEmail: 'sales@datacentra.io',
   phone: '+1 (888) 555-0142',
   foundedYear: 2014,
   description:
-    'Datalyst turns verified B2B data into pipeline — targeted contact data, enrichment, and demand-generation programs that put your message in front of buyers ready to act.',
+    'DataCentra turns verified B2B data into pipeline — targeted contact data, enrichment, and demand-generation programs that put your message in front of buyers ready to act.',
   offices: [
     {
       label: 'Headquarters',

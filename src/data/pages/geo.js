@@ -1,4 +1,4 @@
-// Datalyst data list pages — Geo-Targeted category
+// DataCentra data list pages — Geo-Targeted category
 export default [
   {
     slug: "usa-email-list",
@@ -19,7 +19,7 @@ export default [
       eyebrow: "Overview",
       title: "Built for teams selling into America",
       body: [
-        "The United States is the largest and most competitive B2B market on earth, and generic lists burn your sender reputation fast. Datalyst gives you US contacts that are validated against live mail servers before they ever reach your inbox.",
+        "The United States is the largest and most competitive B2B market on earth, and generic lists burn your sender reputation fast. DataCentra gives you US contacts that are validated against live mail servers before they ever reach your inbox.",
         "Segment by region, vertical, revenue band, or technology stack so your reps spend their hours on accounts that fit, not on bounces and dead aliases."
       ]
     },
@@ -52,7 +52,7 @@ export default [
       { q: "Can I filter by state or metro?", a: "Yes. You can target the entire country or narrow to specific states, metros, and ZIP clusters in a single export." },
       { q: "Is the list CAN-SPAM friendly?", a: "We provide opt-out and suppression fields so you can run compliant campaigns, though your own legal review is always recommended." }
     ],
-    testimonial: { quote: "We replaced three stale vendor lists with one Datalyst export and our US bounce rate dropped below two percent overnight.", name: "Marcus Bellini", role: "VP of Sales", company: "Northwind Cloud" }
+    testimonial: { quote: "We replaced three stale vendor lists with one DataCentra export and our US bounce rate dropped below two percent overnight.", name: "Marcus Bellini", role: "VP of Sales", company: "Northwind Cloud" }
   },
   {
     slug: "canada-email-list",
@@ -60,7 +60,7 @@ export default [
     blurb: "Connect with Canadian companies coast to coast with bilingual, CASL-aware verified contacts.",
     hero: {
       headline: "Win Canadian Accounts From Vancouver to Halifax",
-      subcopy: "Datalyst delivers verified contacts across every province and territory, with the firmographic depth you need to sell into Canada's distinct regional economies."
+      subcopy: "DataCentra delivers verified contacts across every province and territory, with the firmographic depth you need to sell into Canada's distinct regional economies."
     },
     highlights: ["Province coverage", "CASL-aware", "Bilingual records"],
     stats: [
@@ -73,7 +73,7 @@ export default [
       eyebrow: "Overview",
       title: "Made for selling into Canada",
       body: [
-        "Canada's market rewards relevance, from Toronto's finance corridor to Calgary's energy sector to Montreal's francophone enterprises. Datalyst gives you verified contacts that respect those regional and linguistic differences.",
+        "Canada's market rewards relevance, from Toronto's finance corridor to Calgary's energy sector to Montreal's francophone enterprises. DataCentra gives you verified contacts that respect those regional and linguistic differences.",
         "Filter by province, language preference, and industry so your outreach lands in the right inbox with the right context, the first time."
       ]
     },
@@ -114,7 +114,7 @@ export default [
     blurb: "Reach decision-makers across England, Scotland, Wales, and Northern Ireland with GDPR-aware verified data.",
     hero: {
       headline: "Open Doors Across the UK Market",
-      subcopy: "From the City of London to Manchester to Edinburgh, Datalyst gives you verified British business contacts with the firmographics to target precisely and the compliance fields to stay safe."
+      subcopy: "From the City of London to Manchester to Edinburgh, DataCentra gives you verified British business contacts with the firmographics to target precisely and the compliance fields to stay safe."
     },
     highlights: ["UK-wide coverage", "GDPR-aware", "Verified at source"],
     stats: [
@@ -127,7 +127,7 @@ export default [
       eyebrow: "Overview",
       title: "Engineered for British B2B",
       body: [
-        "The UK is a mature, crowded market where a single bad send can cost you a domain's reputation. Datalyst verifies every email against live infrastructure so your campaigns reach real people at real companies.",
+        "The UK is a mature, crowded market where a single bad send can cost you a domain's reputation. DataCentra verifies every email against live infrastructure so your campaigns reach real people at real companies.",
         "Target by region, Companies House sector, headcount, or revenue, and lean on built-in consent fields to keep your outreach defensible under UK GDPR and PECR."
       ]
     },
@@ -160,7 +160,7 @@ export default [
       { q: "Can I target Scotland or Wales specifically?", a: "Yes. You can filter by constituent country, region, and city, or export the entire UK in one go." },
       { q: "How fresh are the records?", a: "Emails are checked at delivery and the dataset is re-verified on a rolling cycle to catch movers and closures." }
     ],
-    testimonial: { quote: "Datalyst's UK data was the first list we have bought where deliverability actually matched what the rep promised.", name: "Olivia Hargreaves", role: "Sales Director", company: "Pennington Tech" }
+    testimonial: { quote: "DataCentra's UK data was the first list we have bought where deliverability actually matched what the rep promised.", name: "Olivia Hargreaves", role: "Sales Director", company: "Pennington Tech" }
   },
   {
     slug: "australia-email-list",
@@ -168,7 +168,7 @@ export default [
     blurb: "Reach Australian businesses from Sydney to Perth with verified, Spam-Act-aware contact data.",
     hero: {
       headline: "Grow Your Pipeline Across Australia",
-      subcopy: "Datalyst delivers verified contacts spanning every state and territory, with the firmographics to target the right industries and the compliance fields to send with confidence."
+      subcopy: "DataCentra delivers verified contacts spanning every state and territory, with the firmographics to target the right industries and the compliance fields to send with confidence."
     },
     highlights: ["State coverage", "Spam Act aware", "Verified emails"],
     stats: [
@@ -181,7 +181,7 @@ export default [
       eyebrow: "Overview",
       title: "Tuned for the Australian market",
       body: [
-        "Australia's business landscape is concentrated in a handful of metros but spread across a vast continent, so precision targeting matters. Datalyst lets you focus on the states, cities, and sectors where your buyers actually sit.",
+        "Australia's business landscape is concentrated in a handful of metros but spread across a vast continent, so precision targeting matters. DataCentra lets you focus on the states, cities, and sectors where your buyers actually sit.",
         "Every email is verified against live servers, and consent fields help you align with the Spam Act so your sends reach inboxes instead of complaint folders."
       ]
     },
@@ -222,7 +222,7 @@ export default [
     blurb: "Reach German Mittelstand and enterprise decision-makers with verified, GDPR-aware contact data.",
     hero: {
       headline: "Sell Into Germany the Right Way",
-      subcopy: "From the Mittelstand to DAX enterprises, Datalyst gives you verified German business contacts with the firmographic depth and consent fields that demanding buyers and strict regulators both expect."
+      subcopy: "From the Mittelstand to DAX enterprises, DataCentra gives you verified German business contacts with the firmographic depth and consent fields that demanding buyers and strict regulators both expect."
     },
     highlights: ["Mittelstand depth", "GDPR-aware", "Bundesland targeting"],
     stats: [
@@ -235,7 +235,7 @@ export default [
       eyebrow: "Overview",
       title: "Built for the German market",
       body: [
-        "Germany rewards precision and punishes sloppiness, both from buyers who value relevance and regulators who enforce strict privacy law. Datalyst verifies every contact and ships the consent fields you need to operate cleanly.",
+        "Germany rewards precision and punishes sloppiness, both from buyers who value relevance and regulators who enforce strict privacy law. DataCentra verifies every contact and ships the consent fields you need to operate cleanly.",
         "Target by Bundesland, industry, or company size to reach the famously hard-to-find Mittelstand decision-makers, not just the obvious enterprise names."
       ]
     },
@@ -268,7 +268,7 @@ export default [
       { q: "Can I reach Mittelstand companies?", a: "Yes. Filtering by headcount and revenue surfaces the mid-sized firms that dominate the German economy." },
       { q: "Is the data localized?", a: "Records carry German-language company names and locations, and you can filter by Bundesland for regional accuracy." }
     ],
-    testimonial: { quote: "Finding real Mittelstand contacts used to take weeks of manual research. Datalyst handed them to us verified in a day.", name: "Jonas Brandt", role: "Country Manager DACH", company: "Helio Systems" }
+    testimonial: { quote: "Finding real Mittelstand contacts used to take weeks of manual research. DataCentra handed them to us verified in a day.", name: "Jonas Brandt", role: "Country Manager DACH", company: "Helio Systems" }
   },
   {
     slug: "france-email-list",
@@ -276,7 +276,7 @@ export default [
     blurb: "Reach French business decision-makers nationwide with verified, RGPD-aware contact data.",
     hero: {
       headline: "Build Pipeline Across France",
-      subcopy: "From Paris to Lyon to the regions, Datalyst delivers verified French business contacts with the firmographics to target precisely and the consent fields to respect RGPD and CNIL expectations."
+      subcopy: "From Paris to Lyon to the regions, DataCentra delivers verified French business contacts with the firmographics to target precisely and the consent fields to respect RGPD and CNIL expectations."
     },
     highlights: ["Nationwide reach", "RGPD-aware", "Verified emails"],
     stats: [
@@ -289,7 +289,7 @@ export default [
       eyebrow: "Overview",
       title: "Crafted for the French market",
       body: [
-        "France blends a Paris-centric enterprise scene with strong regional economies, and buyers expect outreach that feels local and relevant. Datalyst gives you verified contacts segmented by region and sector so you can do exactly that.",
+        "France blends a Paris-centric enterprise scene with strong regional economies, and buyers expect outreach that feels local and relevant. DataCentra gives you verified contacts segmented by region and sector so you can do exactly that.",
         "Consent and opt-out fields help you align with RGPD and CNIL guidance, while live email validation keeps your deliverability high and your sender reputation intact."
       ]
     },
@@ -330,7 +330,7 @@ export default [
     blurb: "Reach India's fast-growing companies across metros and tier-2 cities with verified contact data.",
     hero: {
       headline: "Tap India's Fastest-Growing Companies",
-      subcopy: "From Bengaluru's tech corridor to Mumbai's finance hub, Datalyst delivers verified Indian business contacts with the firmographics to target the right industries at the right scale."
+      subcopy: "From Bengaluru's tech corridor to Mumbai's finance hub, DataCentra delivers verified Indian business contacts with the firmographics to target the right industries at the right scale."
     },
     highlights: ["Metro and tier-2", "Verified emails", "Deep firmographics"],
     stats: [
@@ -343,7 +343,7 @@ export default [
       eyebrow: "Overview",
       title: "Made for the Indian market",
       body: [
-        "India's business growth spans far beyond the headline metros, with serious buying power emerging in tier-2 cities and fast-scaling startups. Datalyst gives you verified contacts across that full spectrum.",
+        "India's business growth spans far beyond the headline metros, with serious buying power emerging in tier-2 cities and fast-scaling startups. DataCentra gives you verified contacts across that full spectrum.",
         "Filter by city, industry, and company stage so you can reach high-growth SaaS, services, and manufacturing firms before your competitors even find them."
       ]
     },
@@ -384,7 +384,7 @@ export default [
     blurb: "Reach Singapore's regional HQs and high-value firms with verified, PDPA-aware contact data.",
     hero: {
       headline: "Reach Singapore's Regional Decision-Makers",
-      subcopy: "As Asia's business gateway, Singapore concentrates regional HQs and high-value buyers. Datalyst delivers verified contacts with the firmographics and consent fields to engage them precisely."
+      subcopy: "As Asia's business gateway, Singapore concentrates regional HQs and high-value buyers. DataCentra delivers verified contacts with the firmographics and consent fields to engage them precisely."
     },
     highlights: ["Regional HQ reach", "PDPA-aware", "Verified emails"],
     stats: [
@@ -398,7 +398,7 @@ export default [
       title: "Tailored to Singapore",
       body: [
         "Singapore punches far above its size as the headquarters hub for companies operating across Southeast Asia. Reaching the right regional decision-maker here often unlocks an entire territory.",
-        "Datalyst verifies every contact and includes consent fields aligned with the PDPA, so you can target high-value firms and APAC regional leaders with confidence."
+        "DataCentra verifies every contact and includes consent fields aligned with the PDPA, so you can target high-value firms and APAC regional leaders with confidence."
       ]
     },
     included: [
@@ -438,7 +438,7 @@ export default [
     blurb: "Reach decision-makers across Dubai, Abu Dhabi, and the free zones with verified Gulf contact data.",
     hero: {
       headline: "Open the Gulf Market From the UAE",
-      subcopy: "Dubai and Abu Dhabi anchor one of the world's most dynamic business hubs. Datalyst delivers verified UAE contacts with the firmographics to target free zones, mainland firms, and regional HQs alike."
+      subcopy: "Dubai and Abu Dhabi anchor one of the world's most dynamic business hubs. DataCentra delivers verified UAE contacts with the firmographics to target free zones, mainland firms, and regional HQs alike."
     },
     highlights: ["Free-zone coverage", "Verified emails", "Regional HQ reach"],
     stats: [
@@ -452,7 +452,7 @@ export default [
       title: "Built for the UAE market",
       body: [
         "The UAE is the commercial gateway to the wider Gulf and MENA region, with thousands of companies operating across mainland jurisdictions and specialized free zones. Reaching the right contact here is rarely straightforward.",
-        "Datalyst verifies every email and segments by emirate, free zone, and industry, so your reps engage genuine decision-makers instead of generic info inboxes."
+        "DataCentra verifies every email and segments by emirate, free zone, and industry, so your reps engage genuine decision-makers instead of generic info inboxes."
       ]
     },
     included: [
@@ -492,7 +492,7 @@ export default [
     blurb: "Reach Japanese enterprises and SMBs with verified, APPI-aware, localized contact data.",
     hero: {
       headline: "Break Into the Japanese Market",
-      subcopy: "Japan rewards precision and relationship-led selling. Datalyst delivers verified Japanese business contacts with localized firmographics and consent fields so you can engage a famously discerning market with confidence."
+      subcopy: "Japan rewards precision and relationship-led selling. DataCentra delivers verified Japanese business contacts with localized firmographics and consent fields so you can engage a famously discerning market with confidence."
     },
     highlights: ["Localized records", "APPI-aware", "Verified emails"],
     stats: [
@@ -506,7 +506,7 @@ export default [
       title: "Designed for the Japanese market",
       body: [
         "Japan is a high-value but high-context market where relevance and accuracy carry enormous weight. Generic Western lists rarely translate, both literally and commercially.",
-        "Datalyst provides verified contacts with localized company data, segmented by prefecture and industry, plus consent fields aligned with the APPI so your entry into Japan starts on solid ground."
+        "DataCentra provides verified contacts with localized company data, segmented by prefecture and industry, plus consent fields aligned with the APPI so your entry into Japan starts on solid ground."
       ]
     },
     included: [
@@ -546,7 +546,7 @@ export default [
     blurb: "Reach Dutch companies nationwide with verified, GDPR-aware, English-friendly contact data.",
     hero: {
       headline: "Connect With Dutch Decision-Makers",
-      subcopy: "The Netherlands is a compact, highly digital, English-friendly market that punches above its weight. Datalyst delivers verified Dutch contacts with the firmographics and consent fields to engage them precisely."
+      subcopy: "The Netherlands is a compact, highly digital, English-friendly market that punches above its weight. DataCentra delivers verified Dutch contacts with the firmographics and consent fields to engage them precisely."
     },
     highlights: ["Nationwide reach", "GDPR-aware", "English-friendly"],
     stats: [
@@ -560,7 +560,7 @@ export default [
       title: "Made for the Dutch market",
       body: [
         "The Netherlands offers one of Europe's most accessible B2B markets: highly digital, business-dense, and comfortable operating in English. That accessibility makes precise targeting the real differentiator.",
-        "Datalyst verifies every contact and segments by province, industry, and company size, with consent fields to keep your GDPR-aligned outreach clean and effective."
+        "DataCentra verifies every contact and segments by province, industry, and company size, with consent fields to keep your GDPR-aligned outreach clean and effective."
       ]
     },
     included: [
@@ -600,7 +600,7 @@ export default [
     blurb: "Reach decision-makers across 40+ European countries with verified, GDPR-aware, multi-market data.",
     hero: {
       headline: "Run Pan-European Campaigns From One Source",
-      subcopy: "Stop stitching together a dozen national vendors. Datalyst delivers verified contacts across 40+ European countries in one consistent, GDPR-aware dataset built for multi-market go-to-market."
+      subcopy: "Stop stitching together a dozen national vendors. DataCentra delivers verified contacts across 40+ European countries in one consistent, GDPR-aware dataset built for multi-market go-to-market."
     },
     highlights: ["40+ countries", "GDPR-aware", "One unified source"],
     stats: [
@@ -614,7 +614,7 @@ export default [
       title: "Built for pan-European go-to-market",
       body: [
         "Selling across Europe usually means juggling different vendors, formats, and compliance approaches for every country. That fragmentation slows teams down and degrades data quality at the seams.",
-        "Datalyst unifies 40+ European markets into one verified dataset with consistent fields and consent handling, so you can plan territories, run multi-country campaigns, and report on the whole region cleanly."
+        "DataCentra unifies 40+ European markets into one verified dataset with consistent fields and consent handling, so you can plan territories, run multi-country campaigns, and report on the whole region cleanly."
       ]
     },
     included: [
@@ -646,6 +646,6 @@ export default [
       { q: "Is compliance handled consistently?", a: "Yes. Consent and lawful-basis fields are standardized across markets to support GDPR-aligned outreach region-wide." },
       { q: "Can I still target a single country?", a: "Absolutely. Filter down to one country, region, or language, or export the whole continent in one consistent file." }
     ],
-    testimonial: { quote: "Consolidating eight national vendors into one Datalyst feed cut our data ops time in half and improved quality.", name: "Elena Ricci", role: "VP Revenue Operations", company: "Continental SaaS Group" }
+    testimonial: { quote: "Consolidating eight national vendors into one DataCentra feed cut our data ops time in half and improved quality.", name: "Elena Ricci", role: "VP Revenue Operations", company: "Continental SaaS Group" }
   }
 ];

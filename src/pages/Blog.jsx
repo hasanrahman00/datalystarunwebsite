@@ -5,7 +5,7 @@ export default function Blog() {
   return (
     <ListingTemplate
       page={{
-        title: 'The Datalyst Blog',
+        title: 'The DataCentra Blog',
         subcopy: 'Playbooks, benchmarks and field notes on B2B data, demand generation and pipeline.',
         variant: 'articles',
         items: blogPosts,

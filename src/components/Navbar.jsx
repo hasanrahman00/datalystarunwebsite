@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { ChevronDown, Menu, X, ArrowRight, Database, Sparkles } from 'lucide-react'
+import { ChevronDown, ChevronRight, ChevronLeft, Menu, X, ArrowRight, Database, Sparkles } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Logo from './Logo.jsx'
 import Button from './Button.jsx'
@@ -104,7 +104,7 @@ function DesktopItem({ item }) {
     <div className="relative" onMouseEnter={enter} onMouseLeave={leave}>
       <Link
         to={item.to}
-        className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-ink/80 transition hover:text-ink"
+        className="flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium text-ink/80 transition hover:text-ink"
       >
         {item.label}
         <ChevronDown className={cn('h-3.5 w-3.5 transition-transform', open && 'rotate-180')} />
@@ -129,6 +129,25 @@ function DesktopItem({ item }) {
 }
 
 function MobileMenu({ open, onClose }) {
+  // Two-level drill-in menu: tapping a parent slides to its sub-panel.
+  const [panel, setPanel] = useState(null)
+  const lastPanel = useRef(null)
+
+  useEffect(() => {
+    if (!open) setPanel(null)
+  }, [open])
+
+  if (panel) lastPanel.current = panel
+  const shown = panel || lastPanel.current
+  const subLinks = shown
+    ? shown.type === 'mega'
+      ? [...shown.hubs, ...shown.featured]
+      : shown.links || []
+    : []
+
+  const row =
+    'flex w-full items-center justify-between border-b border-brand-500/40 py-5 text-left text-lg font-semibold text-white transition-colors'
+
   return (
     <AnimatePresence>
       {open && (
@@ -136,43 +155,86 @@ function MobileMenu({ open, onClose }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[60] bg-white lg:hidden"
+          transition={{ duration: 0.2 }}
+          className="fixed inset-0 z-[60] bg-ink text-white lg:hidden"
         >
-          <div className="flex h-16 items-center justify-between border-b border-surface-muted px-5">
-            <Logo />
-            <button onClick={onClose} aria-label="Close menu" className="rounded-lg p-2 hover:bg-surface-subtle">
+          <div className="flex h-16 items-center justify-between border-b border-white/10 px-5">
+            <Logo light />
+            <button
+              onClick={onClose}
+              aria-label="Close menu"
+              className="rounded-lg p-2 text-white/80 transition hover:bg-white/10 hover:text-white"
+            >
               <X className="h-6 w-6" />
             </button>
           </div>
-          <div className="h-[calc(100vh-4rem)] overflow-y-auto px-5 py-4">
-            {primaryNav.map((item) => (
-              <details key={item.label} className="group border-b border-surface-muted py-1">
-                <summary className="flex cursor-pointer list-none items-center justify-between py-3 text-base font-semibold text-ink">
-                  {item.label}
-                  <ChevronDown className="h-4 w-4 transition-transform group-open:rotate-180" />
-                </summary>
-                <div className="pb-3">
-                  {(item.type === 'mega' ? [...item.hubs, ...item.featured] : item.links).map((l) => (
-                    <Link
-                      key={l.to}
-                      to={l.to}
-                      onClick={onClose}
-                      className="block rounded-lg px-3 py-2 text-sm text-ink-muted hover:bg-surface-subtle hover:text-ink"
-                    >
-                      {l.label}
-                    </Link>
-                  ))}
-                </div>
-              </details>
-            ))}
-            <div className="mt-6 flex flex-col gap-3">
-              <Button to="/contact" variant="outline" onClick={onClose}>
-                Talk to sales
-              </Button>
-              <Button to="/contact" variant="accent" onClick={onClose}>
-                Get a free sample <ArrowRight className="h-4 w-4" />
-              </Button>
-            </div>
+
+          <div className="relative h-[calc(100dvh-4rem)] overflow-hidden">
+            {/* Root level */}
+            <motion.nav
+              animate={{ x: panel ? '-25%' : '0%', opacity: panel ? 0 : 1 }}
+              transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+              aria-hidden={!!panel}
+              className="absolute inset-0 overflow-y-auto px-5 pb-8"
+            >
+              {primaryNav.map((item) =>
+                item.type === 'link' ? (
+                  <Link key={item.label} to={item.to} onClick={onClose} className={row}>
+                    {item.label}
+                  </Link>
+                ) : (
+                  <button key={item.label} onClick={() => setPanel(item)} className={row}>
+                    {item.label}
+                    <ChevronRight className="h-5 w-5 text-white/50" />
+                  </button>
+                ),
+              )}
+              <div className="mt-8 flex flex-col gap-3">
+                <Button to="/contact" variant="accent" size="lg" onClick={onClose}>
+                  Get a free sample <ArrowRight className="h-4 w-4" />
+                </Button>
+                <Button
+                  to="/contact"
+                  variant="outline"
+                  size="lg"
+                  onClick={onClose}
+                  className="border-white/25 bg-white/5 text-white hover:bg-white/15"
+                >
+                  Talk to sales
+                </Button>
+              </div>
+            </motion.nav>
+
+            {/* Sub level */}
+            <motion.nav
+              animate={{ x: panel ? '0%' : '100%' }}
+              transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+              aria-hidden={!panel}
+              className="absolute inset-0 overflow-y-auto px-5 pb-8"
+            >
+              <button
+                onClick={() => setPanel(null)}
+                className="flex w-full items-center gap-2 border-b border-white/10 py-5 text-left text-sm font-semibold uppercase tracking-[0.14em] text-white/60 transition hover:text-white"
+              >
+                <ChevronLeft className="h-4 w-4" /> Back
+              </button>
+              <p className="px-1 pt-5 text-xs font-semibold uppercase tracking-[0.14em] text-accent-soft">
+                {shown?.label}
+              </p>
+              <div className="mt-1">
+                {subLinks.map((l) => (
+                  <Link
+                    key={l.to}
+                    to={l.to}
+                    onClick={onClose}
+                    className="flex items-center justify-between border-b border-white/5 py-4 text-base font-medium text-white/85 transition hover:text-white"
+                  >
+                    {l.label}
+                    <ArrowRight className="h-4 w-4 text-white/25" />
+                  </Link>
+                ))}
+              </div>
+            </motion.nav>
           </div>
         </motion.div>
       )}

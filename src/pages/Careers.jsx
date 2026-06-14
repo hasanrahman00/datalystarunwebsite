@@ -58,7 +58,7 @@ export default function Careers() {
       </Section>
 
       <Section tone="subtle">
-        <SectionHeading eyebrow="Life at Datalyst" title="Perks that respect your life" />
+        <SectionHeading eyebrow="Life at DataCentra" title="Perks that respect your life" />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {perks.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.06}>

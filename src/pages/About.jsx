@@ -105,7 +105,7 @@ export default function About() {
           title="Let’s build pipeline together"
           body="Get a free sample matched to your ideal customer profile and see the quality for yourself."
           primary={{ label: 'Get a free sample', to: '/contact' }}
-          secondary={{ label: 'Why Datalyst', to: '/why-us' }}
+          secondary={{ label: 'Why DataCentra', to: '/why-us' }}
         />
       </Section>
     </>

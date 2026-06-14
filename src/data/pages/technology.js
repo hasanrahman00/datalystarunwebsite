@@ -1,4 +1,4 @@
-// Datalyst — Technology Users email list landing pages
+// DataCentra — Technology Users email list landing pages
 export default [
   {
     slug: "salesforce-users-email-list",
@@ -19,7 +19,7 @@ export default [
       eyebrow: "Overview",
       title: "Pinpoint the people behind the world's biggest CRM",
       body: [
-        "Datalyst maps companies by their live technology footprint, so you can spend your outreach budget only on accounts that already depend on Salesforce.",
+        "DataCentra maps companies by their live technology footprint, so you can spend your outreach budget only on accounts that already depend on Salesforce.",
         "Each record pairs a verified install signal with a real human contact, complete with role context like CRM administrator, sales operations, or VP of revenue."
       ]
     },
@@ -52,7 +52,7 @@ export default [
       { q: "Can I filter by Salesforce edition?", a: "Yes, where the signal is available we tag editions like Enterprise or Unlimited so you can prioritize larger orgs." },
       { q: "Are the emails verified?", a: "Every email passes real-time validation, and we hold a 95% deliverability guarantee on delivered records." }
     ],
-    testimonial: { quote: "We stopped guessing which prospects had Salesforce. Datalyst handed us a clean install-verified list and our reply rate doubled.", name: "Priya Raman", role: "Head of Growth", company: "Cloudwell Apps" }
+    testimonial: { quote: "We stopped guessing which prospects had Salesforce. DataCentra handed us a clean install-verified list and our reply rate doubled.", name: "Priya Raman", role: "Head of Growth", company: "Cloudwell Apps" }
   },
   {
     slug: "microsoft-dynamics-users-email-list",
@@ -74,7 +74,7 @@ export default [
       title: "Engage the Microsoft business-app ecosystem",
       body: [
         "Companies that standardize on Dynamics 365 tend to invest deeply across the Microsoft cloud, making them high-intent buyers for complementary tools and services.",
-        "Datalyst surfaces the project leads and administrators who own those deployments, each tied to a verified email and rich firmographic context."
+        "DataCentra surfaces the project leads and administrators who own those deployments, each tied to a verified email and rich firmographic context."
       ]
     },
     included: [
@@ -128,7 +128,7 @@ export default [
       title: "Open doors at the world's largest Oracle shops",
       body: [
         "Oracle deployments signal scale, complexity, and ongoing budget for licensing, support, and optimization, exactly the profile that high-value vendors want.",
-        "Datalyst connects you with the DBAs, infrastructure architects, and IT executives who steer those Oracle environments and approve new investments."
+        "DataCentra connects you with the DBAs, infrastructure architects, and IT executives who steer those Oracle environments and approve new investments."
       ]
     },
     included: [
@@ -182,7 +182,7 @@ export default [
       title: "Reach the backbone of enterprise operations",
       body: [
         "SAP runs the financial and operational core of many of the world's largest companies, and the migration to S/4HANA is fueling a wave of new projects and spend.",
-        "Datalyst gives you verified access to the people leading those initiatives, from SAP Basis administrators to the executives signing off on transformation budgets."
+        "DataCentra gives you verified access to the people leading those initiatives, from SAP Basis administrators to the executives signing off on transformation budgets."
       ]
     },
     included: [
@@ -214,7 +214,7 @@ export default [
       { q: "How are these companies sourced?", a: "We combine technology install detection with firmographic enrichment, then verify each contact individually." },
       { q: "Can I target specific industries?", a: "Yes, filter by vertical to reach SAP users in manufacturing, retail, energy, and beyond." }
     ],
-    testimonial: { quote: "Datalyst pointed us straight at companies mid-S/4HANA migration. Those were our warmest conversations all quarter.", name: "Marcus Eberle", role: "Partner", company: "Lindgren Advisory" }
+    testimonial: { quote: "DataCentra pointed us straight at companies mid-S/4HANA migration. Those were our warmest conversations all quarter.", name: "Marcus Eberle", role: "Partner", company: "Lindgren Advisory" }
   },
   {
     slug: "netsuite-users-email-list",
@@ -236,7 +236,7 @@ export default [
       title: "Engage the cloud ERP buyers driving growth",
       body: [
         "NetSuite is the system of record for thousands of scaling companies, and those teams continually invest in add-ons, integrations, and advisory help.",
-        "Datalyst delivers verified contacts for the finance and operations leaders who configure NetSuite and approve new tooling around it."
+        "DataCentra delivers verified contacts for the finance and operations leaders who configure NetSuite and approve new tooling around it."
       ]
     },
     included: [
@@ -268,7 +268,7 @@ export default [
       { q: "Can I see which modules they run?", a: "Where detectable, we tag modules so you can tailor outreach to their NetSuite footprint." },
       { q: "How quickly can I get a list?", a: "Standard exports turn around in under 24 hours after your filters are confirmed." }
     ],
-    testimonial: { quote: "We sell a NetSuite add-on, so install-verified contacts are everything. Datalyst gave us exactly the finance leaders we needed.", name: "Dana Whitfield", role: "Co-Founder", company: "Ledgerflow" }
+    testimonial: { quote: "We sell a NetSuite add-on, so install-verified contacts are everything. DataCentra gave us exactly the finance leaders we needed.", name: "Dana Whitfield", role: "Co-Founder", company: "Ledgerflow" }
   },
   {
     slug: "quickbooks-users-email-list",
@@ -290,7 +290,7 @@ export default [
       title: "Tap into the largest small-business accounting base",
       body: [
         "QuickBooks powers the books for millions of small businesses, and those owners constantly seek apps, payment tools, and services that simplify operations.",
-        "Datalyst connects you with verified decision-makers across that base, from solo founders to the bookkeepers and accountants who manage the ledgers."
+        "DataCentra connects you with verified decision-makers across that base, from solo founders to the bookkeepers and accountants who manage the ledgers."
       ]
     },
     included: [
@@ -322,7 +322,7 @@ export default [
       { q: "Can I get accountants and bookkeepers too?", a: "Definitely, filter by role to reach the finance professionals managing QuickBooks for clients." },
       { q: "How do you keep SMB data accurate?", a: "We re-verify contacts on a rolling basis and validate every email before it ships." }
     ],
-    testimonial: { quote: "For SMB outreach, volume and accuracy both matter. Datalyst delivered both and our demo bookings jumped.", name: "Carlos Mendez", role: "Marketing Lead", company: "Tillpay" }
+    testimonial: { quote: "For SMB outreach, volume and accuracy both matter. DataCentra delivered both and our demo bookings jumped.", name: "Carlos Mendez", role: "Marketing Lead", company: "Tillpay" }
   },
   {
     slug: "peoplesoft-users-email-list",
@@ -344,7 +344,7 @@ export default [
       title: "Find the teams maintaining mission-critical PeopleSoft",
       body: [
         "PeopleSoft remains embedded in higher education, healthcare systems, and government, where long upgrade cycles create steady demand for support and modernization.",
-        "Datalyst surfaces the administrators and executives who own these deployments, each tied to a verified contact and detailed organization profile."
+        "DataCentra surfaces the administrators and executives who own these deployments, each tied to a verified contact and detailed organization profile."
       ]
     },
     included: [
@@ -376,7 +376,7 @@ export default [
       { q: "Can I target by module?", a: "Yes, where detectable we tag HCM, Financials, and Campus Solutions so you can focus your message." },
       { q: "Is the contact data current?", a: "We re-verify on a rolling cycle and validate every email before each export ships." }
     ],
-    testimonial: { quote: "Reaching higher-ed IT teams on PeopleSoft used to take weeks of research. Datalyst handed us the list in two days.", name: "Renee Okafor", role: "Account Executive", company: "Verston Systems" }
+    testimonial: { quote: "Reaching higher-ed IT teams on PeopleSoft used to take weeks of research. DataCentra handed us the list in two days.", name: "Renee Okafor", role: "Account Executive", company: "Verston Systems" }
   },
   {
     slug: "aws-users-email-list",
@@ -398,7 +398,7 @@ export default [
       title: "Engage the teams shipping on the largest cloud",
       body: [
         "Companies running on AWS spend continuously on tooling, security, observability, and optimization, making them prime targets for cloud-adjacent products.",
-        "Datalyst connects you with the engineers and technical leaders who choose those tools, each verified and matched to a confirmed AWS footprint."
+        "DataCentra connects you with the engineers and technical leaders who choose those tools, each verified and matched to a confirmed AWS footprint."
       ]
     },
     included: [
@@ -430,7 +430,7 @@ export default [
       { q: "Can I target by AWS service?", a: "Where signals exist, we tag services so you can focus on compute, storage, or specific workloads." },
       { q: "Will I reach actual engineers?", a: "Yes, you can filter to DevOps, platform, and architect roles rather than generic contacts." }
     ],
-    testimonial: { quote: "Selling a security tool, we needed real AWS shops, not tire-kickers. Datalyst's signals filtered out the noise.", name: "Aisha Bello", role: "Demand Gen Manager", company: "Sentriq" }
+    testimonial: { quote: "Selling a security tool, we needed real AWS shops, not tire-kickers. DataCentra's signals filtered out the noise.", name: "Aisha Bello", role: "Demand Gen Manager", company: "Sentriq" }
   },
   {
     slug: "microsoft-azure-users-email-list",
@@ -452,7 +452,7 @@ export default [
       title: "Engage the Microsoft-aligned cloud enterprise",
       body: [
         "Azure adopters typically run wider Microsoft estates, giving you a clear path to organizations with the budget and maturity to buy enterprise tooling.",
-        "Datalyst surfaces the architects and IT leaders steering those Azure environments, each verified and enriched with deep firmographic context."
+        "DataCentra surfaces the architects and IT leaders steering those Azure environments, each verified and enriched with deep firmographic context."
       ]
     },
     included: [
@@ -484,7 +484,7 @@ export default [
       { q: "Do these accounts use other Microsoft products?", a: "Often yes, and where detectable we flag the broader Microsoft stack to enrich your targeting." },
       { q: "Can I reach decision-makers, not just users?", a: "Yes, filter by seniority to focus on architects, directors, and IT executives." }
     ],
-    testimonial: { quote: "We position around the Microsoft ecosystem, so Azure signals were perfect. Datalyst's data matched our ICP almost exactly.", name: "Liam Foster", role: "VP Marketing", company: "Cloudmast" }
+    testimonial: { quote: "We position around the Microsoft ecosystem, so Azure signals were perfect. DataCentra's data matched our ICP almost exactly.", name: "Liam Foster", role: "VP Marketing", company: "Cloudmast" }
   },
   {
     slug: "google-cloud-users-email-list",
@@ -506,7 +506,7 @@ export default [
       title: "Engage the data-forward cloud audience",
       body: [
         "Google Cloud tends to attract data-intensive and analytics-driven companies, an audience hungry for tools that extend BigQuery, Kubernetes, and ML pipelines.",
-        "Datalyst connects you with the engineers and technical leaders running those GCP environments, each verified and matched to a confirmed footprint."
+        "DataCentra connects you with the engineers and technical leaders running those GCP environments, each verified and matched to a confirmed footprint."
       ]
     },
     included: [
@@ -560,7 +560,7 @@ export default [
       title: "Engage the inbound and RevOps crowd",
       body: [
         "HubSpot users are growth-minded teams that invest readily in integrations, content tools, and services that extend their marketing and sales engine.",
-        "Datalyst connects you with the marketers and operations leaders who own those HubSpot portals, each verified and ready for outreach."
+        "DataCentra connects you with the marketers and operations leaders who own those HubSpot portals, each verified and ready for outreach."
       ]
     },
     included: [
@@ -614,7 +614,7 @@ export default [
       title: "Engage advanced B2B marketing teams",
       body: [
         "Marketo is the engine behind many enterprise demand-gen programs, and the teams running it are seasoned buyers of data, enrichment, and automation tooling.",
-        "Datalyst connects you with the marketing ops specialists and CMOs who own those Marketo instances, each verified and enriched for context."
+        "DataCentra connects you with the marketing ops specialists and CMOs who own those Marketo instances, each verified and enriched for context."
       ]
     },
     included: [
@@ -646,7 +646,7 @@ export default [
       { q: "Are these enterprise companies?", a: "Marketo is concentrated in mid-market and enterprise, though you can filter by size." },
       { q: "How fresh are the contacts?", a: "We re-verify on a rolling cycle and validate every email before each export." }
     ],
-    testimonial: { quote: "Marketo ops leaders are a narrow audience, but Datalyst found them at scale. Our enrichment tool sold itself once we got the meetings.", name: "Olivia Brandt", role: "Revenue Lead", company: "Adverity Labs" }
+    testimonial: { quote: "Marketo ops leaders are a narrow audience, but DataCentra found them at scale. Our enrichment tool sold itself once we got the meetings.", name: "Olivia Brandt", role: "Revenue Lead", company: "Adverity Labs" }
   },
   {
     slug: "workday-users-email-list",
@@ -668,7 +668,7 @@ export default [
       title: "Engage the leaders behind enterprise HCM and finance",
       body: [
         "Workday powers HR and financial operations at thousands of large enterprises, and those teams invest steadily in integrations, services, and complementary tools.",
-        "Datalyst connects you with the HRIS administrators and executives who own those Workday deployments, each verified and fully enriched."
+        "DataCentra connects you with the HRIS administrators and executives who own those Workday deployments, each verified and fully enriched."
       ]
     },
     included: [
@@ -700,7 +700,7 @@ export default [
       { q: "Are these mostly large companies?", a: "Yes, Workday skews enterprise, though you can filter by headcount to refine the set." },
       { q: "Can I reach HR decision-makers directly?", a: "You can filter to HRIS, HR leadership, and finance roles rather than generic contacts." }
     ],
-    testimonial: { quote: "Getting in front of HRIS owners at Workday shops was always hard. Datalyst made it a two-day exercise instead of a quarter-long one.", name: "Grace Holloway", role: "Sales Manager", company: "Peoplebridge" }
+    testimonial: { quote: "Getting in front of HRIS owners at Workday shops was always hard. DataCentra made it a two-day exercise instead of a quarter-long one.", name: "Grace Holloway", role: "Sales Manager", company: "Peoplebridge" }
   },
   {
     slug: "servicenow-users-email-list",
@@ -722,7 +722,7 @@ export default [
       title: "Engage the workflow and IT operations buyers",
       body: [
         "ServiceNow sits at the center of enterprise IT and workflow automation, and the teams running it continually invest in integrations, apps, and advisory services.",
-        "Datalyst connects you with the platform owners and IT leaders who steer those ServiceNow instances, each verified and matched to a confirmed install."
+        "DataCentra connects you with the platform owners and IT leaders who steer those ServiceNow instances, each verified and matched to a confirmed install."
       ]
     },
     included: [
@@ -776,7 +776,7 @@ export default [
       title: "Find the teams keeping legacy IBM systems running",
       body: [
         "AS/400 and iSeries still anchor critical operations in manufacturing, distribution, and finance, creating steady demand for support, modernization, and migration help.",
-        "Datalyst connects you with the IT and operations leaders who maintain these systems, each verified and matched to a confirmed legacy footprint."
+        "DataCentra connects you with the IT and operations leaders who maintain these systems, each verified and matched to a confirmed legacy footprint."
       ]
     },
     included: [
@@ -808,6 +808,6 @@ export default [
       { q: "How do you find these accounts?", a: "We combine technographic signals with firmographic data, then verify each contact individually." },
       { q: "Can I focus on specific industries?", a: "Absolutely, filter by vertical to reach AS/400 users in the sectors you serve." }
     ],
-    testimonial: { quote: "AS/400 shops are a needle in a haystack, but Datalyst surfaced them with the IT contacts we needed for our migration practice.", name: "Karl Vendt", role: "Practice Director", company: "Meridian IT Group" }
+    testimonial: { quote: "AS/400 shops are a needle in a haystack, but DataCentra surfaced them with the IT contacts we needed for our migration practice.", name: "Karl Vendt", role: "Practice Director", company: "Meridian IT Group" }
   }
 ]

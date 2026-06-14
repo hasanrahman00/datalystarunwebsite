@@ -6,7 +6,7 @@ export default [
     blurb: "Reach board-certified physicians across every specialty with verified work emails and direct dials that actually connect.",
     hero: {
       headline: "Connect With Practicing Physicians Who Convert",
-      subcopy: "Datalyst gives medical sales and marketing teams clean, specialty-segmented physician contacts. Skip the gatekeepers and put your message in front of the clinicians who prescribe, refer, and decide."
+      subcopy: "DataCentra gives medical sales and marketing teams clean, specialty-segmented physician contacts. Skip the gatekeepers and put your message in front of the clinicians who prescribe, refer, and decide."
     },
     highlights: ["NPI-matched records", "Specialty segmentation", "95% deliverability"],
     stats: [
@@ -60,7 +60,7 @@ export default [
     blurb: "Engage RNs, NPs, and nurse leaders nationwide with verified contacts segmented by role, setting, and credential.",
     hero: {
       headline: "Reach The Nurses Who Drive Frontline Care",
-      subcopy: "From staff RNs to nurse practitioners and CNOs, Datalyst delivers accurate, role-segmented nursing contacts so your products, programs, and roles reach the people running patient care."
+      subcopy: "From staff RNs to nurse practitioners and CNOs, DataCentra delivers accurate, role-segmented nursing contacts so your products, programs, and roles reach the people running patient care."
     },
     highlights: ["RN and NP coverage", "Role-based filters", "Verified at export"],
     stats: [
@@ -114,7 +114,7 @@ export default [
     blurb: "Market to general dentists and specialists at private practices and DSOs with verified, decision-maker-level contacts.",
     hero: {
       headline: "Win More Dental Practices As Customers",
-      subcopy: "Datalyst connects dental suppliers, labs, and software vendors with the dentists and practice owners who buy. Reach general dentistry and every specialty with clean, deliverable contact data."
+      subcopy: "DataCentra connects dental suppliers, labs, and software vendors with the dentists and practice owners who buy. Reach general dentistry and every specialty with clean, deliverable contact data."
     },
     highlights: ["Practice-owner data", "Specialty coverage", "DSO segmentation"],
     stats: [
@@ -168,7 +168,7 @@ export default [
     blurb: "Reach hospital decision-makers across administration, supply chain, and clinical leadership with account-level contact data.",
     hero: {
       headline: "Open Doors Inside Every Hospital You Target",
-      subcopy: "Datalyst maps hospitals and health systems by bed size, ownership, and department, then hands you the named executives and managers who approve vendors, technology, and clinical purchases."
+      subcopy: "DataCentra maps hospitals and health systems by bed size, ownership, and department, then hands you the named executives and managers who approve vendors, technology, and clinical purchases."
     },
     highlights: ["C-suite and dept heads", "System-level mapping", "Account-based ready"],
     stats: [
@@ -222,7 +222,7 @@ export default [
     blurb: "Target retail, hospital, and clinical pharmacists with verified contacts segmented by setting and dispensing authority.",
     hero: {
       headline: "Reach Pharmacists Where Decisions Get Made",
-      subcopy: "Datalyst connects you with pharmacists across retail, hospital, specialty, and long-term care settings — the professionals who counsel patients, manage formularies, and influence what gets dispensed."
+      subcopy: "DataCentra connects you with pharmacists across retail, hospital, specialty, and long-term care settings — the professionals who counsel patients, manage formularies, and influence what gets dispensed."
     },
     highlights: ["Retail to hospital", "Pharmacy-type filters", "Verified deliverability"],
     stats: [
@@ -276,7 +276,7 @@ export default [
     blurb: "Connect with chiropractors and clinic owners nationwide using verified emails and direct dials built for practice outreach.",
     hero: {
       headline: "Grow Your Reach Among Practicing Chiropractors",
-      subcopy: "Datalyst delivers accurate, owner-aware chiropractor contacts so equipment makers, software vendors, and service providers can reach the clinicians who run their own practices."
+      subcopy: "DataCentra delivers accurate, owner-aware chiropractor contacts so equipment makers, software vendors, and service providers can reach the clinicians who run their own practices."
     },
     highlights: ["Owner-level contacts", "Clinic firmographics", "Verified at export"],
     stats: [
@@ -330,7 +330,7 @@ export default [
     blurb: "Reach surgeons across orthopedic, cardiac, general, and specialty disciplines with NPI-verified, hospital-linked contacts.",
     hero: {
       headline: "Reach The Surgeons Who Choose Your Products",
-      subcopy: "Datalyst delivers precise, specialty-segmented surgeon contacts for device, implant, and instrument companies. Connect with the operators whose preferences drive high-value purchasing decisions."
+      subcopy: "DataCentra delivers precise, specialty-segmented surgeon contacts for device, implant, and instrument companies. Connect with the operators whose preferences drive high-value purchasing decisions."
     },
     highlights: ["Surgical specialties", "Hospital affiliation", "NPI-verified"],
     stats: [
@@ -384,7 +384,7 @@ export default [
     blurb: "Reach medical and cosmetic dermatologists at clinics and med-spas with verified, practice-aware contact data.",
     hero: {
       headline: "Connect With Dermatologists And Skin Specialists",
-      subcopy: "Datalyst gives aesthetic, pharma, and device brands clean access to dermatologists across medical, surgical, and cosmetic practice — the clinicians who select treatments and recommend products."
+      subcopy: "DataCentra gives aesthetic, pharma, and device brands clean access to dermatologists across medical, surgical, and cosmetic practice — the clinicians who select treatments and recommend products."
     },
     highlights: ["Medical and cosmetic", "Med-spa coverage", "Verified emails"],
     stats: [
@@ -438,7 +438,7 @@ export default [
     blurb: "Reach interventional, electrophysiology, and general cardiologists with NPI-verified, hospital-linked contact data.",
     hero: {
       headline: "Reach Cardiologists Who Drive Cardiac Care",
-      subcopy: "Datalyst connects device, pharma, and diagnostics teams with cardiologists across every sub-specialty — the high-influence clinicians behind cardiac procedures, prescriptions, and referrals."
+      subcopy: "DataCentra connects device, pharma, and diagnostics teams with cardiologists across every sub-specialty — the high-influence clinicians behind cardiac procedures, prescriptions, and referrals."
     },
     highlights: ["Sub-specialty filters", "Hospital affiliation", "NPI-verified"],
     stats: [
@@ -492,7 +492,7 @@ export default [
     blurb: "Reach psychiatrists and behavioral health prescribers across settings with verified, sub-specialty-aware contacts.",
     hero: {
       headline: "Reach Psychiatrists And Behavioral Health Leaders",
-      subcopy: "Datalyst connects behavioral health, pharma, and telehealth teams with psychiatrists across child, adult, and addiction medicine — the prescribers shaping mental health treatment."
+      subcopy: "DataCentra connects behavioral health, pharma, and telehealth teams with psychiatrists across child, adult, and addiction medicine — the prescribers shaping mental health treatment."
     },
     highlights: ["Sub-specialty data", "Telehealth coverage", "Verified emails"],
     stats: [
@@ -546,7 +546,7 @@ export default [
     blurb: "Reach distributors, manufacturers, and DME suppliers with verified contacts for the buyers and owners who drive deals.",
     hero: {
       headline: "Reach Medical Equipment Buyers And Suppliers",
-      subcopy: "Datalyst connects you with medical equipment manufacturers, distributors, and DME providers — the companies and decision-makers behind sourcing, partnerships, and channel deals."
+      subcopy: "DataCentra connects you with medical equipment manufacturers, distributors, and DME providers — the companies and decision-makers behind sourcing, partnerships, and channel deals."
     },
     highlights: ["Distributor and OEM", "Buyer-level contacts", "Firmographic filters"],
     stats: [
@@ -600,7 +600,7 @@ export default [
     blurb: "Reach administrators and directors at nursing homes and long-term care facilities with verified, role-based contacts.",
     hero: {
       headline: "Reach Decision-Makers At Long-Term Care Facilities",
-      subcopy: "Datalyst maps nursing homes and skilled-care facilities by size, ownership, and chain affiliation, then delivers the administrators, DONs, and directors who approve vendors and services."
+      subcopy: "DataCentra maps nursing homes and skilled-care facilities by size, ownership, and chain affiliation, then delivers the administrators, DONs, and directors who approve vendors and services."
     },
     highlights: ["Administrator contacts", "Facility firmographics", "Chain mapping"],
     stats: [

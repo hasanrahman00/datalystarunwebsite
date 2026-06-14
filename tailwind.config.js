@@ -37,10 +37,29 @@ export default {
           subtle: '#f7f8fc',
           muted: '#eef0f7',
         },
+        // Warm editorial palette (matches cricket-club.daddy-leads.com)
+        cream: {
+          DEFAULT: '#fbf1e5',
+          soft: '#f4e7d4',
+          deep: '#ece0cd',
+        },
+        coal: {
+          DEFAULT: '#1a1a1a',
+          soft: '#2a2a2a',
+          deep: '#0a0a0a',
+        },
+        terracotta: {
+          DEFAULT: '#c8553d',
+          soft: '#e08368',
+          deep: '#a8432e',
+        },
+        gold: '#c9a24a',
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
         display: ['"Plus Jakarta Sans"', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'Cambria', 'serif'],
+        bebas: ['"Bebas Neue"', 'Impact', 'Haettenschweiler', 'sans-serif'],
       },
       fontSize: {
         '2xs': ['0.6875rem', { lineHeight: '1rem' }],

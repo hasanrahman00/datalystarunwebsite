@@ -67,7 +67,7 @@ export default function HubTemplate({ page }) {
 
       {page.features?.length > 0 && (
         <Section tone="subtle">
-          <SectionHeading eyebrow="Why Datalyst" title={page.featuresTitle || 'Data you can campaign on with confidence'} />
+          <SectionHeading eyebrow="Why DataCentra" title={page.featuresTitle || 'Data you can campaign on with confidence'} />
           <div className="mt-10">
             <FeatureCards items={page.features} columns={3} />
           </div>

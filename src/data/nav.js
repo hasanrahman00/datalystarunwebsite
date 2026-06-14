@@ -56,7 +56,7 @@ export const growthLinks = [
 
 export const companyLinks = [
   { label: 'About Us', to: '/about' },
-  { label: 'Why Datalyst', to: '/why-us' },
+  { label: 'Why DataCentra', to: '/why-us' },
   { label: 'Newsroom', to: '/news' },
   { label: 'Delivery Partners', to: '/partners' },
   { label: 'Careers', to: '/careers' },
