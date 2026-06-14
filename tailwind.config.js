@@ -9,33 +9,35 @@ export default {
     },
     extend: {
       colors: {
+        // Core tokens remapped to the warm editorial palette so every page
+        // (which uses ink/brand/accent/surface) matches the homepage.
         ink: {
-          DEFAULT: '#0b1020',
-          soft: '#1b2236',
-          muted: '#5b6478',
+          DEFAULT: '#1a1a1a',
+          soft: '#2a2a2a',
+          muted: '#6e655b',
         },
         brand: {
-          50: '#eef1ff',
-          100: '#e0e5ff',
-          200: '#c6cffe',
-          300: '#a3affb',
-          400: '#7d85f6',
-          500: '#5d5cef',
-          600: '#4b41e0',
-          700: '#3f33c4',
-          800: '#352c9e',
-          900: '#2f2b7d',
-          950: '#1d1849',
+          50: '#fcf1ec',
+          100: '#f8e0d6',
+          200: '#f0c2b0',
+          300: '#e69c82',
+          400: '#db7657',
+          500: '#cf5c3e',
+          600: '#c8553d',
+          700: '#a8432e',
+          800: '#8a3827',
+          900: '#723125',
+          950: '#3e1710',
         },
         accent: {
-          DEFAULT: '#19d3c5',
-          soft: '#7af3e9',
-          deep: '#0fa89c',
+          DEFAULT: '#c9a24a',
+          soft: '#e3c77f',
+          deep: '#9c7a2e',
         },
         surface: {
-          DEFAULT: '#ffffff',
-          subtle: '#f7f8fc',
-          muted: '#eef0f7',
+          DEFAULT: '#fbf1e5',
+          subtle: '#f4e7d4',
+          muted: '#ece0cd',
         },
         // Warm editorial palette (matches cricket-club.daddy-leads.com)
         cream: {
@@ -70,13 +72,13 @@ export default {
       boxShadow: {
         soft: '0 1px 2px rgba(11,16,32,0.04), 0 8px 24px -12px rgba(11,16,32,0.18)',
         lift: '0 24px 60px -28px rgba(31,27,90,0.45)',
-        glow: '0 0 0 1px rgba(93,92,239,0.18), 0 18px 50px -20px rgba(93,92,239,0.55)',
+        glow: '0 0 0 1px rgba(200,85,61,0.18), 0 18px 50px -20px rgba(200,85,61,0.55)',
       },
       backgroundImage: {
         'grid-faint':
           'linear-gradient(to right, rgba(11,16,32,0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(11,16,32,0.045) 1px, transparent 1px)',
         'brand-radial':
-          'radial-gradient(120% 120% at 50% 0%, rgba(93,92,239,0.18) 0%, rgba(93,92,239,0) 55%)',
+          'radial-gradient(120% 120% at 50% 0%, rgba(200,85,61,0.20) 0%, rgba(200,85,61,0) 55%)',
       },
       keyframes: {
         'fade-up': {

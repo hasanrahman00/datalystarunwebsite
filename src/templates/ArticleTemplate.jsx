@@ -46,7 +46,7 @@ export default function ArticleTemplate({ page }) {
           <Breadcrumbs trail={[{ label: isCase ? 'Case Studies' : 'Blog', to: backTo }, { label: page.title }]} />
           <div className="mt-5 max-w-3xl">
             <span className="eyebrow">{page.category}</span>
-            <h1 className="mt-4 text-3xl font-extrabold leading-tight text-balance sm:text-4xl">
+            <h1 className="mt-4 font-serif text-3xl font-bold leading-tight text-balance sm:text-4xl">
               {page.title}
             </h1>
             {page.excerpt && <p className="mt-4 text-lg text-ink-muted text-pretty">{page.excerpt}</p>}

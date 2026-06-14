@@ -11,7 +11,7 @@ export default function LegalTemplate({ page }) {
       <div className="border-b border-surface-muted bg-surface-subtle">
         <div className="container-shell py-12">
           <Breadcrumbs trail={[{ label: 'Legal' }, { label: page.title }]} />
-          <h1 className="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl">{page.title}</h1>
+          <h1 className="mt-4 font-serif text-3xl font-bold tracking-tight sm:text-4xl">{page.title}</h1>
           <p className="mt-2 text-sm text-ink-muted">
             Last updated {page.updated || 'June 2026'} · {brand.legalName}
           </p>

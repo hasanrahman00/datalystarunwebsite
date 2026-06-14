@@ -29,7 +29,7 @@ export default function News() {
         <div className="pointer-events-none absolute inset-0 bg-brand-radial" />
         <div className="container-shell relative py-14 lg:py-16">
           <Breadcrumbs trail={[{ label: 'Company' }, { label: 'Newsroom' }]} light />
-          <h1 className="mt-5 text-4xl font-extrabold leading-tight text-balance sm:text-5xl">Newsroom</h1>
+          <h1 className="mt-5 font-serif text-4xl font-bold leading-tight text-balance sm:text-5xl">Newsroom</h1>
           <p className="mt-4 max-w-xl text-lg text-white/70">Announcements, milestones and press from the {brand.name} team.</p>
         </div>
       </div>

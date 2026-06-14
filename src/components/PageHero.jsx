@@ -31,7 +31,7 @@ export default function PageHero({
                 {eyebrow}
               </span>
             )}
-            <h1 className="mt-4 text-4xl font-extrabold leading-[1.08] text-balance text-white sm:text-5xl">
+            <h1 className="mt-4 font-serif text-4xl font-bold leading-[1.08] text-balance text-white sm:text-5xl">
               {headline}
             </h1>
             {subcopy && (

@@ -2,39 +2,50 @@ import { Link } from 'react-router-dom'
 import brand from '../site/brand.js'
 import { cn } from '../lib/cn.js'
 
-// Inline SVG mark + wordmark so the logo scales crisply and themes via currentColor.
-export default function Logo({ className, mark = true, light = false }) {
+// Circular "DC" monogram seal — a refined, professional brand mark.
+// Adapts to light/dark backgrounds (dark coal seal on light pages, cream seal
+// on the dark footer) with a thin terracotta accent ring. The wordmark is
+// hidden by default (icon-only mark); pass `wordmark` to show the name.
+export default function Logo({ className, mark = true, light = false, wordmark = false }) {
+  const disc = light ? '#fbf1e5' : '#1a1a1a'
+  const letters = light ? '#1a1a1a' : '#fbf1e5'
   return (
-    <Link to="/" className={cn('inline-flex items-center gap-2.5', className)} aria-label={`${brand.name} home`}>
+    <Link
+      to="/"
+      className={cn('inline-flex items-center gap-2.5', className)}
+      aria-label={`${brand.name} home`}
+    >
       {mark && (
-        <span className="inline-flex h-9 w-9 shrink-0 overflow-hidden rounded-xl shadow-soft">
+        <span className="inline-flex h-9 w-9 shrink-0">
           <svg viewBox="0 0 64 64" className="h-full w-full" aria-hidden="true">
-            <defs>
-              <linearGradient id="logoG" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stopColor="#5d5cef" />
-                <stop offset="1" stopColor="#19d3c5" />
-              </linearGradient>
-            </defs>
-            <rect width="64" height="64" rx="16" fill="url(#logoG)" />
+            <circle cx="32" cy="32" r="31" fill={disc} />
+            <circle cx="32" cy="32" r="26.5" fill="none" stroke="#c8553d" strokeWidth="1.5" />
             <text
               x="32"
-              y="33"
+              y="34.5"
               textAnchor="middle"
               dominantBaseline="central"
-              fontFamily="'Plus Jakarta Sans', ui-sans-serif, sans-serif"
-              fontWeight="800"
-              fontSize="30"
-              letterSpacing="-1.5"
-              fill="#0b1020"
+              fontFamily="'Playfair Display', Georgia, 'Times New Roman', serif"
+              fontWeight="700"
+              fontSize="25"
+              letterSpacing="-0.5"
+              fill={letters}
             >
               DC
             </text>
           </svg>
         </span>
       )}
-      <span className={cn('font-display text-lg font-extrabold tracking-tight', light ? 'text-white' : 'text-ink')}>
-        {brand.name}
-      </span>
+      {wordmark && (
+        <span
+          className={cn(
+            'font-display text-lg font-extrabold tracking-tight',
+            light ? 'text-white' : 'text-ink',
+          )}
+        >
+          {brand.name}
+        </span>
+      )}
     </Link>
   )
 }

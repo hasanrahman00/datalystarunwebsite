@@ -3,6 +3,7 @@ import { ArrowUpRight, Calendar, Play, FileText, Download, Wrench } from 'lucide
 import { Section } from '../components/Section.jsx'
 import { Breadcrumbs, TestimonialCard, CTABand } from '../components/blocks.jsx'
 import { getIcon } from '../lib/icons.js'
+import { blogImage, blogImgError } from '../lib/blogImage.js'
 import Reveal from '../components/Reveal.jsx'
 import useSeo from '../lib/useSeo.js'
 
@@ -12,9 +13,16 @@ function ArticleCard({ item }) {
       to={item.path}
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-surface-muted bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
     >
-      <div className="relative h-40 overflow-hidden bg-gradient-to-br from-brand-600 to-accent">
-        <div className="absolute inset-0 bg-grid-faint [background-size:28px_28px] opacity-20" />
-        <span className="absolute left-4 top-4 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-ink">
+      <div className="relative aspect-[16/9] overflow-hidden">
+        <img
+          src={blogImage(item.slug)}
+          onError={blogImgError(item.slug)}
+          alt=""
+          loading="lazy"
+          className="h-full w-full bg-surface-muted object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+        <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-ink">
           {item.category}
         </span>
       </div>
@@ -129,7 +137,7 @@ export default function ListingTemplate({ page }) {
         <div className="container-shell relative py-14 lg:py-16">
           <Breadcrumbs trail={[{ label: 'Resources' }, { label: page.title }]} light />
           <div className="mt-5 max-w-2xl">
-            <h1 className="text-4xl font-extrabold leading-tight text-balance sm:text-5xl">{page.title}</h1>
+            <h1 className="font-serif text-4xl font-bold leading-tight text-balance sm:text-5xl">{page.title}</h1>
             {page.subcopy && <p className="mt-4 text-lg text-white/70 text-pretty">{page.subcopy}</p>}
           </div>
         </div>

@@ -1,17 +1,22 @@
 import { Link } from 'react-router-dom'
 import {
-  ArrowRight, BadgeCheck, Database, Sparkles, Workflow, Megaphone, Check, CalendarDays,
+  ArrowRight, Database, Sparkles, Workflow, Megaphone,
 } from 'lucide-react'
 import { Section, SectionHeading } from '../components/Section.jsx'
+import Hero from '../components/Hero.jsx'
+import Counter from '../components/Counter.jsx'
 import CurvedBand from '../components/CurvedBand.jsx'
 import Button from '../components/Button.jsx'
 import Reveal from '../components/Reveal.jsx'
 import LeadForm from '../components/LeadForm.jsx'
 import { FeatureCards, Steps, TestimonialCard, CheckList } from '../components/blocks.jsx'
 import useSeo from '../lib/useSeo.js'
+import { blogImage, blogImgError } from '../lib/blogImage.js'
 import brand from '../site/brand.js'
 import testimonials from '../data/pages/testimonials.js'
 import { caseStudyPosts, blogPosts } from '../data/collections.js'
+
+const clients = ['Northwind', 'Brightloom', 'Cadence', 'Kestrel', 'Layerstack', 'Versa', 'Pinnacle', 'Orbit']
 
 const solutions = [
   { icon: 'Database', title: 'Data Solutions', body: 'Verified B2B lists by tech, title, industry, healthcare and geography.', to: '/email-lists' },
@@ -45,53 +50,33 @@ const marquee = [
   '64M+ companies', '170+ countries', 'Human + AI verified', 'Always refreshed',
 ]
 
-function HeroVisual() {
-  const rows = [
-    { n: 'A. Chen', r: 'VP Engineering', c: 'Northwind' },
-    { n: 'M. Okafor', r: 'CMO', c: 'Brightloom' },
-    { n: 'S. Patel', r: 'Head of RevOps', c: 'Cadence' },
-    { n: 'L. Romano', r: 'Director, IT', c: 'Kestrel' },
-  ]
+function BlogCard({ post }) {
   return (
-    <div className="relative">
-      <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-terracotta/15 to-gold/15 blur-2xl" />
-      <div className="relative rounded-3xl border border-coal/10 bg-white p-5 shadow-lift">
-        <div className="flex items-center justify-between border-b border-cream-deep pb-3">
-          <div className="flex items-center gap-2 text-sm font-bold text-coal">
-            <Database className="h-4 w-4 text-terracotta" /> Segment preview
-          </div>
-          <span className="rounded-full bg-terracotta/10 px-2.5 py-1 text-xs font-semibold text-terracotta">
-            14,208 matches
-          </span>
-        </div>
-        <div className="mt-3 space-y-2">
-          {rows.map((row) => (
-            <div key={row.n} className="flex items-center justify-between rounded-xl bg-cream px-3 py-2.5">
-              <div className="flex items-center gap-3">
-                <div className="grid h-8 w-8 place-items-center rounded-full bg-cream-deep text-xs font-bold text-coal">
-                  {row.n.split(' ').map((p) => p[0]).join('')}
-                </div>
-                <div>
-                  <div className="text-sm font-semibold text-coal">{row.n}</div>
-                  <div className="text-xs text-coal/55">{row.r} · {row.c}</div>
-                </div>
-              </div>
-              <span className="flex items-center gap-1 text-xs font-medium text-terracotta">
-                <BadgeCheck className="h-4 w-4" /> Verified
-              </span>
-            </div>
-          ))}
-        </div>
-        <div className="mt-3 grid grid-cols-3 gap-2 text-center">
-          {[['95%', 'Deliverable'], ['70+', 'Fields'], ['<24h', 'Turnaround']].map(([v, l]) => (
-            <div key={l} className="rounded-xl border border-cream-deep py-2">
-              <div className="font-bebas text-2xl leading-none text-coal">{v}</div>
-              <div className="text-2xs uppercase tracking-wide text-coal/55">{l}</div>
-            </div>
-          ))}
-        </div>
+    <Link
+      to={post.path}
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream-deep bg-white shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lift"
+    >
+      <div className="relative aspect-[16/9] overflow-hidden">
+        <img
+          src={blogImage(post.slug)}
+          onError={blogImgError(post.slug)}
+          alt=""
+          loading="lazy"
+          className="h-full w-full bg-cream-deep object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+        <span className="absolute left-3 top-3 rounded-full bg-cream/90 px-2.5 py-1 text-xs font-semibold text-coal">
+          {post.category}
+        </span>
       </div>
-    </div>
+      <div className="flex flex-1 flex-col p-5">
+        <h3 className="font-serif text-lg font-bold leading-snug text-coal transition-colors group-hover:text-terracotta">
+          {post.title}
+        </h3>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-coal/65 line-clamp-2">{post.excerpt}</p>
+        <span className="mt-3 text-xs text-coal/50">{post.date}</span>
+      </div>
+    </Link>
   )
 }
 
@@ -102,42 +87,24 @@ export default function Home() {
 
   return (
     <div className="bg-cream">
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-cream">
-        <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-terracotta/10 blur-3xl" />
-        <div className="pointer-events-none absolute -left-24 bottom-0 h-72 w-72 rounded-full bg-gold/10 blur-3xl" />
-        <div className="container-shell relative grid items-center gap-14 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
-          <Reveal>
-            <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-terracotta">
-              <span className="h-px w-8 bg-terracotta/40" />
-              Intent-driven B2B data
-            </span>
-            <h1 className="mt-5 font-serif text-5xl font-bold leading-[1.05] text-balance text-coal sm:text-6xl lg:text-[4.25rem]">
-              Turn verified data into <span className="italic text-terracotta">predictable pipeline</span>
-            </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-coal/70 text-pretty">
-              {brand.name} gives revenue teams targeted contact data, enrichment and demand-generation
-              programs — so your message reaches buyers who are ready to act.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button to="/contact" variant="terracotta" size="lg">
-                Get a free sample <ArrowRight className="h-4 w-4" />
-              </Button>
-              <Button to="/email-lists" variant="outline" size="lg" className="border-coal/20 bg-transparent text-coal hover:bg-cream-soft">
-                Explore data solutions
-              </Button>
-            </div>
-            <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-coal/60">
-              {['No commitment', '95% deliverability SLA', 'GDPR & CAN-SPAM aligned'].map((t) => (
-                <li key={t} className="flex items-center gap-1.5">
-                  <Check className="h-4 w-4 text-terracotta" strokeWidth={3} /> {t}
-                </li>
+      {/* Full-viewport animated hero */}
+      <Hero />
+
+      {/* Social proof marquee */}
+      <section className="border-y border-cream-deep bg-cream py-8">
+        <div className="container-shell">
+          <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-coal/40">
+            Trusted by revenue teams at fast-growing companies
+          </p>
+          <div className="mask-fade-x mt-6 overflow-hidden">
+            <div className="flex w-max animate-marquee items-center gap-12">
+              {[...clients, ...clients].map((c, i) => (
+                <span key={i} className="font-serif text-2xl font-bold tracking-tight text-coal/25">
+                  {c}
+                </span>
               ))}
-            </ul>
-          </Reveal>
-          <Reveal delay={0.12}>
-            <HeroVisual />
-          </Reveal>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -185,8 +152,8 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Curved stats band */}
-      <CurvedBand>
+      {/* Curved stats band with count-up */}
+      <CurvedBand id="proof">
         <Reveal className="text-center">
           <span className="inline-flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-terracotta">
             <span className="h-px w-8 bg-terracotta/50" />
@@ -201,13 +168,12 @@ export default function Home() {
         <div className="mx-auto mt-14 grid max-w-4xl grid-cols-2 gap-y-12 sm:grid-cols-4">
           {brand.metrics.map((m, i) => (
             <Reveal key={m.label} delay={i * 0.08} className="text-center">
-              <div className="font-bebas text-6xl leading-none text-white sm:text-7xl">{m.value}</div>
+              <Counter value={m.value} className="block font-bebas text-6xl leading-none text-white sm:text-7xl" />
               <div className="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/55">{m.label}</div>
             </Reveal>
           ))}
         </div>
 
-        {/* bullet marquee */}
         <div className="mask-fade-x mt-16 overflow-hidden">
           <div className="flex w-max animate-marquee items-center">
             {[...marquee, ...marquee].map((t, i) => (
@@ -260,7 +226,7 @@ export default function Home() {
         <Section tone="cream">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <SectionHeading serif align="left" eyebrowStyle="rule" eyebrow="Proof" title="Results, not promises" className="!mx-0" />
-            <Button to="/case-studies" variant="ghost" className="text-coal hover:bg-cream-soft">All case studies <ArrowRight className="h-4 w-4" /></Button>
+            <Button to="/case-studies" variant="ghost" className="text-coal hover:bg-cream-deep">All case studies <ArrowRight className="h-4 w-4" /></Button>
           </div>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {cases.map((c, i) => (
@@ -301,22 +267,12 @@ export default function Home() {
         <Section tone="cream">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <SectionHeading serif align="left" eyebrowStyle="rule" eyebrow="From the blog" title="Ideas worth stealing" className="!mx-0" />
-            <Button to="/blog" variant="ghost" className="text-coal hover:bg-cream-soft">Read the blog <ArrowRight className="h-4 w-4" /></Button>
+            <Button to="/blog" variant="ghost" className="text-coal hover:bg-cream-deep">Read the blog <ArrowRight className="h-4 w-4" /></Button>
           </div>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {posts.map((p, i) => (
               <Reveal key={p.path} delay={i * 0.06}>
-                <Link to={p.path} className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream-deep bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
-                  <div className="relative h-36 bg-gradient-to-br from-coal to-coal-soft">
-                    <div className="absolute inset-0 bg-grid-faint [background-size:24px_24px] opacity-10" />
-                    <span className="absolute left-4 top-4 rounded-full bg-cream px-2.5 py-1 text-xs font-semibold text-coal">{p.category}</span>
-                  </div>
-                  <div className="flex flex-1 flex-col p-5">
-                    <h3 className="text-base font-bold text-coal group-hover:text-terracotta">{p.title}</h3>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-coal/65 line-clamp-2">{p.excerpt}</p>
-                    <span className="mt-3 text-xs text-coal/50">{p.date}</span>
-                  </div>
-                </Link>
+                <BlogCard post={p} />
               </Reveal>
             ))}
           </div>

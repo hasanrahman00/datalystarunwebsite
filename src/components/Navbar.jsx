@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { Link, useLocation } from 'react-router-dom'
 import { ChevronDown, ChevronRight, ChevronLeft, Menu, X, ArrowRight, Database, Sparkles } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -148,7 +149,9 @@ function MobileMenu({ open, onClose }) {
   const row =
     'flex w-full items-center justify-between border-b border-brand-500/40 py-5 text-left text-lg font-semibold text-white transition-colors'
 
-  return (
+  if (typeof document === 'undefined') return null
+
+  return createPortal(
     <AnimatePresence>
       {open && (
         <motion.div
@@ -238,7 +241,8 @@ function MobileMenu({ open, onClose }) {
           </div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body,
   )
 }
 
@@ -263,8 +267,8 @@ export default function Navbar() {
       className={cn(
         'sticky top-0 z-50 transition-all duration-300',
         scrolled
-          ? 'border-b border-surface-muted bg-white/85 backdrop-blur-lg'
-          : 'border-b border-transparent bg-white/0',
+          ? 'border-b border-surface-muted bg-cream/90 backdrop-blur-lg'
+          : 'border-b border-transparent bg-transparent',
       )}
     >
       <div className="container-shell flex h-16 items-center justify-between gap-4 lg:h-[72px]">

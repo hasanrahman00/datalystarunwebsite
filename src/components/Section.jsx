@@ -25,8 +25,8 @@ export function SectionHeading({
   description,
   align = 'center',
   light = false,
-  serif = false,
-  eyebrowStyle = 'pill',
+  serif = true,
+  eyebrowStyle = 'rule',
   className,
 }) {
   return (

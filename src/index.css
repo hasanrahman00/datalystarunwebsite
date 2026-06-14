@@ -72,4 +72,31 @@
     -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
     mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
   }
+  /* Faint editorial data-grid backdrop */
+  .bg-data-grid {
+    background-image:
+      linear-gradient(rgba(26, 26, 26, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(26, 26, 26, 0.05) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+}
+
+/* Ambient warm aurora used behind the hero on the cream theme */
+@keyframes aurora {
+  0% { transform: translate(-8%, -6%) rotate(0deg) scale(1); }
+  50% { transform: translate(8%, 6%) rotate(8deg) scale(1.08); }
+  100% { transform: translate(-8%, -6%) rotate(0deg) scale(1); }
+}
+.aurora {
+  position: absolute;
+  inset: -25%;
+  z-index: 0;
+  filter: blur(80px);
+  opacity: 0.55;
+  will-change: transform;
+  animation: aurora 18s ease-in-out infinite;
+  background:
+    radial-gradient(40% 40% at 28% 30%, rgba(200, 85, 61, 0.42), transparent 70%),
+    radial-gradient(35% 35% at 72% 38%, rgba(224, 131, 104, 0.36), transparent 70%),
+    radial-gradient(48% 48% at 50% 80%, rgba(201, 162, 74, 0.30), transparent 70%);
 }
