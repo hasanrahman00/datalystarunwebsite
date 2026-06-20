@@ -274,31 +274,28 @@ export default function Navbar() {
       <div className="container-shell flex h-16 items-center justify-between gap-4 lg:h-[72px]">
         <Logo />
 
+        {/* Data Solutions + Enrich + B2B Scraping in the header; the rest are in the footer. */}
         <nav className="hidden items-center gap-0.5 lg:flex">
-          {primaryNav.map((item) => (
+          {primaryNav.slice(0, 2).map((item) => (
             <DesktopItem key={item.label} item={item} />
           ))}
+          <Link
+            to="/b2b-scraping"
+            className="whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium text-ink/80 transition hover:text-ink"
+          >
+            B2B Scraping
+          </Link>
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
-          <Button to="/contact" variant="ghost" size="sm">
+        <div className="flex items-center gap-2">
+          <Button to="/contact" variant="ghost" size="sm" className="hidden text-white hover:bg-white/10 sm:inline-flex">
             Talk to sales
           </Button>
           <Button to="/contact" variant="accent" size="sm">
             <Sparkles className="h-4 w-4" /> Get a free sample
           </Button>
         </div>
-
-        <button
-          className="rounded-lg p-2 hover:bg-surface-subtle lg:hidden"
-          onClick={() => setMobileOpen(true)}
-          aria-label="Open menu"
-        >
-          <Menu className="h-6 w-6" />
-        </button>
       </div>
-
-      <MobileMenu open={mobileOpen} onClose={() => setMobileOpen(false)} />
     </header>
   )
 }

@@ -11,6 +11,7 @@ export const dataHubs = [
 ]
 
 export const dataFeatured = [
+  { label: 'B2B Scraping', to: '/b2b-scraping' },
   { label: 'Email Lists', to: '/email-lists' },
   { label: 'Total Addressable Market', to: '/total-addressable-market' },
   { label: 'B2B Sales Leads', to: '/b2b-sales-leads' },
