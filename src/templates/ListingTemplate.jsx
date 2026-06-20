@@ -11,7 +11,7 @@ function ArticleCard({ item }) {
   return (
     <Link
       to={item.path}
-      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-surface-muted bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-surface-muted bg-card shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
     >
       <div className="relative aspect-[16/9] overflow-hidden">
         <img
@@ -27,7 +27,7 @@ function ArticleCard({ item }) {
         </span>
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <h3 className="text-base font-bold text-ink group-hover:text-brand-700">{item.title}</h3>
+        <h3 className="text-base font-bold text-ink group-hover:text-brand-200">{item.title}</h3>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted line-clamp-3">{item.excerpt}</p>
         <div className="mt-4 flex items-center gap-1.5 text-xs text-ink-muted">
           <Calendar className="h-3.5 w-3.5" /> {item.date}
@@ -42,19 +42,19 @@ function CaseCard({ item }) {
   return (
     <Link
       to={item.path}
-      className="group flex h-full flex-col justify-between rounded-2xl border border-surface-muted bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
+      className="group flex h-full flex-col justify-between rounded-2xl border border-surface-muted bg-card p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
     >
       <div>
         <div className="flex items-center justify-between">
-          <span className="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-semibold text-brand-700">{item.category}</span>
-          <ArrowUpRight className="h-4 w-4 text-ink-muted group-hover:text-brand-600" />
+          <span className="rounded-full bg-brand-500/15 px-2.5 py-1 text-xs font-semibold text-brand-200">{item.category}</span>
+          <ArrowUpRight className="h-4 w-4 text-ink-muted group-hover:text-brand-300" />
         </div>
         <h3 className="mt-4 text-lg font-bold text-ink">{item.title}</h3>
         <p className="mt-2 text-sm leading-relaxed text-ink-muted line-clamp-3">{item.excerpt}</p>
       </div>
       {item.headline && (
         <div className="mt-5 border-t border-surface-muted pt-4">
-          <span className="text-2xl font-extrabold text-brand-600">{item.headline.value}</span>
+          <span className="text-2xl font-extrabold text-brand-300">{item.headline.value}</span>
           <span className="ml-1.5 text-sm text-ink-muted">{item.headline.label}</span>
         </div>
       )}
@@ -66,14 +66,14 @@ function ResourceCard({ item }) {
   const typeIcon = { Guide: FileText, 'White Paper': Download, Infographic: FileText }
   const Icon = typeIcon[item.category] || FileText
   return (
-    <div className="group flex h-full flex-col rounded-2xl border border-surface-muted bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
-      <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-600">
+    <div className="group flex h-full flex-col rounded-2xl border border-surface-muted bg-card p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+      <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-500/15 text-brand-300">
         <Icon className="h-5 w-5" />
       </span>
       <span className="mt-4 text-xs font-semibold uppercase tracking-wide text-ink-muted">{item.category}</span>
       <h3 className="mt-1 text-base font-bold text-ink">{item.title}</h3>
       <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{item.excerpt}</p>
-      <Link to="/contact" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 hover:text-brand-700">
+      <Link to="/contact" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-300 hover:text-brand-200">
         <Download className="h-4 w-4" /> Download
       </Link>
     </div>
@@ -82,8 +82,8 @@ function ResourceCard({ item }) {
 
 function VideoCard({ item }) {
   return (
-    <div className="group overflow-hidden rounded-2xl border border-surface-muted bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
-      <div className="relative grid h-44 place-items-center bg-ink">
+    <div className="group overflow-hidden rounded-2xl border border-surface-muted bg-card shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+      <div className="relative grid h-44 place-items-center bg-night">
         <div className="absolute inset-0 bg-brand-radial opacity-60" />
         <span className="relative grid h-14 w-14 place-items-center rounded-full bg-white/90 text-ink shadow-lift transition group-hover:scale-110">
           <Play className="h-6 w-6 translate-x-0.5" fill="currentColor" />
@@ -104,13 +104,13 @@ function VideoCard({ item }) {
 function ToolCard({ item }) {
   const Icon = getIcon(item.icon || 'Wrench')
   return (
-    <div className="group flex h-full flex-col rounded-2xl border border-surface-muted bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+    <div className="group flex h-full flex-col rounded-2xl border border-surface-muted bg-card p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
       <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-accent/15 text-accent-deep">
         <Icon className="h-5 w-5" />
       </span>
       <h3 className="mt-4 text-base font-bold text-ink">{item.title}</h3>
       <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{item.excerpt}</p>
-      <Link to="/contact" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 hover:text-brand-700">
+      <Link to="/contact" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-300 hover:text-brand-200">
         Try it free <ArrowUpRight className="h-4 w-4" />
       </Link>
     </div>
@@ -132,7 +132,7 @@ export default function ListingTemplate({ page }) {
 
   return (
     <>
-      <div className="relative overflow-hidden border-b border-surface-muted bg-ink text-white">
+      <div className="relative overflow-hidden border-b border-surface-muted bg-night text-white">
         <div className="pointer-events-none absolute inset-0 bg-brand-radial" />
         <div className="container-shell relative py-14 lg:py-16">
           <Breadcrumbs trail={[{ label: 'Resources' }, { label: page.title }]} light />

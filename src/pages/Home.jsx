@@ -54,7 +54,7 @@ function BlogCard({ post }) {
   return (
     <Link
       to={post.path}
-      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream-deep bg-white shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lift"
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-cream-deep bg-card shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lift"
     >
       <div className="relative aspect-[16/9] overflow-hidden">
         <img
@@ -136,7 +136,7 @@ export default function Home() {
             <Reveal key={s.title} delay={i * 0.06}>
               <Link
                 to={s.to}
-                className="group flex h-full flex-col rounded-2xl border border-cream-deep bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
+                className="group flex h-full flex-col rounded-2xl border border-cream-deep bg-card p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
               >
                 <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-terracotta/10 text-terracotta transition group-hover:bg-terracotta group-hover:text-white">
                   {(() => { const I = { Database, Sparkles, Workflow, Megaphone }[s.icon]; return <I className="h-5 w-5" /> })()}
@@ -155,10 +155,10 @@ export default function Home() {
       {/* Curved stats band with count-up */}
       <CurvedBand id="proof">
         <Reveal className="text-center">
-          <span className="inline-flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-terracotta">
-            <span className="h-px w-8 bg-terracotta/50" />
+          <span className="inline-flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-white/90">
+            <span className="h-px w-8 bg-white/40" />
             The numbers
-            <span className="h-px w-8 bg-terracotta/50" />
+            <span className="h-px w-8 bg-white/40" />
           </span>
           <h2 className="mx-auto mt-4 max-w-2xl font-serif text-4xl font-bold leading-tight text-white sm:text-[2.75rem]">
             Scale without sacrificing quality
@@ -179,7 +179,7 @@ export default function Home() {
             {[...marquee, ...marquee].map((t, i) => (
               <span key={i} className="flex items-center text-sm font-bold uppercase tracking-[0.18em] text-white/55">
                 <span className="px-6">{t}</span>
-                <span className="h-1.5 w-1.5 rounded-full bg-terracotta" />
+                <span className="h-1.5 w-1.5 rounded-full bg-white/70" />
               </span>
             ))}
           </div>
@@ -231,7 +231,7 @@ export default function Home() {
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {cases.map((c, i) => (
               <Reveal key={c.path} delay={i * 0.06}>
-                <Link to={c.path} className="group flex h-full flex-col justify-between rounded-2xl border border-cream-deep bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+                <Link to={c.path} className="group flex h-full flex-col justify-between rounded-2xl border border-cream-deep bg-card p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                   <div>
                     <span className="rounded-full bg-terracotta/10 px-2.5 py-1 text-xs font-semibold text-terracotta">{c.category}</span>
                     <h3 className="mt-4 text-lg font-bold text-coal">{c.title}</h3>

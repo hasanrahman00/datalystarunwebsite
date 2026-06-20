@@ -27,7 +27,7 @@ export default function LegalTemplate({ page }) {
                 <a
                   key={i}
                   href={`#sec-${i}`}
-                  className="block rounded-md px-2 py-1.5 text-ink-muted transition hover:bg-surface-subtle hover:text-brand-700"
+                  className="block rounded-md px-2 py-1.5 text-ink-muted transition hover:bg-surface-subtle hover:text-brand-200"
                 >
                   {s.heading}
                 </a>

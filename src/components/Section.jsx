@@ -7,10 +7,10 @@ export function Section({ children, className, tone = 'default', id }) {
     default: 'bg-surface',
     subtle: 'bg-surface-subtle',
     muted: 'bg-surface-muted',
-    ink: 'bg-ink text-white',
+    ink: 'bg-night text-white',
     cream: 'bg-cream text-coal',
     'cream-soft': 'bg-cream-soft text-coal',
-    coal: 'bg-coal text-white',
+    coal: 'bg-night text-white',
   }
   return (
     <section id={id} className={cn('py-16 sm:py-20 lg:py-24', tones[tone], className)}>

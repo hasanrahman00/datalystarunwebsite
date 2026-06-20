@@ -16,7 +16,7 @@ export default function PageHero({
   side,
 }) {
   return (
-    <section className="relative overflow-hidden bg-ink text-white">
+    <section className="relative overflow-hidden bg-night text-white">
       <div className="pointer-events-none absolute inset-0 bg-brand-radial" />
       <div className="pointer-events-none absolute inset-0 bg-grid-faint [background-size:44px_44px] opacity-[0.07]" />
       <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-brand-500/20 blur-3xl" />

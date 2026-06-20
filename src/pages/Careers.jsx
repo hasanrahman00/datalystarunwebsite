@@ -38,19 +38,19 @@ export default function Careers() {
 
       <Section>
         <SectionHeading eyebrow="Open roles" title="Come build with us" description="Don’t see your role? We’re always glad to meet great people — reach out anyway." />
-        <div className="mx-auto mt-10 max-w-3xl divide-y divide-surface-muted overflow-hidden rounded-2xl border border-surface-muted bg-white shadow-soft">
+        <div className="mx-auto mt-10 max-w-3xl divide-y divide-surface-muted overflow-hidden rounded-2xl border border-surface-muted bg-card shadow-soft">
           {openings.map((o, i) => (
             <Reveal key={o.role} delay={i * 0.04}>
               <a href="/contact" className="group flex flex-col gap-2 px-6 py-5 transition hover:bg-surface-subtle sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <div className="text-base font-bold text-ink group-hover:text-brand-700">{o.role}</div>
+                  <div className="text-base font-bold text-ink group-hover:text-brand-200">{o.role}</div>
                   <div className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-ink-muted">
                     <span>{o.team}</span>
                     <span className="flex items-center gap-1"><MapPin className="h-3.5 w-3.5" /> {o.location}</span>
                     <span className="rounded-full bg-surface-muted px-2 py-0.5 text-xs">{o.type}</span>
                   </div>
                 </div>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">Apply <ArrowUpRight className="h-4 w-4" /></span>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-300">Apply <ArrowUpRight className="h-4 w-4" /></span>
               </a>
             </Reveal>
           ))}
@@ -62,8 +62,8 @@ export default function Careers() {
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {perks.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.06}>
-              <div className="h-full rounded-2xl border border-surface-muted bg-white p-6 shadow-soft">
-                <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-600"><p.icon className="h-5 w-5" /></span>
+              <div className="h-full rounded-2xl border border-surface-muted bg-card p-6 shadow-soft">
+                <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-500/15 text-brand-300"><p.icon className="h-5 w-5" /></span>
                 <h3 className="mt-4 text-base font-bold text-ink">{p.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-muted">{p.body}</p>
               </div>

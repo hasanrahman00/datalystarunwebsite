@@ -41,7 +41,7 @@ export default function ArticleTemplate({ page }) {
   return (
     <>
       <div className="relative overflow-hidden border-b border-surface-muted bg-surface-subtle">
-        <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-brand-100 blur-3xl" />
+        <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-brand-500/20 blur-3xl" />
         <div className="container-shell relative py-12 lg:py-16">
           <Breadcrumbs trail={[{ label: isCase ? 'Case Studies' : 'Blog', to: backTo }, { label: page.title }]} />
           <div className="mt-5 max-w-3xl">
@@ -70,8 +70,8 @@ export default function ArticleTemplate({ page }) {
       <Section className="!py-14">
         <div className="mx-auto max-w-3xl">
           {isCase && page.client && (
-            <div className="mb-8 flex flex-wrap items-center gap-4 rounded-2xl border border-surface-muted bg-white p-5 shadow-soft">
-              <div className="grid h-12 w-12 place-items-center rounded-xl bg-ink text-lg font-extrabold text-white">
+            <div className="mb-8 flex flex-wrap items-center gap-4 rounded-2xl border border-surface-muted bg-card p-5 shadow-soft">
+              <div className="grid h-12 w-12 place-items-center rounded-xl bg-night text-lg font-extrabold text-white">
                 {page.client.name?.[0]}
               </div>
               <div>
@@ -94,7 +94,7 @@ export default function ArticleTemplate({ page }) {
           </Reveal>
 
           <div className="mt-12 border-t border-surface-muted pt-6">
-            <Link to={backTo} className="inline-flex items-center gap-2 text-sm font-semibold text-brand-600 hover:text-brand-700">
+            <Link to={backTo} className="inline-flex items-center gap-2 text-sm font-semibold text-brand-300 hover:text-brand-200">
               <ArrowLeft className="h-4 w-4" /> {backLabel}
             </Link>
           </div>

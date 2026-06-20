@@ -58,7 +58,7 @@ export default function DataPageTemplate({ page }) {
             title={page.includedTitle || 'Every record, fully attributed'}
             description={page.includedDesc || 'Selectable fields you can segment and target on — verified before delivery.'}
           />
-          <div className="mt-10 rounded-4xl border border-surface-muted bg-white p-7 shadow-soft sm:p-10">
+          <div className="mt-10 rounded-4xl border border-surface-muted bg-card p-7 shadow-soft sm:p-10">
             <CheckList items={page.included} columns={2} />
           </div>
         </Section>

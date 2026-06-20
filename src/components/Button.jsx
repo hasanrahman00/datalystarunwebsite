@@ -6,18 +6,18 @@ const base =
 
 const variants = {
   primary:
-    'bg-ink text-white hover:bg-ink-soft shadow-soft hover:shadow-lift hover:-translate-y-0.5',
+    'bg-night text-white hover:bg-night-soft shadow-soft hover:shadow-lift hover:-translate-y-0.5',
   accent:
     'bg-gradient-to-r from-brand-600 to-accent text-white shadow-glow hover:-translate-y-0.5 hover:shadow-lift',
   outline:
-    'border border-ink/15 bg-white text-ink hover:border-ink/30 hover:bg-surface-subtle',
+    'border border-ink/15 bg-card text-ink hover:border-ink/30 hover:bg-surface-subtle',
   ghost: 'text-ink hover:bg-surface-muted',
   light:
-    'bg-white text-ink hover:bg-white/90 shadow-soft hover:-translate-y-0.5',
+    'bg-card text-ink hover:bg-white/90 shadow-soft hover:-translate-y-0.5',
   terracotta:
     'bg-terracotta text-white hover:bg-terracotta-deep shadow-soft hover:shadow-lift hover:-translate-y-0.5',
   coal:
-    'bg-coal text-white hover:bg-coal-soft shadow-soft hover:shadow-lift hover:-translate-y-0.5',
+    'bg-night text-white hover:bg-night-soft shadow-soft hover:shadow-lift hover:-translate-y-0.5',
 }
 
 const sizes = {

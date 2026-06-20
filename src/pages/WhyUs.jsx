@@ -52,10 +52,10 @@ export default function WhyUs() {
 
       <Section tone="subtle">
         <SectionHeading eyebrow="Compare" title="DataCentra vs. a typical list vendor" />
-        <Reveal className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-surface-muted bg-white shadow-soft">
+        <Reveal className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-surface-muted bg-card shadow-soft">
           <div className="grid grid-cols-[1fr_auto_auto] items-center gap-2 border-b border-surface-muted bg-surface-subtle px-5 py-4 text-sm font-semibold text-ink">
             <span>Capability</span>
-            <span className="w-24 text-center text-brand-700">{brand.name}</span>
+            <span className="w-24 text-center text-brand-200">{brand.name}</span>
             <span className="w-24 text-center text-ink-muted">Typical vendor</span>
           </div>
           {compareRows.map(([label, a, b], i) => (

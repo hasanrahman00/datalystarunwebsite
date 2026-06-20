@@ -15,17 +15,17 @@ const press = [
 ]
 
 const tagColor = {
-  Product: 'bg-brand-50 text-brand-700',
-  Company: 'bg-accent/15 text-accent-deep',
-  Partnership: 'bg-amber-50 text-amber-700',
-  Research: 'bg-violet-50 text-violet-700',
+  Product: 'bg-brand-500/15 text-brand-200',
+  Company: 'bg-accent/15 text-accent-soft',
+  Partnership: 'bg-amber-400/15 text-amber-300',
+  Research: 'bg-fuchsia-400/15 text-fuchsia-300',
 }
 
 export default function News() {
   useSeo({ title: 'Newsroom', description: `Latest news, announcements and press from ${brand.name}.` })
   return (
     <>
-      <div className="relative overflow-hidden border-b border-surface-muted bg-ink text-white">
+      <div className="relative overflow-hidden border-b border-surface-muted bg-night text-white">
         <div className="pointer-events-none absolute inset-0 bg-brand-radial" />
         <div className="container-shell relative py-14 lg:py-16">
           <Breadcrumbs trail={[{ label: 'Company' }, { label: 'Newsroom' }]} light />
@@ -38,14 +38,14 @@ export default function News() {
         <div className="grid gap-5 md:grid-cols-2">
           {press.map((p, i) => (
             <Reveal key={p.title} delay={(i % 2) * 0.06}>
-              <article className="group flex h-full flex-col rounded-2xl border border-surface-muted bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+              <article className="group flex h-full flex-col rounded-2xl border border-surface-muted bg-card p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                 <div className="flex items-center justify-between">
                   <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${tagColor[p.tag] || 'bg-surface-muted text-ink'}`}>{p.tag}</span>
                   <span className="flex items-center gap-1.5 text-xs text-ink-muted"><Calendar className="h-3.5 w-3.5" /> {p.date}</span>
                 </div>
                 <h2 className="mt-4 text-lg font-bold text-ink">{p.title}</h2>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{p.excerpt}</p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">Read more <ArrowUpRight className="h-3.5 w-3.5" /></span>
+                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-300">Read more <ArrowUpRight className="h-3.5 w-3.5" /></span>
               </article>
             </Reveal>
           ))}

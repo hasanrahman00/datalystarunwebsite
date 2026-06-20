@@ -6,7 +6,7 @@ import useSeo from '../lib/useSeo.js'
 import brand from '../site/brand.js'
 
 const fieldCls =
-  'w-full rounded-xl border border-coal/20 bg-cream px-3.5 py-3 text-sm text-coal placeholder:text-coal/40 outline-none transition focus:border-terracotta focus:bg-white focus:ring-4 focus:ring-terracotta/15'
+  'w-full rounded-xl border border-coal/20 bg-cream px-3.5 py-3 text-sm text-coal placeholder:text-coal/40 outline-none transition focus:border-terracotta focus:bg-card focus:ring-4 focus:ring-terracotta/15'
 const labelCls = 'mb-1.5 block text-xs font-bold uppercase tracking-[0.12em] text-coal/70'
 
 const tel = brand.phone.replace(/[^+\d]/g, '')
@@ -80,7 +80,7 @@ export default function Contact() {
 
         {/* Right — offset-bordered form card */}
         <Reveal delay={0.1} className="relative">
-          <div className="absolute inset-0 translate-x-2.5 translate-y-2.5 rounded-3xl bg-coal" aria-hidden="true" />
+          <div className="absolute inset-0 translate-x-2.5 translate-y-2.5 rounded-3xl bg-night" aria-hidden="true" />
           <div className="relative rounded-3xl border-2 border-coal bg-cream p-6 sm:p-8">
             {status === 'done' ? (
               <div className="py-12 text-center">
@@ -99,7 +99,7 @@ export default function Contact() {
                   Data request · Step 1 of 1
                 </span>
                 <h2 className="mt-2 font-bebas text-4xl leading-none text-coal">Tell us what you need.</h2>
-                <div className="my-5 h-px bg-coal/15" />
+                <div className="my-5 h-px bg-night/15" />
 
                 <div className="space-y-4">
                   <div>

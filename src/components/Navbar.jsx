@@ -51,7 +51,7 @@ function MegaPanel({ item }) {
             <li key={f.to}>
               <Link
                 to={f.to}
-                className="flex items-center justify-between rounded-lg px-3 py-2 text-sm font-medium text-ink transition hover:bg-white hover:shadow-soft"
+                className="flex items-center justify-between rounded-lg px-3 py-2 text-sm font-medium text-ink transition hover:bg-card hover:shadow-soft"
               >
                 {f.label}
                 <ArrowRight className="h-3.5 w-3.5 text-ink-muted" />
@@ -61,7 +61,7 @@ function MegaPanel({ item }) {
         </ul>
         <Link
           to={item.cta.to}
-          className="mt-3 flex items-center gap-1.5 px-3 text-sm font-semibold text-brand-600 hover:text-brand-700"
+          className="mt-3 flex items-center gap-1.5 px-3 text-sm font-semibold text-brand-300 hover:text-brand-200"
         >
           {item.cta.label} <ArrowRight className="h-3.5 w-3.5" />
         </Link>
@@ -78,7 +78,7 @@ function ListPanel({ item }) {
           <li key={l.to}>
             <Link
               to={l.to}
-              className="block rounded-lg px-3 py-2 text-sm font-medium text-ink transition hover:bg-surface-subtle hover:text-brand-700"
+              className="block rounded-lg px-3 py-2 text-sm font-medium text-ink transition hover:bg-surface-subtle hover:text-brand-200"
             >
               {l.label}
             </Link>
@@ -118,7 +118,7 @@ function DesktopItem({ item }) {
             exit={{ opacity: 0, y: 8 }}
             transition={{ duration: 0.16 }}
             className={cn(
-              'absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 overflow-hidden rounded-2xl border border-surface-muted bg-white shadow-lift',
+              'absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 overflow-hidden rounded-2xl border border-surface-muted bg-card shadow-lift',
             )}
           >
             {item.type === 'mega' ? <MegaPanel item={item} /> : <ListPanel item={item} />}
@@ -159,7 +159,7 @@ function MobileMenu({ open, onClose }) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="fixed inset-0 z-[60] bg-ink text-white lg:hidden"
+          className="fixed inset-0 z-[60] bg-night text-white lg:hidden"
         >
           <div className="flex h-16 items-center justify-between border-b border-white/10 px-5">
             <Logo light />

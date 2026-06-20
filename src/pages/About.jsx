@@ -73,8 +73,8 @@ export default function About() {
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((v, i) => (
             <Reveal key={v.title} delay={i * 0.06}>
-              <div className="h-full rounded-2xl border border-surface-muted bg-white p-6 shadow-soft">
-                <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-600">
+              <div className="h-full rounded-2xl border border-surface-muted bg-card p-6 shadow-soft">
+                <span className="inline-grid h-11 w-11 place-items-center rounded-xl bg-brand-500/15 text-brand-300">
                   <v.icon className="h-5 w-5" />
                 </span>
                 <h3 className="mt-4 text-base font-bold text-ink">{v.title}</h3>
@@ -92,7 +92,7 @@ export default function About() {
             {timeline.map((t, i) => (
               <Reveal as="li" key={t.year} delay={i * 0.05} className="mb-8 ml-6">
                 <span className="absolute -left-2.5 grid h-5 w-5 place-items-center rounded-full bg-brand-600 ring-4 ring-white" />
-                <div className="text-sm font-extrabold text-brand-600">{t.year}</div>
+                <div className="text-sm font-extrabold text-brand-300">{t.year}</div>
                 <p className="mt-1 text-ink/80">{t.text}</p>
               </Reveal>
             ))}

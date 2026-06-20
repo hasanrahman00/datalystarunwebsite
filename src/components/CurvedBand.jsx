@@ -3,9 +3,12 @@ import { cn } from '../lib/cn.js'
 // A warm-black band with curved top & bottom edges that "scoop" into the cream
 // page — the editorial look from cricket-club.daddy-leads.com. The SVG fills are
 // cream so the band reads as a rounded lens sitting on the page.
-export default function CurvedBand({ children, className, curveColor = '#fbf1e5', id }) {
+export default function CurvedBand({ children, className, curveColor = '#0b0b16', id }) {
   return (
-    <section id={id} className="relative scroll-mt-20 bg-coal text-white">
+    <section
+      id={id}
+      className="relative scroll-mt-20 bg-gradient-to-br from-brand-950 via-brand-800 to-accent-deep text-white"
+    >
       {/* top scoop */}
       <svg
         className="pointer-events-none absolute inset-x-0 top-0 h-8 w-full sm:h-12 lg:h-16"

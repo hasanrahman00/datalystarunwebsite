@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <Section className="!py-28">
       <div className="mx-auto max-w-lg text-center">
-        <p className="text-7xl font-extrabold tracking-tight text-brand-600">404</p>
+        <p className="text-7xl font-extrabold tracking-tight text-brand-300">404</p>
         <h1 className="mt-4 text-2xl font-bold text-ink">We couldn’t find that page</h1>
         <p className="mt-3 text-ink-muted">
           The link may be broken or the page may have moved. Let’s get you back on track.

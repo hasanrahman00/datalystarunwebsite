@@ -42,18 +42,18 @@ export default function HubTemplate({ page }) {
             <Reveal key={c.path} delay={(i % 3) * 0.05}>
               <Link
                 to={c.path}
-                className="group flex h-full flex-col justify-between rounded-2xl border border-surface-muted bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:border-brand-200 hover:shadow-lift"
+                className="group flex h-full flex-col justify-between rounded-2xl border border-surface-muted bg-card p-6 shadow-soft transition hover:-translate-y-1 hover:border-brand-200 hover:shadow-lift"
               >
                 <div>
                   <h3 className="flex items-start justify-between gap-3 text-base font-bold text-ink">
                     {c.title}
-                    <ArrowUpRight className="h-4 w-4 shrink-0 text-ink-muted transition group-hover:text-brand-600" />
+                    <ArrowUpRight className="h-4 w-4 shrink-0 text-ink-muted transition group-hover:text-brand-300" />
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-ink-muted line-clamp-3">
                     {c.blurb}
                   </p>
                 </div>
-                <span className="mt-4 text-sm font-semibold text-brand-600">
+                <span className="mt-4 text-sm font-semibold text-brand-300">
                   View list →
                 </span>
               </Link>

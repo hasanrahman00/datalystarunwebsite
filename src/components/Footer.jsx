@@ -35,7 +35,7 @@ function Column({ title, links }) {
 export default function Footer() {
   const year = 2026
   return (
-    <footer className="bg-ink text-white">
+    <footer className="bg-night text-white">
       {/* CTA banner */}
       <div className="container-shell">
         <div className="relative -mb-px overflow-hidden rounded-t-4xl border border-white/10 bg-gradient-to-br from-brand-700 via-brand-600 to-brand-800 px-6 py-12 sm:px-12 sm:py-14">

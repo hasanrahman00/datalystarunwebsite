@@ -22,7 +22,7 @@ export default function LeadForm({
 
   if (status === 'done') {
     return (
-      <div className={cn('rounded-2xl border border-surface-muted bg-white p-7 text-center shadow-lift', className)}>
+      <div className={cn('rounded-2xl border border-surface-muted bg-card p-7 text-center shadow-lift', className)}>
         <span className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-accent/15 text-accent-deep">
           <CheckCircle2 className="h-6 w-6" />
         </span>
@@ -35,12 +35,12 @@ export default function LeadForm({
   }
 
   const field =
-    'w-full rounded-xl border border-surface-muted bg-surface-subtle px-3.5 py-2.5 text-sm text-ink placeholder:text-ink-muted/70 outline-none transition focus:border-brand-400 focus:bg-white focus:ring-2 focus:ring-brand-100'
+    'w-full rounded-xl border border-surface-muted bg-surface-subtle px-3.5 py-2.5 text-sm text-ink placeholder:text-ink-muted/70 outline-none transition focus:border-brand-400 focus:bg-card focus:ring-2 focus:ring-brand-100'
 
   return (
     <form
       onSubmit={handleSubmit}
-      className={cn('rounded-2xl border border-surface-muted bg-white p-6 shadow-lift', className)}
+      className={cn('rounded-2xl border border-surface-muted bg-card p-6 shadow-lift', className)}
     >
       <h3 className="text-lg font-bold text-ink">{title}</h3>
       <p className="mt-1 text-sm text-ink-muted">{subtitle}</p>
