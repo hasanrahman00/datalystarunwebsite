@@ -22,8 +22,10 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <Link to="/" className="flex items-center mb-4">
-              <div className="w-9 h-9 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-[10px] flex items-center justify-center text-[0.82rem] font-extrabold text-white">VL</div>
+            <Link to="/" className="flex items-center mb-4" aria-label="Data Centra home">
+              <span className="font-display text-xl font-extrabold tracking-tight text-white">
+                Data <span className="gradient-text">Centra</span>
+              </span>
             </Link>
             <p className="text-[0.85rem] text-txt-secondary leading-relaxed max-w-[280px] mb-4">B2B Prospecting Agency helping 5000+ sales teams generate pipeline through data, AI & automation.</p>
             <a href={`mailto:${SITE.email}`} className="text-[0.88rem] text-purple-400 hover:text-purple-300 transition-colors font-medium">{SITE.email}</a>
@@ -64,7 +66,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="pt-8 border-t border-purple-500/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3 text-[0.78rem] text-txt-muted">
-          <span>© {new Date().getFullYear()} VikiLeads. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Data Centra. All rights reserved.</span>
           <span>Built with precision for B2B teams.</span>
         </div>
       </div>

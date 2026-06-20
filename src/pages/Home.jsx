@@ -179,7 +179,7 @@ export default function Home() {
                 Ready to <span className="gradient-text">10x Your Pipeline</span>?
               </h2>
               <p className="text-[1.05rem] text-txt-secondary max-w-[500px] mx-auto leading-relaxed mb-9 relative z-[1]">
-                Join 5000+ sales teams who trust VikiLeads. First prospects within 48 hours.
+                Join 5000+ sales teams who trust Data Centra. First prospects within 48 hours.
               </p>
               <div className="relative z-[1] flex items-center justify-center gap-4 flex-wrap">
                 <button onClick={() => setModalOpen(true)} className="btn-primary inline-flex items-center gap-2.5 px-8 py-3.5 text-[0.95rem] font-semibold rounded-full">

@@ -242,7 +242,7 @@ export function ComparisonTable({ data }) {
   return (
     <section className="py-24 relative z-[1]">
       <div className="max-w-[1200px] mx-auto px-6">
-        <Reveal><SectionHeader label="Compare" title={<>Why Teams Choose <span className="gradient-text">VikiLeads</span></>} /></Reveal>
+        <Reveal><SectionHeader label="Compare" title={<>Why Teams Choose <span className="gradient-text">Data Centra</span></>} /></Reveal>
         <Reveal>
           <div className="overflow-x-auto rounded-2xl border border-purple-500/[0.1]">
             <table className="w-full text-left min-w-[700px]">

@@ -49,9 +49,11 @@ export default function Navbar() {
       <nav className={`fixed top-0 left-0 right-0 h-[72px] z-[1000] backdrop-blur-xl transition-all duration-300 border-b ${scrolled ? 'bg-[#09090f]/95 shadow-[0_4px_30px_rgba(0,0,0,0.4)] border-purple-500/[0.08]' : 'bg-[#09090f]/80 border-purple-500/[0.05]'}`}>
         <div className="grid grid-cols-[auto_1fr_auto] items-center h-full max-w-[1200px] mx-auto px-6">
 
-          {/* ── Logo (VL icon only) ── */}
-          <Link to="/" className="flex items-center">
-            <div className="w-9 h-9 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-[10px] flex items-center justify-center text-[0.82rem] font-extrabold text-white relative overflow-hidden">VL</div>
+          {/* ── Logo (Data Centra wordmark) ── */}
+          <Link to="/" className="flex items-center" aria-label="Data Centra home">
+            <span className="font-display text-xl font-extrabold tracking-tight text-white">
+              Data <span className="gradient-text">Centra</span>
+            </span>
           </Link>
 
           {/* ── Desktop Nav (centered) ── */}

@@ -1,4 +1,4 @@
-export const SITE = { name: 'VikiLeads', slackUrl: 'https://join.slack.com/t/vikileadsworkspace/shared_invite/zt-3pg9ypdae-wpriXr5uGhgoZHF9BmnEwg', email: 'contact@vikileads.co' }
+export const SITE = { name: 'Data Centra', slackUrl: 'https://join.slack.com/t/vikileadsworkspace/shared_invite/zt-3pg9ypdae-wpriXr5uGhgoZHF9BmnEwg', email: 'contact@datacentra.io' }
 
 export const NAV_LINKS = [
   { label: 'DFY Prospecting', href: '/dfy-prospecting' },
@@ -93,14 +93,14 @@ export const STEPS = [
 ]
 
 export const TESTIMONIALS = [
-  { text: "VikiLeads replaced our entire Clay.com setup. The ICP analysis is incredibly detailed and leads are spot-on. We've 3x'd our pipeline in 2 months.", name: 'James Mitchell', role: 'Head of Sales, SaaSGrowth', initials: 'JM' },
+  { text: "Data Centra replaced our entire Clay.com setup. The ICP analysis is incredibly detailed and leads are spot-on. We've 3x'd our pipeline in 2 months.", name: 'James Mitchell', role: 'Head of Sales, SaaSGrowth', initials: 'JM' },
   { text: "The waterfall enrichment found contacts we couldn't get anywhere else. For new companies without much data online, this is a game-changer.", name: 'Sarah Rodriguez', role: 'Founder, OutboundLabs', initials: 'SR' },
-  { text: "We saved $2,400/month by dropping our database subscriptions and using VikiLeads instead. Better data, verified emails, zero hassle.", name: 'Alex Kim', role: 'CEO, RevStack Agency', initials: 'AK' },
+  { text: "We saved $2,400/month by dropping our database subscriptions and using Data Centra instead. Better data, verified emails, zero hassle.", name: 'Alex Kim', role: 'CEO, RevStack Agency', initials: 'AK' },
   { text: "Their LinkedIn automation agent books 15-20 meetings per week for us on autopilot. The ROI is insane compared to hiring another SDR.", name: 'David Chen', role: 'VP Sales, CloseFast.io', initials: 'DC' },
-  { text: "We went from paying $35K/year for ZoomInfo + Apollo + Clay to under $6K with VikiLeads. Same data quality, better verification.", name: 'Maria Santos', role: 'RevOps Lead, ScaleHQ', initials: 'MS' },
+  { text: "We went from paying $35K/year for ZoomInfo + Apollo + Clay to under $6K with Data Centra. Same data quality, better verification.", name: 'Maria Santos', role: 'RevOps Lead, ScaleHQ', initials: 'MS' },
   { text: "The Sales Nav scraping is flawless. Boolean search, unlimited extraction, catch-all verified — everything we needed.", name: 'Tom Bradley', role: 'Founder, LeadGenX', initials: 'TB' },
   { text: "Ecommerce store owner data was exactly what we needed. Shopify store contacts with revenue estimates — pure gold for our agency.", name: 'Nina Park', role: 'CEO, StoreLaunch', initials: 'NP' },
-  { text: "We use VikiLeads for all our client campaigns. The consistency and quality of data is unmatched. 10/10 would recommend.", name: 'Ryan Foster', role: 'Founder, ColdReach Agency', initials: 'RF' },
+  { text: "We use Data Centra for all our client campaigns. The consistency and quality of data is unmatched. 10/10 would recommend.", name: 'Ryan Foster', role: 'Founder, ColdReach Agency', initials: 'RF' },
 ]
 
 export const CASE_STUDIES = [
@@ -111,7 +111,7 @@ export const CASE_STUDIES = [
 ]
 
 export const COMPARISON = {
-  headers: ['Feature', 'VikiLeads', 'Clay.com', 'Apollo', 'ZoomInfo'],
+  headers: ['Feature', 'Data Centra', 'Clay.com', 'Apollo', 'ZoomInfo'],
   rows: [
     ['Monthly cost', 'Pay per project', '$149-800/mo', '$49-119/mo', '$14,995+/yr'],
     ['Databases', '30+ included', '75+ providers', '1 database', '1 database'],
@@ -125,7 +125,7 @@ export const COMPARISON = {
 }
 
 export const FAQ_GENERAL = [
-  { q: 'How is VikiLeads different from buying a database subscription?', a: 'Database subscriptions give you one source with credit limits. VikiLeads extracts from 30+ databases, catch-all verifies every email, and delivers ICP-analyzed prospects — all done for you.' },
+  { q: 'How is Data Centra different from buying a database subscription?', a: 'Database subscriptions give you one source with credit limits. Data Centra extracts from 30+ databases, catch-all verifies every email, and delivers ICP-analyzed prospects — all done for you.' },
   { q: 'What does "catch-all verified" mean?', a: 'Standard verification checks if an email exists. Catch-all verification tests if catch-all domains actually deliver emails or silently bounce. Our clients see <1% bounce versus 5-8% industry average.' },
   { q: 'How quickly do I get my first leads?', a: 'Most clients get their first list within 48 hours. Complex requests with deep personalization take 3-5 business days.' },
   { q: 'Do I need subscriptions or software?', a: 'No. Fully done-for-you. No Apollo, ZoomInfo, or Sales Nav needed. We deliver clean data in CSV, Sheets, or direct to CRM.' },

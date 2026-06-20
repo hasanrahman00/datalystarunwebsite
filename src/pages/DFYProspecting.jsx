@@ -4,7 +4,7 @@ import { CASE_STUDIES, COMPARISON, GUARANTEES } from '@/lib/constants'
 const FAQ = [
   { q: 'What is a 3-layer ICP analysis?', a: 'Layer 1: Industry, company size & revenue matching. Layer 2: Tech stack, growth signals & hiring trends. Layer 3: Decision-maker identification with role-specific personalization.' },
   { q: 'How do you generate icebreakers?', a: 'We track 25+ signal types — funding, press mentions, job postings, LinkedIn activity, tech stack changes — and reference specific recent events in each icebreaker.' },
-  { q: 'How does this replace Clay.com?', a: 'Clay requires 10-40 hours of DIY setup. VikiLeads delivers the same output — enriched, personalized prospect lists — fully done for you. Same result, zero setup.' },
+  { q: 'How does this replace Clay.com?', a: 'Clay requires 10-40 hours of DIY setup. Data Centra delivers the same output — enriched, personalized prospect lists — fully done for you. Same result, zero setup.' },
   { q: 'What format is the data delivered in?', a: 'CSV, Google Sheets, or direct CRM import. Includes name, title, company, verified email, phone, LinkedIn URL, ICP score, and 2-3 icebreakers per prospect.' },
 ]
 
