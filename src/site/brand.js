@@ -4,8 +4,8 @@ export const brand = {
   legalName: 'DataCentra Data, Inc.',
   tagline: 'Intent-driven B2B data & demand generation',
   domain: 'datacentra.io',
-  email: 'hello@datacentra.io',
-  salesEmail: 'sales@datacentra.io',
+  email: 'contact@datacentra.io',
+  salesEmail: 'contact@datacentra.io',
   phone: '+1 (888) 555-0142',
   foundedYear: 2014,
   description:
