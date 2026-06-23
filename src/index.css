@@ -23,14 +23,14 @@
   }
 
   ::selection {
-    background: rgba(139, 92, 246, 0.32);
+    background: rgba(59, 130, 246, 0.36);
     color: #fff;
   }
 
   ::-webkit-scrollbar { width: 12px; height: 12px; }
-  ::-webkit-scrollbar-track { background: #0b0b16; }
-  ::-webkit-scrollbar-thumb { background: #2a2a3e; border-radius: 999px; border: 3px solid #0b0b16; }
-  ::-webkit-scrollbar-thumb:hover { background: #3a3a52; }
+  ::-webkit-scrollbar-track { background: #0a1020; }
+  ::-webkit-scrollbar-thumb { background: #22304c; border-radius: 999px; border: 3px solid #0a1020; }
+  ::-webkit-scrollbar-thumb:hover { background: #2f4267; }
 
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
@@ -78,7 +78,7 @@
     background-size: 64px 64px;
   }
   .text-gradient {
-    background-image: linear-gradient(95deg, #60a5fa 0%, #a78bfa 45%, #f472d8 100%);
+    background-image: linear-gradient(95deg, #60a5fa 0%, #38bdf8 50%, #22d3ee 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -86,7 +86,7 @@
   }
 }
 
-/* Ambient blue→purple→magenta aurora behind the dark hero */
+/* Ambient blue → cyan aurora behind the dark hero */
 @keyframes aurora {
   0% { transform: translate(-8%, -6%) rotate(0deg) scale(1); }
   50% { transform: translate(8%, 6%) rotate(8deg) scale(1.12); }
@@ -97,13 +97,13 @@
   inset: -25%;
   z-index: 0;
   filter: blur(90px);
-  opacity: 0.7;
+  opacity: 0.65;
   will-change: transform;
   animation: aurora 18s ease-in-out infinite;
   background:
-    radial-gradient(40% 40% at 25% 28%, rgba(59, 130, 246, 0.55), transparent 70%),
-    radial-gradient(38% 38% at 72% 35%, rgba(139, 92, 246, 0.55), transparent 70%),
-    radial-gradient(46% 46% at 55% 82%, rgba(230, 75, 208, 0.45), transparent 70%);
+    radial-gradient(40% 40% at 25% 28%, rgba(37, 99, 235, 0.55), transparent 70%),
+    radial-gradient(38% 38% at 72% 35%, rgba(59, 130, 246, 0.5), transparent 70%),
+    radial-gradient(46% 46% at 55% 82%, rgba(34, 211, 238, 0.4), transparent 70%);
 }
 
 /* Flowing light-streak "ribbons" behind the hero */

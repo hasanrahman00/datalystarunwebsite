@@ -15,8 +15,6 @@ import brand from '../site/brand.js'
 import testimonials from '../data/pages/testimonials.js'
 import { caseStudyPosts } from '../data/collections.js'
 
-const clients = ['Northwind', 'Brightloom', 'Cadence', 'Kestrel', 'Layerstack', 'Versa', 'Pinnacle', 'Orbit']
-
 const solutions = [
   { icon: 'Database', title: 'Data Solutions', body: 'Verified B2B lists by tech, title, industry, healthcare and geography.', to: '/email-lists' },
   { icon: 'Sparkles', title: 'Enrich', body: 'Append, verify and cleanse your records to fill gaps and cut bounces.', to: '/services/data-enrichment' },
@@ -55,26 +53,8 @@ export default function Home() {
 
   return (
     <div className="bg-cream">
-      {/* Full-viewport animated hero */}
+      {/* Animated hero (with built-in trusted-by logo cloud) */}
       <Hero />
-
-      {/* Social proof marquee */}
-      <section className="border-y border-cream-deep bg-cream py-8">
-        <div className="container-shell">
-          <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-coal/40">
-            Trusted by revenue teams at fast-growing companies
-          </p>
-          <div className="mask-fade-x mt-6 overflow-hidden">
-            <div className="flex w-max animate-marquee items-center gap-12">
-              {[...clients, ...clients].map((c, i) => (
-                <span key={i} className="font-serif text-2xl font-bold tracking-tight text-coal/25">
-                  {c}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Value props */}
       <Section tone="cream">

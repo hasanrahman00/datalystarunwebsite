@@ -2,34 +2,51 @@ import { Link } from 'react-router-dom'
 import brand from '../site/brand.js'
 import { cn } from '../lib/cn.js'
 
-// Modern wordmark logo: a gradient "sparkle" mark + "Data Centra", with an
-// animated gradient pan on "Centra". No boxed icon — eye-catching but clean.
-export default function Logo({ className }) {
+// Stacked-cube mark (3 isometric slabs, blue→cyan) + "Data Centra" wordmark
+// and a small tagline — matches the Datacentra brand look.
+const LAYERS = [
+  { cy: 32, sideL: '#1e3a8a', sideR: '#1d4ed8' }, // bottom
+  { cy: 23, sideL: '#1d4ed8', sideR: '#2563eb' }, // middle
+  { cy: 14, sideL: '#2563eb', sideR: '#3b82f6' }, // top
+]
+
+export default function Logo({ className, tagline = true }) {
   return (
     <Link
       to="/"
-      className={cn('group inline-flex items-center gap-2', className)}
+      className={cn('group inline-flex items-center gap-2.5', className)}
       aria-label={`${brand.name} home`}
     >
       <svg
-        viewBox="0 0 24 24"
-        className="h-[1.15rem] w-[1.15rem] shrink-0 drop-shadow-[0_0_8px_rgba(139,92,246,0.6)] transition-transform duration-500 group-hover:rotate-[18deg]"
+        viewBox="0 0 48 52"
+        className="h-9 w-9 shrink-0 drop-shadow-[0_0_10px_rgba(59,130,246,0.5)] transition-transform duration-500 group-hover:-translate-y-0.5"
         aria-hidden="true"
       >
         <defs>
-          <linearGradient id="dcSpark" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#3b82f6" />
-            <stop offset="0.5" stopColor="#8b5cf6" />
-            <stop offset="1" stopColor="#e64bd0" />
+          <linearGradient id="cubeTop" x1="0" y1="0" x2="0.4" y2="1">
+            <stop offset="0" stopColor="#7dd3fc" />
+            <stop offset="0.55" stopColor="#38bdf8" />
+            <stop offset="1" stopColor="#2563eb" />
           </linearGradient>
         </defs>
-        <path
-          fill="url(#dcSpark)"
-          d="M12 2 C13 9 15 11 22 12 C15 13 13 15 12 22 C11 15 9 13 2 12 C9 11 11 9 12 2 Z"
-        />
+        {LAYERS.map(({ cy, sideL, sideR }) => (
+          <g key={cy}>
+            <path d={`M9,${cy} L24,${cy + 7} L24,${cy + 11} L9,${cy + 4} Z`} fill={sideL} />
+            <path d={`M24,${cy + 7} L39,${cy} L39,${cy + 4} L24,${cy + 11} Z`} fill={sideR} />
+            <path d={`M24,${cy - 7} L39,${cy} L24,${cy + 7} L9,${cy} Z`} fill="url(#cubeTop)" />
+          </g>
+        ))}
       </svg>
-      <span className="font-display text-xl font-extrabold tracking-tight text-white">
-        Data <span className="text-gradient animate-gradient-pan">Centra</span>
+
+      <span className="flex flex-col leading-none">
+        <span className="font-display text-xl font-extrabold tracking-tight text-white">
+          Data <span className="text-gradient">Centra</span>
+        </span>
+        {tagline && (
+          <span className="mt-1 hidden text-[0.5rem] font-bold uppercase tracking-[0.22em] text-ink-muted sm:block">
+            Data. Connected. Growth.
+          </span>
+        )}
       </span>
     </Link>
   )

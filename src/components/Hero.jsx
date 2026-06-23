@@ -1,227 +1,214 @@
-import {
-  motion, useReducedMotion, useMotionValue, useSpring, useTransform,
-} from 'framer-motion'
-import { ArrowRight, BadgeCheck, Database, ChevronDown, Play, Sparkles } from 'lucide-react'
+import { motion, useReducedMotion } from 'framer-motion'
+import { ArrowRight, ShieldCheck, Lock, TrendingUp } from 'lucide-react'
 import Button from './Button.jsx'
 import brand from '../site/brand.js'
 
 const EASE = [0.4, 0, 0.2, 1]
 
-const headlineWords = [
-  { t: 'Turn' }, { t: 'verified' }, { t: 'data' }, { t: 'into' },
-  { t: 'predictable', accent: true }, { t: 'pipeline', accent: true },
+const features = [
+  { Icon: ShieldCheck, title: 'High Quality Data', sub: 'Accurate. Verified. Reliable.' },
+  { Icon: Lock, title: 'Secure & Compliant', sub: 'Your data is always protected.' },
+  { Icon: TrendingUp, title: 'Drive Real Growth', sub: 'Insights that convert.' },
 ]
 
-const trustAvatars = [
-  'https://randomuser.me/api/portraits/women/44.jpg',
-  'https://randomuser.me/api/portraits/men/32.jpg',
-  'https://randomuser.me/api/portraits/women/68.jpg',
-  'https://randomuser.me/api/portraits/men/75.jpg',
-]
+const logos = ['Microsoft', 'AWS', 'Google', 'HubSpot', 'Oracle', 'SAP']
 
-const RIBBONS = [
-  { d: 'M700,-60 C540,200 980,440 720,960', g: 'rb1', w: 1.6, delay: '0s' },
-  { d: 'M940,-60 C1200,240 840,580 1140,960', g: 'rb2', w: 1.6, delay: '-3s' },
-  { d: 'M1180,-60 C1440,300 1060,640 1360,960', g: 'rb3', w: 1.4, delay: '-6s' },
-  { d: 'M560,-60 C660,320 460,560 600,960', g: 'rb1', w: 1, delay: '-1.5s' },
+/* ---------- Isometric stacked-cube ---------- */
+const SLABS = [
+  { cy: 176, sideL: '#1e3a8a', sideR: '#1d4ed8' }, // bottom
+  { cy: 118, sideL: '#1d4ed8', sideR: '#2563eb' }, // middle
+  { cy: 60, sideL: '#2563eb', sideR: '#3b82f6' }, // top
 ]
-
-function HeroRibbons() {
+function StackCube() {
   return (
-    <svg
-      aria-hidden="true"
-      className="pointer-events-none absolute inset-0 z-0 h-full w-full"
-      viewBox="0 0 1440 900"
-      preserveAspectRatio="xMidYMid slice"
-    >
+    <svg viewBox="0 0 260 240" className="h-full w-full overflow-visible" aria-hidden="true">
       <defs>
-        <linearGradient id="rb1" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#3b82f6" /><stop offset="1" stopColor="#8b5cf6" />
-        </linearGradient>
-        <linearGradient id="rb2" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#8b5cf6" /><stop offset="1" stopColor="#e64bd0" />
-        </linearGradient>
-        <linearGradient id="rb3" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#e64bd0" /><stop offset="1" stopColor="#f43f5e" />
+        <linearGradient id="slabTop" x1="0" y1="0" x2="0.35" y2="1">
+          <stop offset="0" stopColor="#a5f3fc" />
+          <stop offset="0.5" stopColor="#38bdf8" />
+          <stop offset="1" stopColor="#2563eb" />
         </linearGradient>
       </defs>
-      <g className="hero-ribbons">
-        <g style={{ filter: 'blur(14px)' }} opacity="0.45">
-          {RIBBONS.map((r, i) => (
-            <path key={i} d={r.d} stroke={`url(#${r.g})`} strokeWidth={r.w * 2.4} fill="none" strokeLinecap="round" />
-          ))}
+      {SLABS.map(({ cy, sideL, sideR }) => (
+        <g key={cy}>
+          <path d={`M58,${cy} L130,${cy + 30} L130,${cy + 44} L58,${cy + 14} Z`} fill={sideL} />
+          <path d={`M130,${cy + 30} L202,${cy} L202,${cy + 14} L130,${cy + 44} Z`} fill={sideR} />
+          <path
+            d={`M130,${cy - 30} L202,${cy} L130,${cy + 30} L58,${cy} Z`}
+            fill="url(#slabTop)"
+            stroke="#bae6fd"
+            strokeOpacity="0.4"
+          />
         </g>
-        {RIBBONS.map((r, i) => (
-          <path key={i} d={r.d} stroke={`url(#${r.g})`} strokeWidth={r.w} fill="none" strokeLinecap="round" className="ribbon-line" style={{ animationDelay: r.delay }} />
-        ))}
-      </g>
+      ))}
     </svg>
   )
 }
 
-function HeroVisual({ reduce }) {
-  const mx = useMotionValue(0)
-  const my = useMotionValue(0)
-  const rotateX = useSpring(useTransform(my, [-0.5, 0.5], [6, -6]), { stiffness: 120, damping: 18 })
-  const rotateY = useSpring(useTransform(mx, [-0.5, 0.5], [-6, 6]), { stiffness: 120, damping: 18 })
-
-  const onMove = (e) => {
-    if (reduce) return
-    const r = e.currentTarget.getBoundingClientRect()
-    mx.set((e.clientX - r.left) / r.width - 0.5)
-    my.set((e.clientY - r.top) / r.height - 0.5)
-  }
-  const reset = () => { mx.set(0); my.set(0) }
-
-  const rows = [
-    { n: 'A. Chen', r: 'VP Engineering', c: 'Northwind', img: 'https://randomuser.me/api/portraits/women/44.jpg' },
-    { n: 'M. Okafor', r: 'CMO', c: 'Brightloom', img: 'https://randomuser.me/api/portraits/men/32.jpg' },
-    { n: 'S. Patel', r: 'Head of RevOps', c: 'Cadence', img: 'https://randomuser.me/api/portraits/women/68.jpg' },
-  ]
-
-  const rowsWrap = { hidden: {}, show: { transition: { staggerChildren: reduce ? 0 : 0.12, delayChildren: reduce ? 0 : 0.85 } } }
-  const rowItem = {
-    hidden: { opacity: 0, x: reduce ? 0 : 18 },
-    show: { opacity: 1, x: 0, transition: { duration: 0.45, ease: EASE } },
-  }
-
+/* ---------- Floating mini data cards ---------- */
+function MiniCard({ children, className, delay = 0, dur = 5, reduce }) {
   return (
     <motion.div
-      onMouseMove={onMove}
-      onMouseLeave={reset}
-      style={reduce ? undefined : { rotateX, rotateY, transformPerspective: 1000 }}
-      className="relative [transform-style:preserve-3d]"
+      animate={reduce ? {} : { y: [0, -10, 0] }}
+      transition={{ duration: dur, repeat: Infinity, ease: 'easeInOut', delay }}
+      className={
+        'absolute rounded-xl border border-white/10 bg-card/85 p-3 shadow-lift backdrop-blur ' + className
+      }
     >
-      <div className="absolute -inset-6 rounded-[2.4rem] bg-lake-gradient opacity-30 blur-3xl" />
-      <div className="relative rounded-3xl border border-white/10 bg-card/90 p-5 text-left shadow-lift backdrop-blur">
-        <div className="flex items-center justify-between border-b border-white/10 pb-3">
-          <div className="flex items-center gap-2 text-sm font-bold text-ink">
-            <Database className="h-4 w-4 text-brand-400" /> Segment preview
-          </div>
-          <span className="flex items-center gap-1.5 rounded-full bg-brand-500/15 px-2.5 py-1 text-xs font-semibold text-brand-300">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
-            </span>
-            14,208 matches
-          </span>
-        </div>
-        <motion.div variants={rowsWrap} initial="hidden" animate="show" className="mt-3 space-y-2">
-          {rows.map((row) => (
-            <motion.div key={row.n} variants={rowItem} className="flex items-center justify-between rounded-xl border border-white/5 bg-white/5 px-3 py-2.5">
-              <div className="flex items-center gap-3">
-                <img src={row.img} alt={row.n} loading="lazy" className="h-8 w-8 rounded-full object-cover ring-2 ring-white/15" />
-                <div>
-                  <div className="text-sm font-semibold text-ink">{row.n}</div>
-                  <div className="text-xs text-ink-muted">{row.r} · {row.c}</div>
-                </div>
-              </div>
-              <span className="flex items-center gap-1 text-xs font-medium text-brand-300">
-                <BadgeCheck className="h-4 w-4" /> Verified
-              </span>
-            </motion.div>
-          ))}
-        </motion.div>
-        <div className="mt-3 grid grid-cols-3 gap-2 text-center">
-          {[['95%', 'Deliverable'], ['70+', 'Fields'], ['<24h', 'Turnaround']].map(([v, l]) => (
-            <div key={l} className="rounded-xl border border-white/10 bg-white/5 py-2">
-              <div className="font-bebas text-2xl leading-none text-gradient">{v}</div>
-              <div className="text-2xs uppercase tracking-wide text-ink-muted">{l}</div>
-            </div>
-          ))}
-        </div>
-      </div>
+      {children}
     </motion.div>
+  )
+}
+
+function DataViz({ reduce }) {
+  return (
+    <div className="relative mx-auto aspect-square w-full max-w-[520px]">
+      {/* glow */}
+      <div className="pointer-events-none absolute inset-[12%] rounded-full bg-brand-500/25 blur-3xl" />
+
+      {/* orbit rings */}
+      <div className={'absolute inset-[6%] rounded-full border border-brand-500/15 ' + (reduce ? '' : 'animate-spin-slow')}>
+        <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent shadow-[0_0_12px_2px_rgba(34,211,238,0.7)]" />
+        <span className="absolute bottom-[14%] right-0 h-1.5 w-1.5 translate-x-1/2 rounded-full bg-brand-400 shadow-[0_0_10px_2px_rgba(96,165,250,0.7)]" />
+        <span className="absolute bottom-[8%] left-[10%] h-1.5 w-1.5 rounded-full bg-accent/80" />
+      </div>
+      <div className="absolute inset-[20%] rounded-full border border-white/5" />
+
+      {/* central stacked cube */}
+      <motion.div
+        animate={reduce ? {} : { y: [0, -12, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+        className="absolute inset-[14%] grid place-items-center"
+      >
+        <StackCube />
+      </motion.div>
+
+      {/* floating data cards */}
+      <MiniCard reduce={reduce} delay={0} dur={5} className="left-[-2%] top-[10%] w-28">
+        <div className="mb-1.5 text-[0.6rem] font-semibold uppercase tracking-wide text-ink-muted">Revenue</div>
+        <div className="flex items-end gap-1">
+          {[10, 16, 12, 22, 18, 26].map((h, i) => (
+            <span key={i} className="w-2.5 rounded-sm bg-gradient-to-t from-brand-600 to-accent" style={{ height: h }} />
+          ))}
+        </div>
+      </MiniCard>
+
+      <MiniCard reduce={reduce} delay={1.2} dur={5.5} className="right-[-3%] top-[3%] w-24">
+        <div className="mb-1 text-[0.6rem] font-semibold uppercase tracking-wide text-ink-muted">Segments</div>
+        <svg viewBox="0 0 36 36" className="mx-auto h-12 w-12">
+          <circle cx="18" cy="18" r="14" fill="none" stroke="#1e293b" strokeWidth="5" />
+          <circle cx="18" cy="18" r="14" fill="none" stroke="#22d3ee" strokeWidth="5" strokeDasharray="60 88" strokeLinecap="round" transform="rotate(-90 18 18)" />
+          <circle cx="18" cy="18" r="14" fill="none" stroke="#3b82f6" strokeWidth="5" strokeDasharray="28 120" strokeDashoffset="-60" strokeLinecap="round" transform="rotate(-90 18 18)" />
+        </svg>
+      </MiniCard>
+
+      <MiniCard reduce={reduce} delay={0.6} dur={6} className="left-[-6%] top-[48%] w-36">
+        <div className="flex items-center gap-2">
+          <span className="grid h-7 w-7 place-items-center rounded-full bg-brand-500/20 text-[0.6rem] font-bold text-brand-300">AC</span>
+          <div className="flex-1 space-y-1">
+            <div className="h-1.5 w-full rounded bg-white/15" />
+            <div className="h-1.5 w-2/3 rounded bg-white/10" />
+          </div>
+        </div>
+      </MiniCard>
+
+      <MiniCard reduce={reduce} delay={1.8} dur={5.2} className="bottom-[8%] right-[-2%] w-32">
+        <div className="mb-1 flex items-center justify-between text-[0.6rem] font-semibold uppercase tracking-wide text-ink-muted">
+          <span>Growth</span><span className="text-accent">+24%</span>
+        </div>
+        <svg viewBox="0 0 100 36" className="h-10 w-full">
+          <polyline points="2,30 20,24 38,26 56,14 74,18 98,4" fill="none" stroke="#22d3ee" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </MiniCard>
+    </div>
   )
 }
 
 export default function Hero() {
   const reduce = useReducedMotion()
   const appear = (delay) => ({
-    initial: { opacity: 0, y: reduce ? 0 : 20 },
+    initial: { opacity: 0, y: reduce ? 0 : 22 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.6, delay: reduce ? 0 : delay, ease: EASE },
   })
 
   return (
-    <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-night py-28 lg:py-20">
-      <HeroRibbons />
+    <section className="relative isolate overflow-hidden bg-gradient-to-b from-night via-surface to-night">
       <div aria-hidden className="aurora opacity-50" />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 z-0 bg-data-grid opacity-50 [mask-image:radial-gradient(120%_110%_at_50%_35%,#000_25%,transparent_72%)]"
+        className="pointer-events-none absolute inset-0 z-0 bg-data-grid opacity-40 [mask-image:radial-gradient(120%_100%_at_50%_30%,#000_25%,transparent_75%)]"
       />
 
-      <div className="container-shell relative z-10 grid items-center gap-12 lg:grid-cols-[55fr_45fr] lg:gap-10">
+      <div className="container-shell relative z-10 grid items-center gap-12 pt-16 pb-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pt-24 lg:pb-16">
+        {/* Left — copy */}
         <div>
           <motion.span
-            {...appear(0.1)}
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-brand-200 backdrop-blur"
+            {...appear(0.05)}
+            className="inline-flex items-center rounded-full border border-white/12 bg-white/[0.04] px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-brand-200 backdrop-blur"
           >
-            <Sparkles className="h-3.5 w-3.5 text-accent" /> New · Buyer-intent signals are live
+            Trusted data partner for growing businesses
           </motion.span>
 
           <motion.h1
-            {...appear(0.2)}
-            className="mt-5 font-serif text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.08] text-balance text-white"
+            {...appear(0.15)}
+            className="mt-6 font-display text-[clamp(2.6rem,6vw,4.4rem)] font-extrabold leading-[1.05] tracking-tight text-white"
           >
-            {headlineWords.map((w, i) => (
-              <span key={i} className={'mr-[0.22em] inline-block ' + (w.accent ? 'text-gradient' : '')}>
-                {w.t}
-              </span>
-            ))}
+            Powering Smarter<br />Data <span className="text-gradient animate-gradient-pan">Decisions</span>
           </motion.h1>
 
-          <motion.p {...appear(0.35)} className="mt-6 max-w-[500px] text-lg leading-relaxed text-ink-muted text-pretty">
-            {brand.name} gives revenue teams targeted contact data, enrichment and demand-generation
-            programs — so your message reaches buyers who are ready to act.
+          <motion.p {...appear(0.3)} className="mt-6 max-w-[520px] text-lg leading-relaxed text-ink-muted">
+            {brand.name} connects you to high-quality, accurate and actionable data that drives growth
+            and performance.
           </motion.p>
 
-          <motion.div {...appear(0.5)} className="mt-8 flex flex-wrap items-center gap-3">
-            <Button to="/contact" variant="accent" size="lg" className="cta-glow group">
-              Get a free sample <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+          <motion.div {...appear(0.42)} className="mt-9 flex flex-wrap items-center gap-3">
+            <Button to="/email-lists" variant="accent" size="lg" className="group">
+              Explore Solutions <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
             </Button>
-            <Button to="/why-us" variant="ghost" size="lg" className="text-white hover:bg-white/10">
-              <span className="grid h-6 w-6 place-items-center rounded-full border border-white/20 bg-white/5">
-                <Play className="h-3 w-3 translate-x-px" fill="currentColor" />
-              </span>
-              Watch demo
+            <Button to="/contact" variant="outline" size="lg" className="border-white/20 bg-white/[0.04] text-white hover:bg-white/10">
+              Book a Demo
             </Button>
           </motion.div>
 
-          <motion.div {...appear(0.65)} className="mt-8 flex items-center gap-3">
-            <div className="flex -space-x-2.5">
-              {trustAvatars.map((a, i) => (
-                <img key={i} src={a} alt="" loading="lazy" className="h-9 w-9 rounded-full border-2 border-night object-cover" />
-              ))}
-            </div>
-            <p className="text-sm text-ink-muted">
-              Trusted by <span className="font-semibold text-white">8,000+</span> GTM teams
-            </p>
+          <motion.div {...appear(0.55)} className="mt-10 grid gap-5 sm:grid-cols-3">
+            {features.map(({ Icon, title, sub }) => (
+              <div key={title} className="flex items-start gap-3">
+                <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-brand-500/15 text-brand-300">
+                  <Icon className="h-5 w-5" />
+                </span>
+                <div>
+                  <div className="text-sm font-bold text-white">{title}</div>
+                  <div className="text-xs text-ink-muted">{sub}</div>
+                </div>
+              </div>
+            ))}
           </motion.div>
         </div>
 
+        {/* Right — animated data illustration */}
         <motion.div
-          initial={{ opacity: 0, y: reduce ? 0 : 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: reduce ? 0 : 0.5, type: 'spring', stiffness: 90, damping: 16 }}
+          initial={{ opacity: 0, scale: reduce ? 1 : 0.94 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: reduce ? 0 : 0.3, ease: EASE }}
         >
-          <motion.div animate={reduce ? {} : { y: [0, -10, 0] }} transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}>
-            <HeroVisual reduce={reduce} />
-          </motion.div>
+          <DataViz reduce={reduce} />
         </motion.div>
       </div>
 
-      <a href="#proof" aria-label="Scroll to content" className="absolute bottom-7 left-1/2 z-10 -translate-x-1/2 text-white/40 hover:text-white">
-        <motion.span
-          animate={reduce ? {} : { y: [0, 8, 0] }}
-          transition={{ duration: 1.6, repeat: Infinity }}
-          className="flex flex-col items-center gap-1 text-[0.65rem] font-bold uppercase tracking-[0.2em]"
-        >
-          Scroll
-          <ChevronDown className="h-4 w-4" />
-        </motion.span>
-      </a>
+      {/* Trusted-by logo cloud */}
+      <div className="container-shell relative z-10 border-t border-white/8 py-8">
+        <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-ink-muted/70">
+          Trusted by 500+ businesses worldwide
+        </p>
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-5 sm:gap-x-16">
+          {logos.map((l) => (
+            <span key={l} className="text-lg font-extrabold tracking-tight text-white/35 transition hover:text-white/60 sm:text-xl">
+              {l}
+            </span>
+          ))}
+        </div>
+      </div>
     </section>
   )
 }
