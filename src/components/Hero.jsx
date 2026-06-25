@@ -11,7 +11,10 @@ const features = [
   { Icon: TrendingUp, title: 'Drive Real Growth', sub: 'Insights that convert.' },
 ]
 
-const logos = ['Microsoft', 'AWS', 'Google', 'HubSpot', 'Oracle', 'SAP']
+const logos = [
+  'Microsoft', 'AWS', 'Google', 'HubSpot', 'Oracle', 'SAP', 'Salesforce',
+  'Adobe', 'Stripe', 'Slack', 'Shopify', 'Zoom', 'IBM', 'Atlassian', 'Snowflake',
+]
 
 /* ---------- Isometric stacked-cube ---------- */
 const SLABS = [
@@ -201,12 +204,18 @@ export default function Hero() {
         <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-ink-muted/70">
           Trusted by 500+ businesses worldwide
         </p>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-5 sm:gap-x-16">
-          {logos.map((l) => (
-            <span key={l} className="text-lg font-extrabold tracking-tight text-white/35 transition hover:text-white/60 sm:text-xl">
-              {l}
-            </span>
-          ))}
+        <div className="group mask-fade-x relative mt-6 overflow-hidden">
+          <div className="flex w-max items-center gap-x-12 animate-marquee group-hover:[animation-play-state:paused] motion-reduce:animate-none sm:gap-x-16">
+            {[...logos, ...logos].map((l, i) => (
+              <span
+                key={i}
+                aria-hidden={i >= logos.length}
+                className="shrink-0 text-lg font-extrabold tracking-tight text-white/35 transition hover:text-white/60 sm:text-xl"
+              >
+                {l}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
