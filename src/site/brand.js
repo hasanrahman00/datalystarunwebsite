@@ -1,7 +1,7 @@
 // Single source of truth for brand identity. Swap these values to rebrand.
 export const brand = {
   name: 'DataCentra',
-  legalName: 'DataCentra Data, Inc.',
+  legalName: 'DataCentra',
   tagline: 'Intent-driven B2B data & demand generation',
   domain: 'datacentra.io',
   email: 'contact@datacentra.io',

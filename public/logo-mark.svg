@@ -6,12 +6,15 @@
       <stop offset="1" stop-color="#2563eb"/>
     </linearGradient>
   </defs>
+  <!-- bottom slab -->
   <path d="M116,300 L256,366 L256,396 L116,330 Z" fill="#1e3a8a"/>
   <path d="M256,366 L396,300 L396,330 L256,396 Z" fill="#1d4ed8"/>
   <path d="M256,234 L396,300 L256,366 L116,300 Z" fill="url(#top)" stroke="#bae6fd" stroke-opacity="0.35" stroke-width="2"/>
+  <!-- middle slab -->
   <path d="M116,236 L256,302 L256,332 L116,266 Z" fill="#1d4ed8"/>
   <path d="M256,302 L396,236 L396,266 L256,332 Z" fill="#2563eb"/>
   <path d="M256,170 L396,236 L256,302 L116,236 Z" fill="url(#top)" stroke="#bae6fd" stroke-opacity="0.35" stroke-width="2"/>
+  <!-- top slab -->
   <path d="M116,172 L256,238 L256,268 L116,202 Z" fill="#2563eb"/>
   <path d="M256,238 L396,172 L396,202 L256,268 Z" fill="#3b82f6"/>
   <path d="M256,106 L396,172 L256,238 L116,172 Z" fill="url(#top)" stroke="#bae6fd" stroke-opacity="0.45" stroke-width="2"/>
