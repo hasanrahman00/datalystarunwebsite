@@ -30,10 +30,10 @@ export default function ComplianceBadges({ tone = 'cream' }) {
               <img
                 src={`/compliance/${b.key}.png`}
                 alt={`${b.acr} compliant`}
-                width="64"
-                height="79"
+                width="48"
+                height="59"
                 loading="lazy"
-                className="h-[4.5rem] w-auto drop-shadow-[0_4px_12px_rgba(0,0,0,0.25)] transition-transform duration-300 group-hover:-translate-y-0.5"
+                className="h-12 w-auto drop-shadow-[0_4px_12px_rgba(0,0,0,0.25)] transition-transform duration-300 group-hover:-translate-y-0.5"
               />
               <div className="mt-3 text-sm font-extrabold tracking-tight text-coal">{b.acr}</div>
               <div className="mt-0.5 text-[0.6rem] font-bold uppercase tracking-[0.16em] text-terracotta">Compliant</div>

@@ -199,15 +199,17 @@ export default function Home() {
         </Section>
       )}
 
-      {/* Testimonials */}
+      {/* Testimonials — auto-scrolling loop */}
       <Section tone="cream-soft">
         <SectionHeading serif eyebrowStyle="rule" eyebrow="Testimonials" title="Teams that switched, stayed" />
-        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {testimonials.slice(0, 3).map((t, i) => (
-            <Reveal key={t.name} delay={i * 0.06}>
-              <TestimonialCard {...t} />
-            </Reveal>
-          ))}
+        <div className="group mask-fade-x relative mt-12 overflow-hidden">
+          <div className="flex w-max gap-5 animate-marquee group-hover:[animation-play-state:paused] motion-reduce:animate-none">
+            {[...testimonials, ...testimonials].map((t, i) => (
+              <div key={i} className="w-[320px] shrink-0 sm:w-[360px]" aria-hidden={i >= testimonials.length}>
+                <TestimonialCard {...t} />
+              </div>
+            ))}
+          </div>
         </div>
       </Section>
 
