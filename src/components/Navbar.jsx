@@ -24,7 +24,7 @@ function MegaPanel({ item }) {
     <div className="grid w-[680px] grid-cols-[1.4fr_1fr] gap-6 p-6">
       <div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-ink-muted">
-          Browse by audience
+          {item.panelLabel || 'Browse by audience'}
         </p>
         <div className="grid grid-cols-2 gap-1.5">
           {item.hubs.map((h) => (
@@ -274,9 +274,9 @@ export default function Navbar() {
       <div className="container-shell flex h-16 items-center justify-between gap-4 lg:h-[72px]">
         <Logo />
 
-        {/* Data Solutions + Enrich + B2B Scraping in the header; the rest are in the footer. */}
+        {/* Data Solutions + Data Intelligence + Enrich + B2B Scraping in the header; the rest are in the footer. */}
         <nav className="hidden items-center gap-0.5 lg:flex">
-          {primaryNav.slice(0, 2).map((item) => (
+          {primaryNav.slice(0, 3).map((item) => (
             <DesktopItem key={item.label} item={item} />
           ))}
           <Link

@@ -14,6 +14,7 @@ import servicesEnrich from './pages/services-enrich.js'
 import servicesEngage from './pages/services-engage.js'
 import servicesMarketing from './pages/services-marketing.js'
 import servicesGrowth from './pages/services-growth.js'
+import servicesIntelligence from './pages/services-intelligence.js'
 import blog from './pages/blog.js'
 
 const services = [
@@ -21,6 +22,7 @@ const services = [
   ...servicesEngage,
   ...servicesMarketing,
   ...servicesGrowth,
+  ...servicesIntelligence,
 ]
 import caseStudies from './pages/caseStudies.js'
 import legal from './pages/legal.js'

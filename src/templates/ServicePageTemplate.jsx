@@ -12,6 +12,7 @@ const groupLabels = {
   engage: 'Engage',
   marketing: 'Data-Driven Marketing',
   growth: 'Growth Solutions',
+  intelligence: 'Data Intelligence',
 }
 
 // Renders a service landing page (enrich / engage / marketing / growth).

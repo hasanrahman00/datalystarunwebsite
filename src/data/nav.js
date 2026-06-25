@@ -18,6 +18,25 @@ export const dataFeatured = [
   { label: 'Investors Email List', to: '/investors-email-list' },
 ]
 
+// Data Intelligence hub — verticalized databases, intent & enrichment.
+export const dataIntelligence = [
+  { label: 'Industry Databases', to: '/data-intelligence/industry-databases', desc: 'Verticalized B2B data across thousands of industries' },
+  { label: 'Data by Geography', to: '/data-intelligence/geography', desc: 'Target by country, region, state & city' },
+  { label: 'Healthcare Data', to: '/data-intelligence/healthcare-data', desc: 'Practitioners, facilities & NPI-level detail' },
+  { label: 'Professional Contacts', to: '/data-intelligence/professional-contacts', desc: 'Verified executives by title & seniority' },
+  { label: 'Tech Install Base', to: '/data-intelligence/tech-install-base', desc: 'Target by the software companies actually run' },
+  { label: 'Custom B2B Data', to: '/data-intelligence/custom-data', desc: 'Build-to-spec datasets for your exact ICP' },
+  { label: 'Data Enrichment', to: '/services/data-enrichment', desc: 'Cleanse, enrich & append your records' },
+  { label: 'Data Licensing', to: '/data-intelligence/data-licensing', desc: 'License databases in bulk for your product' },
+]
+
+export const intelligenceFeatured = [
+  { label: 'Industry Databases', to: '/data-intelligence/industry-databases' },
+  { label: 'Healthcare Data', to: '/data-intelligence/healthcare-data' },
+  { label: 'Tech Install Base', to: '/data-intelligence/tech-install-base' },
+  { label: 'Custom B2B Data', to: '/data-intelligence/custom-data' },
+]
+
 export const enrichLinks = [
   { label: 'Data Enrichment', to: '/services/data-enrichment' },
   { label: 'Email Append', to: '/services/email-append' },
@@ -80,9 +99,19 @@ export const primaryNav = [
   {
     label: 'Data Solutions',
     type: 'mega',
+    panelLabel: 'Browse by audience',
     hubs: dataHubs,
     featured: dataFeatured,
     cta: { label: 'Explore all data', to: '/email-lists' },
+  },
+  {
+    label: 'Data Intelligence',
+    type: 'mega',
+    to: '/data-intelligence',
+    panelLabel: 'Explore by capability',
+    hubs: dataIntelligence,
+    featured: intelligenceFeatured,
+    cta: { label: 'Explore Data Intelligence', to: '/data-intelligence' },
   },
   { label: 'Enrich', type: 'list', links: enrichLinks, to: '/services/data-enrichment' },
   { label: 'Engage', type: 'list', links: engageLinks, to: '/services/account-based-marketing' },

@@ -6,6 +6,7 @@ import { getContentRoutes } from './data/registry.jsx'
 
 import Home from './pages/Home.jsx'
 import B2BScraping from './pages/B2BScraping.jsx'
+import DataIntelligence from './pages/DataIntelligence.jsx'
 import About from './pages/About.jsx'
 import WhyUs from './pages/WhyUs.jsx'
 import Contact from './pages/Contact.jsx'
@@ -29,6 +30,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/b2b-scraping" element={<B2BScraping />} />
+          <Route path="/data-intelligence" element={<DataIntelligence />} />
 
           {/* Company */}
           <Route path="/about" element={<About />} />
