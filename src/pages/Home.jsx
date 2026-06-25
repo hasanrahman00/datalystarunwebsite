@@ -6,6 +6,7 @@ import { Section, SectionHeading } from '../components/Section.jsx'
 import Hero from '../components/Hero.jsx'
 import Counter from '../components/Counter.jsx'
 import CurvedBand from '../components/CurvedBand.jsx'
+import ComplianceBadges from '../components/ComplianceBadges.jsx'
 import Button from '../components/Button.jsx'
 import Reveal from '../components/Reveal.jsx'
 import LeadForm from '../components/LeadForm.jsx'
@@ -209,6 +210,9 @@ export default function Home() {
           ))}
         </div>
       </Section>
+
+      {/* Compliance trust band */}
+      <ComplianceBadges tone="cream" />
 
     </div>
   )

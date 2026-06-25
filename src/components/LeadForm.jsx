@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { ArrowRight, CheckCircle2, Loader2 } from 'lucide-react'
 import { cn } from '../lib/cn.js'
 
-// Client-side lead-capture form. No backend wired — simulates submission and
-// shows a success state. Swap handleSubmit for a real endpoint when ready.
+// Lead-capture form. Posts to the /api/contact serverless function, which
+// emails the submission to the DataCentra inbox via Resend.
 export default function LeadForm({
   title = 'Request counts & pricing',
   subtitle = 'Tell us your target audience — we’ll send matched counts and a sample within one business day.',
@@ -12,12 +12,33 @@ export default function LeadForm({
   className,
 }) {
   const [status, setStatus] = useState('idle') // idle | loading | done
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    const form = e.currentTarget
+    const payload = {
+      ...Object.fromEntries(new FormData(form).entries()),
+      source: title,
+      path: typeof window !== 'undefined' ? window.location.pathname : '',
+    }
     setStatus('loading')
-    // Simulated async submit. Replace with fetch('/api/leads', ...).
-    setTimeout(() => setStatus('done'), 900)
+    setError('')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.error || 'Something went wrong. Please try again.')
+      }
+      setStatus('done')
+    } catch (err) {
+      setError(err.message || 'Could not send your request. Please try again.')
+      setStatus('idle')
+    }
   }
 
   if (status === 'done') {
@@ -46,13 +67,15 @@ export default function LeadForm({
       <p className="mt-1 text-sm text-ink-muted">{subtitle}</p>
       <div className="mt-5 grid gap-3">
         <div className={cn('grid gap-3', !compact && 'sm:grid-cols-2')}>
-          <input className={field} placeholder="Work email" type="email" required aria-label="Work email" />
-          <input className={field} placeholder="Company" type="text" aria-label="Company" />
+          <input className={field} name="email" placeholder="Work email" type="email" required aria-label="Work email" />
+          <input className={field} name="company" placeholder="Company" type="text" aria-label="Company" />
         </div>
-        <input className={field} placeholder="Target audience (e.g. CTOs in SaaS, US)" type="text" aria-label="Target audience" />
+        <input className={field} name="audience" placeholder="Target audience (e.g. CTOs in SaaS, US)" type="text" aria-label="Target audience" />
         {!compact && (
-          <textarea className={cn(field, 'min-h-[84px] resize-none')} placeholder="Anything else we should know?" aria-label="Message" />
+          <textarea className={cn(field, 'min-h-[84px] resize-none')} name="message" placeholder="Anything else we should know?" aria-label="Message" />
         )}
+        {/* honeypot — hidden from users, catches bots */}
+        <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
         <button
           type="submit"
           disabled={status === 'loading'}
@@ -68,6 +91,7 @@ export default function LeadForm({
             </>
           )}
         </button>
+        {error && <p className="text-center text-xs font-medium text-rose-400">{error}</p>}
         <p className="text-center text-2xs text-ink-muted">
           No spam. By submitting you agree to our privacy policy.
         </p>

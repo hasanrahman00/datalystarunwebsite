@@ -20,11 +20,33 @@ const infoCards = [
 export default function Contact() {
   useSeo({ title: 'Contact', description: `Talk to ${brand.name} about data, enrichment and demand generation.` })
   const [status, setStatus] = useState('idle')
+  const [error, setError] = useState('')
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault()
+    const form = e.currentTarget
+    const payload = {
+      ...Object.fromEntries(new FormData(form).entries()),
+      source: 'Contact page',
+      path: typeof window !== 'undefined' ? window.location.pathname : '',
+    }
     setStatus('loading')
-    setTimeout(() => setStatus('done'), 900) // swap for a real endpoint
+    setError('')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.error || 'Something went wrong. Please try again.')
+      }
+      setStatus('done')
+    } catch (err) {
+      setError(err.message || 'Could not send your request. Please try again.')
+      setStatus('idle')
+    }
   }
 
   return (
@@ -104,20 +126,20 @@ export default function Contact() {
                 <div className="space-y-4">
                   <div>
                     <label className={labelCls}>Work email <span className="text-terracotta">*</span></label>
-                    <input className={fieldCls} type="email" required placeholder="you@company.com" />
+                    <input className={fieldCls} name="email" type="email" required placeholder="you@company.com" />
                   </div>
                   <div>
                     <label className={labelCls}>Company</label>
-                    <input className={fieldCls} type="text" placeholder="Acme Inc." />
+                    <input className={fieldCls} name="company" type="text" placeholder="Acme Inc." />
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div>
                       <label className={labelCls}>Target audience <span className="text-terracotta">*</span></label>
-                      <input className={fieldCls} type="text" required placeholder="e.g. CTOs in US SaaS" />
+                      <input className={fieldCls} name="audience" type="text" required placeholder="e.g. CTOs in US SaaS" />
                     </div>
                     <div>
                       <label className={labelCls}>Monthly volume</label>
-                      <select className={fieldCls} defaultValue="">
+                      <select className={fieldCls} name="volume" defaultValue="">
                         <option value="" disabled>Select…</option>
                         <option>Not sure yet</option>
                         <option>Under 10k</option>
@@ -134,9 +156,12 @@ export default function Contact() {
                     </label>
                     <textarea
                       className={`${fieldCls} min-h-[110px] resize-none`}
+                      name="message"
                       placeholder="Tell us about your goals, target accounts and timeline…"
                     />
                   </div>
+                  {/* honeypot — hidden from users, catches bots */}
+                  <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
                 </div>
 
                 <button
@@ -150,6 +175,7 @@ export default function Contact() {
                     <>Send my request <ArrowRight className="h-4 w-4" /></>
                   )}
                 </button>
+                {error && <p className="mt-3 text-center text-sm font-medium text-rose-500">{error}</p>}
                 <p className="mt-4 text-xs text-coal/55">
                   No spam, no signup. A data strategist replies within one business day.
                 </p>
